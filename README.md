@@ -5,11 +5,11 @@ This repository contains material from the [Society of Music Theory](https://soc
 The materials include two presentation/workshops related to methodological concerns in computational music theory:
 
 + *Representing Musical Objects as Data*
-  + [Nat Condit-Schultz](mailto:natcs@gatech.edu)
+  + Nat Condit-Schultz
   + [Computational and Cognitive Musicology Lab](https://ccml.gtcmt.gatech.edu)
   + Georgia Tech, [School of Music](https://music.gatech.edu)
 + *Representetive Sampling of Music*
-  + Nick Shea (*MIIG Char*
+  + Nick Shea (*MIIG Chair*)
   + [CACTUS Music Lab](https://www.cactusmusiclab.com/)
   + Arizona State University, [School of Music, Dance and Theatre](https://musicdancetheatre.asu.edu/)
 
@@ -20,5 +20,13 @@ This repo can be accessed and played with in this posit cloud "sandbox" environm
 
 Several [humdrum](humdrum.org)-formatted datasets are included in the repo:
 
-+ `**kern` encodings of 371 Chorarales by J.S. Bach.
++ `**kern` encodings of 371 Chorales by J.S. Bach.
 + The [CoCoPops](https://github.com/Computational-Cognitive-Musicology-Lab/CoCoPops) dataset of 20th-century rock/pop transcriptions.
+
+
+### Software
+
+
+In Nat's presentation, I will use [humdrumR](https://humdrumr.ccml.gtcmt.gatech.edu/): an R-package for computational musicology.
+
+![](Slides/images/humdrumR.svg)
