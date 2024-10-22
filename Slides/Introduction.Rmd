@@ -44,12 +44,13 @@ We will be using this Posit Cloud sandbox environment.
 
 Humdrum is a system for computational musicology created by David Huron, circa 1989--1995.
 
-The humdrum ecosystem includes:
-
-+ The humdrum data *syntax*
-+ The Unix-based humdrum *toolkit*
-  + Craig Sapp's Verovio Humdrum Viewer
-  + My humdrum$_{\mathbb{R}}$
++ The humdrum ecosystem includes:
+  + A data format
+    + The "*humdrum syntax*"
+  + Software
+    + The original *humdrum toolkit* 
+    + Craig Sapp's *Verovio Humdrum Viewer*
+    + My humdrum$_{\mathbb{R}}$
 
 
 
@@ -59,7 +60,7 @@ The humdrum ecosystem includes:
 The humdrum "syntax" is a simple tabular format, emphasizing transparency (read/write ease) and musicological flexibility.
 
 + Lots of musical information can be represented.
-+ The standard representation for conventional notation is called `**kern`
++ The standard representation for conventional notation is called `**kern`.
 
 ---
 
@@ -75,7 +76,7 @@ str
 
 ---
 
-Tens of thousands of scores available in humdrum's `**kern` format.
+Tens of thousands of `**kern` scores are available.
 
 + Possible to include *any* arbitrary information
   + Harmonic information
