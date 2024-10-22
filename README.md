@@ -14,7 +14,7 @@ The materials include two presentation/workshops related to methodological conce
   + Arizona State University, [School of Music, Dance and Theatre](https://musicdancetheatre.asu.edu/)
 
 
-This repo can be accessed and played with in this posit cloud "sandbox" environment.
+This repo can be accessed and played with in [this](https://posit.cloud/content/9055786) posit cloud "sandbox" environment.
 
 ### Data
 
