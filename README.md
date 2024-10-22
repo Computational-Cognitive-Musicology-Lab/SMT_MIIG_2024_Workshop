@@ -29,4 +29,4 @@ Several [humdrum](humdrum.org)-formatted datasets are included in the repo:
 
 In Nat's presentation, I will use [humdrumR](https://humdrumr.ccml.gtcmt.gatech.edu/): an R-package for computational musicology.
 
-![](Slides/images/humdrumR.svg)
+![](Slides/images/humdrumR_light.svg)
