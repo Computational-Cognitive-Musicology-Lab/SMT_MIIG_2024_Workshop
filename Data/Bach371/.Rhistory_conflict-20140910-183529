@@ -1,0 +1,512 @@
+prior=log(prior(sq,pr))
+P=exp(LL+prior)
+P=P/sum(P)
+return(P)
+}
+post1=posterior(x,prior1) ; plot(sq,post1,type='l',col='blue')
+post2=posterior(x,prior2) ; points(sq,post2,type='l',col='red')
+post3=posterior(x,prior3) ; points(sq,post3,type='l',col='darkgreen')
+post4=posterior(x,prior4) ; points(sq,post4,type='l',col='black')
+points(mu,0,col='darkblue',lwd=4,pch=2)
+prior1=c(67,1)  ;  plot(sq,prior(sq,prior1),type='l',col='blue',xlim=c(50,76))
+prior2=c(64,2) ;  points(sq,prior(sq,prior2),type='l',col='red')
+prior3=c(66,5)  ;  points(sq,prior(sq,prior3),type='l',col='darkgreen')
+prior4=c(60,50) ;  points(sq,prior(sq,prior4),type='l',col='black')
+LL=function(x){ dnorm(mean(x),sq,sd(x)/sqrt(n),log=T) }
+posterior=function(x,pr){
+LL=LL(x)
+prior=log(prior(sq,pr))
+P=exp(LL+prior)
+P=P/sum(P)
+return(P)
+}
+post1=posterior(x,prior1) ; plot(sq,post1,type='l',col='blue')
+post2=posterior(x,prior2) ; points(sq,post2,type='l',col='red')
+post3=posterior(x,prior3) ; points(sq,post3,type='l',col='darkgreen')
+post4=posterior(x,prior4) ; points(sq,post4,type='l',col='black')
+points(mu,0,col='darkblue',lwd=4,pch=2)
+source('~/.active-rstudio-document')
+mu=rnorm(1,sample(seq(65,66,.1),1),2)#True population mean
+pop=rnorm(1000000,mu,5) #Population
+n=100
+x=sample(pop,n)
+prior=function(value,par){dnorm(value,par[1],par[2])}
+prior1=c(67,1)  ;  plot(sq,prior(sq,prior1),type='l',col='blue',xlim=c(50,76))
+prior2=c(64,2) ;  points(sq,prior(sq,prior2),type='l',col='red')
+prior3=c(66,5)  ;  points(sq,prior(sq,prior3),type='l',col='darkgreen')
+prior4=c(60,50) ;  points(sq,prior(sq,prior4),type='l',col='black')
+#
+LL=function(x){ dnorm(mean(x),sq,sd(x)/sqrt(n),log=T) }
+posterior=function(x,pr){
+LL=LL(x)
+prior=log(prior(sq,pr))
+P=exp(LL+prior)
+P=P/sum(P)
+return(P)
+}
+post1=posterior(x,prior1) ; plot(sq,post1,type='l',col='blue')
+post2=posterior(x,prior2) ; points(sq,post2,type='l',col='red')
+post3=posterior(x,prior3) ; points(sq,post3,type='l',col='darkgreen')
+post4=posterior(x,prior4) ; points(sq,post4,type='l',col='black')
+points(mu,0,col='darkblue',lwd=4,pch=2)
+bias1[i]=abs(sq[which.max(post1)]-mu)
+bias2[i]=abs(sq[which.max(post2)]-mu)
+bias3[i]=abs(sq[which.max(post3)]-mu)
+bias4[i]=abs(sq[which.max(post4)]-mu)
+x=sample(pop,n)
+prior=function(value,par){dnorm(value,par[1],par[2])}
+prior1=c(67,1)  ;  plot(sq,prior(sq,prior1),type='l',col='blue',xlim=c(50,76))
+prior2=c(64,2) ;  points(sq,prior(sq,prior2),type='l',col='red')
+prior3=c(66,5)  ;  points(sq,prior(sq,prior3),type='l',col='darkgreen')
+prior4=c(60,50) ;  points(sq,prior(sq,prior4),type='l',col='black')
+#
+LL=function(x){ dnorm(mean(x),sq,sd(x)/sqrt(n),log=T) }
+posterior=function(x,pr){
+LL=LL(x)
+prior=log(prior(sq,pr))
+P=exp(LL+prior)
+P=P/sum(P)
+return(P)
+}
+post1=posterior(x,prior1) ; plot(sq,post1,type='l',col='blue')
+post2=posterior(x,prior2) ; points(sq,post2,type='l',col='red')
+post3=posterior(x,prior3) ; points(sq,post3,type='l',col='darkgreen')
+post4=posterior(x,prior4) ; points(sq,post4,type='l',col='black')
+points(mu,0,col='darkblue',lwd=4,pch=2)
+bias1[i]=abs(sq[which.max(post1)]-mu)
+bias2[i]=abs(sq[which.max(post2)]-mu)
+bias3[i]=abs(sq[which.max(post3)]-mu)
+bias4[i]=abs(sq[which.max(post4)]-mu)
+source('~/.active-rstudio-document')
+prior=function(x,a,b){ dbeta(x,a,b)  }
+prior(.5,1,10)
+prior(.5,10,10)
+prior(.5,1,1)
+prior(.5,1,2)
+prior(.5,1,2)
+prior(.5,1,3)
+prior(.2,1,3)
+prior(.2,1,.1)
+prior(.2,1,1)
+Like=function(observed,mean,sd){ dnorm(observed,mean,sd)}
+prior(x)
+prior(x,2,2)
+prior=function(x){ dbeta(x,9,4)  }
+Like=function(observed,mean){ dnorm(observed,mean,4)}
+prior(5)
+prior(.5)
+prior=function(x){ dnorm(x,0,5)  }
+prior=function(x){ dnorm(x,0,5)  }
+prior=function(x){ dnorm(x,0,5)  } #probability of parameter x: P(x)
+Like=function(data,x){ dnorm(data,x,5)} #probability of data given x: P(data|x)
+data=5
+Like(data,-10:10)
+prior(-10:10)
+Pr.x.Like=function(x){
+return(prior(x)*Like(x))
+}
+?integral
+1:10 %~% 1:10
+1:10 %prop% 1:10
+?integrate
+integrate(Pr.x.Like,-Inf,Inf)
+integrate(Pr.x.Like,0,Inf)
+Pr.x.like(5)
+Pr.x.Like=function(x){
+return(prior(x)*Like(x))
+}
+integrate(Pr.x.Like,0,Inf)
+Like=function(x){dnorm(data,x,5)} #probability of data given x: P(data|x)
+integrate(Pr.x.Like,0,Inf)
+integrate(prior,-Inf,Inf)
+integrate(prior,0,Inf)
+sq=seq(-100,100,.001)
+Pr.x.Like(sq)
+sum(Pr.x.Like(sq))
+sum(Pr.x.Like(sq))/43.9391
+sum(Pr.x.Like(sq)/43.9391)
+143.9391
+1/43.9391
+sq=seq(-1000,1000,.01)
+sum(Pr.x.Like(sq))
+sq
+sum(Pr.x.Like(sq))
+sq=seq(-1000,1000,.0001)
+sum(Pr.x.Like(sq))
+sum(Pr.x.Like(sq)/439.391)
+sum(prior(sq))
+length(sq)
+sum(prior(sq)/10000)
+integrate(Pr.x.Like,0,Inf)
+integrate(Pr.x.Like,-Inf,Inf)
+d=integrate(Pr.x.Like,-Inf,Inf)
+d$value
+Posterior=function(x){
+pl=Pr.x.Like(x)
+integral=integrate(pl,-Inf,-Inf)$value
+return(pl/integral)
+}
+Posterior(x)
+Posterior=function(x){
+pl=Pr.x.Like(x)
+integral=integrate(Pr.x.Like,-Inf,-Inf)$value
+return(pl/integral)
+}
+Posterior(x)
+x
+Posterior(4)
+plot()
+plot(prior(1:10))
+plot(prior(-10:10))
+par(mfcol=c(1,1))
+plot(prior(-10:20))
+plot(prior(-20:20))
+plot(prior(-20:20),type='l')
+plot(prior(-20:20),type='l',lwd=2,lty='dashed')
+plot(prior(-20:20),type='l',lwd=3,lty='dashed')
+points(Pr.x.Like(-20:20),type='l',lwd=3,lty='red')
+points(Pr.x.Like(-20:20),type='l',lwd=3,col='red')
+points(Posterior(-20:20),type='l',lwd=3,col='blue')
+data
+plot(prior(-20:20),type='l',lwd=3,lty='dashed',ylim=c(0,.5))
+plot(prior(-20:20),type='l',lwd=3,lty='dashed',ylim=c(0,.4))
+plot(prior(-20:20),type='l',lwd=3,lty='dashed',ylim=c(0,.3))
+points(Posterior(-20:20),type='l',lwd=3,col='blue')
+plot(-20:20,prior(-20:20),type='l',lwd=3,lty='dashed',ylim=c(0,.3))
+points(-20:20,Posterior(-20:20),type='l',lwd=3,col='blue')
+data
+Like=function(x){prod(dnorm(data,x,5))} #probability of data given x: P(data|x)
+data=c(4,5,6)
+plot.bayes=function(){
+plot(-20:20,prior(-20:20),type='l',lwd=3,lty='dashed',ylim=c(0,.3))
+points(-20:20,Posterior(-20:20),type='l',lwd=3,col='blue')
+}
+plot.bayes()
+Posterior(10)
+Like(5)
+Like(1:10)
+Pr.x.Like=function(x){
+return(exp(prior(x)+Like(x)))
+}
+Like=function(x){dnorm(data,x,5,log=T)} #probability of data given x: P(data|x)
+prior=function(x){ dnorm(x,0,5,log=T)  } #probability of parameter x: P(x)
+prior(5)
+Like(5)
+data
+Like(1)
+Pr.c.Like(5)
+Pr.x.Like(5)
+plot.bayes()
+Like=function(x){sum(dnorm(data,x,5,log=T))} #probability of data given x: P(data|x)
+plot.bayes()
+Like(5)
+data=1
+Like(5)
+data=1:10
+Like(5)
+prior(5)
+prior(3)
+Like(5)+prior(5)
+exp(Like(5)+prior(5))
+prior=function(x){ dnorm(x,0,5,log=T)  } #probability of parameter x: P(x)
+Like=function(x){sum(dnorm(data,x,5,log=T))} #probability of data given x: P(data|x)
+Pr.x.Like=function(x){
+return(exp(prior(x)+Like(x)))
+}
+integrate(Pr.x.Like)
+integrate(Pr.x.Like,0,1)
+integrate(Pr.x.Like,-Inf,Inf)
+integrate(Pr.x.Like,-1000,Inf)
+integrate(Pr.x.Like,-1000,1000)
+Pr.x.Like(1)
+Pr.x.Like(-100)
+Pr.x.Like(-10)
+Pr.x.Like(-12)
+integrate(Pr.x.Like,-12,12)
+Posterior=function(x){
+pl=Pr.x.Like(x)
+integral=integrate(Pr.x.Like,-12,-12)$value
+return(pl/integral)
+}
+plot.bayes()
+Posterior(4)
+Posterior(3)
+Posterior(2)
+prior(4)
+plot.bayes=function(){
+plot(-20:20,exp(prior(-20:20)),type='l',lwd=3,lty='dashed',ylim=c(0,.3))
+points(-20:20,Posterior(-20:20),type='l',lwd=3,col='blue')
+}
+plot.bayes()
+Posterior=function(x){
+pl=Pr.x.Like(x)
+integral=integrate(Pr.x.Like,-12,12)$value
+return(pl/integral)
+}
+plot.bayes()
+integrate(Pr.x.Like,-12,12)
+integrate(Pr.x.Like,-5,10)
+integrate(Pr.x.Like,-12,12)
+Posterior=function(x){
+pl=Pr.x.Like(x)
+integral=integrate(Pr.x.Like,-5,5)$value
+return(pl/integral)
+}
+Posterior(2)
+Posterior=function(x){
+pl=Pr.x.Like(x)
+integral=integrate(Pr.x.Like,-10,10)$value
+return(pl/integral)
+}
+Posterior(2)
+Posterior=function(x){
+pl=Pr.x.Like(x)
+integral=integrate(Pr.x.Like,-20,20)$value
+return(pl/integral)
+}
+Posterior(2)
+Pr.x.Like()
+Pr.x.Like(2)
+data
+Pr.x.Like(5)
+integrate(Pr.x.Like)
+integrate(Pr.x.Like,-10,10)
+integrate(Pr.x.Like,-Inf,Inf)
+data=1:3
+integrate(Pr.x.Like,-Inf,Inf)
+data=3
+integrate(Pr.x.Like,-Inf,Inf)
+prior(5)
+exp(prior(5))
+exp(prior(0))
+exp(Like(0))
+data
+exp(Like(0)+prior(0))
+integrate(Pr.x.Like,-Inf,Inf)
+prior=function(x){ dnorm(x,0,5,log=F)  } #probability of parameter x: P(x)
+Like=function(x){dnorm(data,x,5)} #probability of data given x: P(data|x)
+Pr.x.Like=function(x){
+return(prior(x)*Like(x))
+}
+Pr.x.Like=function(x){
+return(prior(x)*Like(x))
+}
+integrate(Pr.x.Like,-Inf,Inf)
+plot.bayes()
+data=10
+plot.bayes()
+setwd('Bridge//Research/Data//Kern/JSBach/371chorales/')
+read.table('BassSoprano',header=F)
+colnames(data)=c('AnteBass','AnteSoprano')
+str(data)
+data=read.table('BassSoprano',header=F)
+colnames(data)=c('AnteBass','AnteSoprano')
+table(data[,1])
+solfege=c('de','do','di','ra','re','ri','me','mi','fa','fi','se','so','si','le','la','te','ti','r')
+source('~/.active-rstudio-document')
+source('~/.active-rstudio-document')
+getwd()
+source('~/.active-rstudio-document')
+data
+table(data[,1])
+table(data[,2])
+source('~/.active-rstudio-document')
+data
+data$ConsBass
+head(data$AnteBass,-1)
+source('~/.active-rstudio-document')
+data
+data$ConsBass=factor(c('r',head(data$AnteBass,-1)),levels=solfege)
+data$ConsBass
+source('~/.active-rstudio-document')
+data
+mat=table(data)
+mat
+which(data$ConsBass=='re')
+which(data$ConsBass==solfege)
+where(data$ConsBass==solfege)
+where(data$ConsBass,solfege)
+where(solfege,data$ConsBass)
+warnings()
+where(data$ConsBass,solfege)
+where(data$ConsBass[3],solfege)
+solfege[where(data$ConsBass[3],solfege)]
+data[3,]
+mat[1,,,]
+mat[1,1,1,]
+mat[1,2,1,]
+mat[1,2,3,]
+fourth.dim=function(Bass=c('so','do'),Soprano='ti'){
+outcomes=mat[sol(Bass[1]),sol(Soprano),sol(Bass[2]),]
+}
+fourth.dim()
+sol=function(sol){where(sol,solfege)}
+fourth.dim()
+fourth.dim=function(Bass=c('so','do'),Soprano='ti'){
+outcomes=mat[sol(Bass[1]),sol(Soprano),sol(Bass[2]),]
+return(outcomes)
+}
+fourth.dim()
+fourth.dim(Bass=c('so','la'))
+fourth.dim(Bass=c('so','fa'))
+fourth.dim(Bass=c('so','fa'),'fa')
+fourth.dim(Bass=c('so','do'),'fa')
+fourth.dim(Bass=c('so','do'),'so')
+fourth.dim=function(Bass=c('so','do'),Soprano='ti'){
+outcomes=mat[sol(Bass[1]),sol(Soprano),sol(Bass[2]),]
+cat(sum(outcomes,'data points'))
+return(outcomes/sum(outcomes))
+}
+fourth.dim(Bass=c('so','do'),'so')
+fourth.dim=function(Bass=c('so','do'),Soprano='ti'){
+outcomes=mat[sol(Bass[1]),sol(Soprano),sol(Bass[2]),]
+cat(sum(outcomes),'data points\n')
+return(outcomes/sum(outcomes))
+}
+fourth.dim(Bass=c('so','do'),'so')
+fourth.dim(Bass=c('do','fa'),'so')
+sum(fourth.dim(Bass=c('do','fa'),'so'))
+fourth.dim(Bass=c('do','fa'),'so')
+fourth.dim(Bass=c('do','so'),'so')
+fourth.dim(Bass=c('do','fa'),'te')
+fourth.dim(Bass=c('do','fa'),'ti')
+fourth.dim(Bass=c('do','fa'),'la')
+fourth.dim(Bass=c('do','fa'),'mi')
+fourth.dim(Bass=c('do','fa'),'dp)
+fourth.dim(Bass=c('do','fa'),'dp)
+fourth.dim(Bass=c('do','fa'),'do')
+fourth.dim(Bass=c('fa','re'),'do')
+fourth.dim(Bass=c('fa','re'),'re')
+fourth.dim(Bass=c('fa','re'),'mi')
+fourth.dim(Bass=c('fa','re'),'la')
+fourth.dim(Bass=c('re','so'),'la')
+nrow(data)
+fourth.dim(Bass=c('re','so'),'fa')
+fourth.dim(Bass=c('re','so'),'fi')
+fourth.dim(Bass=c('re','so'),'le')
+data=5
+prior=function(x){ dnorm(x,0,5,log=F)  } #probability of parameter x: P(x)
+Like=function(x){dnorm(data,x,5)} #probability of data given x: P(data|x)
+Pr.x.Like=function(x){
+return(prior(x)*Like(x))
+}
+Posterior=function(x){
+pl=Pr.x.Like(x)
+integral=integrate(Pr.x.Like,-20,20)$value
+return(pl/integral)
+}
+plot.bayes=function(){
+plot(-20:20,exp(prior(-20:20)),type='l',lwd=3,lty='dashed',ylim=c(0,.3))
+points(-20:20,Posterior(-20:20),type='l',lwd=3,col='blue')
+}
+plot.bayes()
+plot.bayes=function(){
+plot(-20:20,prior(-20:20),type='l',lwd=3,lty='dashed',ylim=c(0,.3))
+points(-20:20,Posterior(-20:20),type='l',lwd=3,col='blue')
+}
+plot.bayes()
+data=10
+plot.bayes()
+prior=function(x){ dnorm(x,0,50,log=F)  } #probability of parameter x: P(x)
+Like=function(x){dnorm(data,x,5)} #probability of data given x: P(data|x)
+plot.bayes()
+data=5
+plot.bayes()
+Like=function(x){prod(dnorm(data,x,5))} #probability of data given x: P(data|x)
+plot.bayes()
+dnorm(5,5,5)
+dnorm(5:6,5,5)
+prod(dnorm(5:6,5,5))
+Like=function(x){prod(dnorm(data,x,5))} #probability of data given x: P(data|x)
+plot.bayes()
+data
+Like(5)
+data=5:6
+Like(5)
+Pr.x.Like(5)
+data=5
+Pr.x.Like(5)
+data=5:6
+Pr.x.Like(5)
+integrate(Pr.x.Like,-Inf,Inf)
+integrate(Pr.x.Like,-20,20)
+data=5
+integrate(Pr.x.Like,-20,20)
+integrate(Pr.x.Like,-Inf,Inf)
+Like=function(x){dnorm(data,x,5)} #probability of data given x: P(data|x)
+data=5
+integrate(Pr.x.Like,-Inf,Inf)
+Like=function(x){prod(dnorm(data,x,5))} #probability of data given x: P(data|x)
+Like(5)
+Like(5:6)
+Like=function(x){prod(dnorm(data,x,10))} #probability of data given x: P(data|x)
+Like(5:6)
+Like=function(x){prod(dnorm(data,x,2))} #probability of data given x: P(data|x)
+Like(5:6)
+Like(5)
+Like(3)
+Like(1)
+Like(6)
+Like(5)
+integrate(Pr.x.Like,-Inf,Inf)
+Pr.x.Like(4)
+Pr.x.Like(5)
+Like=function(x){prod(dnorm(data,x,5))} #probability of data given x: P(data|x)
+Pr.x.Like(5)
+Like=function(x){prod(dnorm(data,x,1))} #probability of data given x: P(data|x)
+Pr.x.Like(5)
+integrate(Pr.x.Like,-Inf,Inf)
+integrate(Pr.x.Like,-10,10)
+integrate(Pr.x.Like,-5,5)
+plot(Pr.X.Like(-10:10))
+plot(Pr.x.Like(-10:10))
+Pr.x.Like(-10:10)
+Like=function(x){prod(dnorm(data,x,10))} #probability of data given x: P(data|x)
+Pr.x.Like(-10:10)
+Like=function(x){prod(dnorm(data,x,3))} #probability of data given x: P(data|x)
+Pr.x.Like(-10:10)
+Like=function(x){prod(dnorm(data,x,6))} #probability of data given x: P(data|x)
+Pr.x.Like(-10:10)
+prior=function(x){ dnorm(x,0,10,log=F)  } #probability of parameter x: P(x)
+Pr.x.Like(-10:10)
+Like=function(x){prod(dnorm(data,x,20))} #probability of data given x: P(data|x)
+Pr.x.Like(-10:10)
+Like=function(x){prod(dnorm(data,x,2))} #probability of data given x: P(data|x)
+Pr.x.Like(-10:10)
+Like=function(x){prod(dnorm(data,x,5))} #probability of data given x: P(data|x)
+Pr.x.Like(-10:10)
+integrate(Pr.x.Like,-Inf,Inf)
+test=function(x) x=x/2+sum(1:10)
+test(4)
+test=function(x) x/2+sum(1:10)
+Like=function(x){prod(dnorm(data,x,5))} #probability of data given x: P(data|x)
+test(4)
+Vectorize(test)
+test(1:3)
+Like=function(x){dnorm(data,x,5)} #probability of data given x: P(data|x)
+prior(1;10)
+prior(1:10)
+Pr.x.Like(3)
+test=Vectorize(Pr.x.Like)
+test(4:3)
+test(1:10)
+integrate(test)
+integrate(test,-Inf,Inf)
+data
+data=c(1:2)
+integrate(test,-Inf,Inf)
+Like=function(x){prod(dnorm(data,x,5))} #probability of data given x: P(data|x)
+integrate(test,-Inf,Inf)
+plot.bayes()
+data=-1:3
+plot.bayes()
+data=c(-1,1)
+plot.bayes()
+data=c(3,2)
+plot.bayes()
+data=c(5:5)
+plot.bayes()
+Posterior(5)
+Posterior(3)
+Posterior(1)
+integrate(Pr.x.Like,-Inf,Inf)

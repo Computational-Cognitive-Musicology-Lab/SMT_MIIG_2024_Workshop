@@ -1,0 +1,102 @@
+---
+title: "SMT Music Informatics Group meeting"
+format:
+  revealjs:
+    theme: dark
+    slide-number: c/t
+    show-slide-number: all
+    incremental: true
+    scrollable: true
+    transition: slide
+    footer: "SMT MIG 2024: Representing and Sampling Music"
+author: Nick Shea, Nat Condit-Schultz
+date: November 9, 2024
+---
+
+```{r echo=FALSE}
+library(shiny)
+```
+
+# Welcome!
+
+We have two presentations planned:
+
++ Comparing musical definitions using humdrum$_{\mathbb{R}}$
+  + --- Nat
++ Sample representation in the Rolling Stone. 
+  + --- Nick
+
+
+----
+
+We will be using this Posit Cloud sandbox environment.
+
+![](images/PositLink_SMT_MIG_2024.png)
+
++ Feel free to follow along!
+
+
+# Humdrum
+
+
+----
+
+
+Humdrum is a system for computational musicology created by David Huron, circa 1989--1995.
+
+The humdrum ecosystem includes:
+
++ The humdrum data *syntax*
++ The Unix-based humdrum *toolkit*
+  + Craig Sapp's Verovio Humdrum Viewer
+  + My humdrum$_{\mathbb{R}}$
+
+
+
+## The Humdrum Syntax
+
+
+The humdrum "syntax" is a simple tabular format, emphasizing transparency (read/write ease) and musicological flexibility.
+
++ Lots of musical information can be represented.
++ The standard representation for conventional notation is called `**kern`
+
+---
+
+
+```{r, echo = FALSE, eval = TRUE, results = 'asis'}
+txt <- readLines('M179.txt')
+
+# txt <- paste0('!!!filter:%20extract%20-s%201-4,0%0A', txt)
+
+str <- tags$div(class = 'notes', tags$iframe(src = paste0('https://verovio.humdrum.org/?k=E&t=', txt), width = '1600px', height = '2000px', title="Verovio Humdrum Viewer"))
+str
+```
+
+---
+
+Tens of thousands of scores available in humdrum's `**kern` format.
++ Possible to include *any* arbitrary information
+  + Harmonic information
+  + Formal information
+  + Dance steps, emotion annotations, fingerings, etc.
+
+
+
+
+# Representing Music
+
+## Music as Data
+
+A music encoding is a representation of musical events (notes, chords) or structures (meter, tonality).
+
++ No encoding is perfect.
++ There are many ways we can represent musical information.
+  + Different approaches reveal different information.
+
+----
+
+Let's focus on the two "primary parameters":
+
++ Pitch data
++ Timing data
