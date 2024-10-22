@@ -76,10 +76,12 @@ str
 ---
 
 Tens of thousands of scores available in humdrum's `**kern` format.
+
 + Possible to include *any* arbitrary information
   + Harmonic information
   + Formal information
-  + Dance steps, emotion annotations, fingerings, etc.
+  + Dance steps, emotion annotations, fingerings, 
+  + etc.
 
 
 ## humdrumR
@@ -99,7 +101,7 @@ Humdrum$_{\mathbb{R}}$ is a new, R-based, software for analyzing humdrum data.
 A music encoding is a representation of musical events (notes, chords) or structures (meter, tonality).
 
 + No encoding is perfect.
-  + Encodings are at best inperfect measurements of "real" structures.
+  + Encodings are at best imperfect measurements of "real" structures.
 + There are many ways we can represent musical information.
   + Different approaches reveal different information.
 
