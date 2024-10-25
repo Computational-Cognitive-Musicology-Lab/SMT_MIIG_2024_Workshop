@@ -30,3 +30,14 @@ Several [humdrum](humdrum.org)-formatted datasets are included in the repo:
 In Nat's presentation, I will use [humdrumR](https://humdrumr.ccml.gtcmt.gatech.edu/): an R-package for computational musicology.
 
 ![](Slides/images/humdrumR_light.svg)
+
+## Content
+
+This repo contains three subdirectories:
+
++ `Data`, which contains two sets of humdrum data.
++ `Slides`, which contains `.Rmd`-based reveal-js presentations.
++ `Tutorials`, which contains `.Rmd`-based code tutorials.
+
+If you look at this repo via the [posit cloud workspace](https://posit.cloud/content/9055786), you can look at our slide-decks and/or try out tutorials right in your browser.
+Simply open a `.Rmd` file from either the `Slides` or `Tutorials` directories, and click the "Run Document" or "Render" button.
