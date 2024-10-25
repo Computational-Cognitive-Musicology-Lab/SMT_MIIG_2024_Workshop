@@ -1,0 +1,210 @@
+---
+title: Representing Pitch
+output:
+    learnr::tutorial:
+      theme: flatly
+      progressive: true
+      allow_skip: true
+      ace_theme: "github"
+      df_print: "kable"
+runtime: shiny_prerendered
+description: >
+  Discuss different ways pitch can be represented for research purposes, and illustrate relevant 
+  functionality in humdrumR.
+---
+
+```{r, include = FALSE, message =FALSE, warning=FALSE}
+library(learnr)
+library(humdrumR)
+humdrumR(syntaxHighlight = FALSE, maxRecordsPerFile = 30L)
+source('helper_functions.R')
+tutorial_options(exercise.lines = 10)
+
+```
+
+## Representing Pitch
+
+###
+
+Information about pitch in music and be represented in numerous ways.
+
+
+### 
+
+Some pitch representations are equivalent---only representing an aesthetic difference.
+
++ Of course, "aesthetic" differences can be important if they affect human or machine readability.
+
+We can convert between equivalent representations without losing and information (**lossless**).
+
+```{r lossless, exercise = TRUE}
+Kern  <- c('c', 'g#','a', 'dd','cc')
+Pitch <- c('C4', 'G#4', 'A4', 'D5', 'C5')
+```
+
+```{r lossless-solution}
+data.frame(Pitch2Kern = Pitch |> kern(),
+           Kern2Pitch = Kern |> pitch(),
+           Pitch2Kern2Pitch = Pitch |> kern() |> pitch())
+
+```
+
+
+### 
+
+In contrast, some pitch representation really do represent different information about pitch.
+
+Converting between these representations can lose information (**lossy**), or *require* additional information (depending on the direction you are converting).
+
+```{r}
+Kern  <- c('c', 'a-','a', 'dd','cc')
+Freq <- c(261.6256, 415.3047, 440.0000, 587.3295, 523.2511)
+
+data.frame(Freq2Kern = Freq |> kern(Exclusive = 'freq'),
+           Kern2Freq = Kern |> freq(frequency.reference = 440, frequency.reference.note = 'a', tonalHarmonic = 2^(19/12)),
+           Kern2Freq2Kern = Kern |> freq() |> kern())
+
+
+```
+
+> The distinction between G# and Ab is lost in the frequency representation.
+> Conversely, information about exact pitch is lost in the kern representation.
+> We have to independently provide additional information about the tuning system in order to convert between these representations at all.
+
+### 
+
+When doing computational musicology research, we need to consider: 
+
++ What information about pitch is encoded in our data?
++ If we are creating our own data, what information should we put into our data?
+
+
+
+## Some Data
+
+We will start with some simple data, the 371 Bach Chorales:
+
+```{r, cache=TRUE}
+
+bach <- readHumdrum('../Data/Bach370/.*krn')
+
+```
+
+```{r}
+bach
+```
+
+
+### Chorale Pitch Data
+
+In this data, the pitches are represented as `**kern` format, which is essentially the same a "Scientific Pitch Notation." We can even convert to scientific notation using the `pitch()` function:
+
+```{r}
+bach |> pitch()
+```
+
+
+
+
+## Perspectives on Pitch
+
+Pitch can be regarded from a variety of perspectives, embedding different information.
+
+```{r, echo = FALSE}
+
+pline()
+
+lab(.85, '**kern **pitch')
+
+
+```
+
+### Acoustic
+
+Pitch is a subjective perceptual phenomenon.
+
+- Humans *perceive* some sounds as having a property called "pitch."
+- The percept is roughly associated with the fundamental frequency of harmonic signals.
+
+
+
+
+```{r fig.height=10, fig.width=6}
+bach |> freq() |> with(draw( . ,facet = Instrument, showCounts = FALSE))
+
+```
+
+
+However, this data doesn't really support this analysis.
+
++ The exact tuning system used by Bach, or any particular choir singing this music, is not represented in the data.
++ Nor is the tuning variations that would happen in real human performance.
+
+
+### Tuning
+
+We might get closer with A420 and a Pythagorean tuning:
+
+```{r fig.height=10, fig.width=6}
+bach |> freq() |> with(draw(. ,facet = Instrument, showCounts = FALSE, xlim = c(20, 500), breaks = 30))
+
+bach |> freq(tonalHarmonic = 3, frequency.reference = 420) |> with(draw(. ,facet = Instrument, showCounts = FALSE, xlim = c(20, 500), breaks = 30))
+
+```
+
+```{r}
+
+pline()
+
+lab(.85, '**kern **pitch')
+lab(.05, '**freq')
+
+
+```
+
+### Using frequency
+
+What research questions might be supported by frequency data?
+
+<div id='freq-hint'>
++ Estimating reverb tail of choir singing in specific concert hall.
+</div>
+
+----
+
+### Tonality
+
+
+Frequency space is not very representative of musical experience.
+We can try something more perceptually meaningful using semitones:
+
+
+```{r fig.height=10, fig.width=6}
+bach |> semits() |> with(draw(Semits ,facet = Instrument, showCounts = FALSE, xlim = c(20, 500), breaks = 30))
+
+```
+
+### Semitones
+
+This representation can be fully extracted from our score data.
+
+```{r}
+
+pline()
+
+lab(.85, '**kern **pitch')
+lab(.05, '**freq')
+lab(.25, '**semits')
+
+
+```
+
+### Tonal Pitch
+
+There are five pieces of information:
+
+- Key
+- Scale step (A-G)
+- Alteration (#, b, bb, etc.)
+- Octave
+- "Detuning"
