@@ -1,11 +1,4 @@
-base
-methods
 data.table
-datasets
-utils
-grDevices
-graphics
-stats
 shiny
 learnr
 bit
