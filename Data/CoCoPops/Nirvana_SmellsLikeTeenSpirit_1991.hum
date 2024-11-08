@@ -3,1037 +3,1038 @@
 !!!COC: Nirvana
 !!!RRD: 1991/
 !!!In original RS 5x20 subset: True
-**harm	**harte	**harm	**harte	**kern	**silbe	**stress	**timestamp
-!T.d.C.	!T.d.C.	!D.T.	!D.T.	!T.d.C.	!	!	!
-!	!	!	!	!OCT=4	!	!	!
-=1	=1	=1	=1	=1	=1	=1	=1
-*>Intro	*>Intro	*>Intro	*>Intro	*>Intro	*>Intro	*>Intro	*>Intro
-*tb2	*tb2	*tb2	*tb2	*tb2	*	*	*
-*M4/4	*M4/4	*M4/4	*M4/4	*M4/4	*	*	*
-*F:	*F:	*F:	*F:	*f:	*	*	*
-*	*	*	*	*k[b-e-a-d-]	*	*	*
-i	F:min	i	F:min	.	.	.	0.196
-IV	B-:maj	iv	B-:min	.	.	.	.
-=2	=2	=2	=2	=2	=2	=2	=2
--III	A-:maj	-III	A-:maj	.	.	.	2.377
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=3	=3	=3	=3	=3	=3	=3	=3
-i	F:min	i	F:min	.	.	.	4.541
-IV	B-:maj	iv	B-:min	.	.	.	.
-=4	=4	=4	=4	=4	=4	=4	=4
--III	A-:maj	-III	A-:maj	.	.	.	6.714
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=5	=5	=5	=5	=5	=5	=5	=5
-i	F:min	i	F:min	.	.	.	8.835
-IV	B-:maj	iv	B-:min	.	.	.	.
-=6	=6	=6	=6	=6	=6	=6	=6
--III	A-:maj	-III	A-:maj	.	.	.	10.879
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=7	=7	=7	=7	=7	=7	=7	=7
-i	F:min	i	F:min	.	.	.	12.888
-IV	B-:maj	iv	B-:min	.	.	.	.
-=8	=8	=8	=8	=8	=8	=8	=8
--III	A-:maj	-III	A-:maj	.	.	.	14.911
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=9	=9	=9	=9	=9	=9	=9	=9
-i	F:min	i	F:min	.	.	.	16.956
-IV	B-:maj	iv	B-:min	.	.	.	.
-=10	=10	=10	=10	=10	=10	=10	=10
--III	A-:maj	-III	A-:maj	.	.	.	18.992
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=11	=11	=11	=11	=11	=11	=11	=11
-i	F:min	i	F:min	.	.	.	21.009
-IV	B-:maj	iv	B-:min	.	.	.	.
-=12	=12	=12	=12	=12	=12	=12	=12
--III	A-:maj	-III	A-:maj	.	.	.	23.009
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=13	=13	=13	=13	=13	=13	=13	=13
-i	F:min	i	F:min	.	.	.	25.042
-IV	B-:maj	iv	B-:min	.	.	.	.
-=14	=14	=14	=14	=14	=14	=14	=14
--III	A-:maj	-III	A-:maj	.	.	.	27.120
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=15	=15	=15	=15	=15	=15	=15	=15
-i	F:min	i	F:min	.	.	.	29.186
-IV	B-:maj	iv	B-:min	.	.	.	.
-=16	=16	=16	=16	=16	=16	=16	=16
--III	A-:maj	-III	A-:maj	.	.	.	31.269
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=17	=17	=17	=17	=17	=17	=17	=17
-*>Verse	*>Verse	*>Verse	*>Verse	*>Verse	*>Verse	*>Verse	*>Verse
-*tb8	*tb8	*tb8	*tb8	*tb8	*	*	*
-i	F:min	i	F:min	.	.	.	33.339
-.	.	.	.	.	.	.	.
-.	.	.	.	c	load	1	.
-.	.	.	.	e-	up	0	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	f	on	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	guns	1	.
-=18	=18	=18	=18	=18	=18	=18	=18
--III	A-:maj	-III	A-:maj	.	.	.	35.413
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	f	bring	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	e-	_	.	.
-.	.	.	.	d-	your	0	.
-.	.	.	.	c	friends	1	.
-=19	=19	=19	=19	=19	=19	=19	=19
-i	F:min	i	F:min	.	.	.	37.473
-.	.	.	.	.	.	.	.
-.	.	.	.	d-	its	0	.
-.	.	.	.	c	fun	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	B-	to	0	.
-.	.	.	.	A-	lose	1	.
-=20	=20	=20	=20	=20	=20	=20	=20
--III	A-:maj	-III	A-:maj	.	.	.	39.550
-.	.	.	.	.	.	.	.
-.	.	.	.	B-	and	0	.
-.	.	.	.	c	to	0	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	B-	_	.	.
-.	.	.	.	A-	pret-	0	.
-.	.	.	.	G	-end	1	.
-=21	=21	=21	=21	=21	=21	=21	=21
-i	F:min	i	F:min	.	.	.	41.626
-.	.	.	.	.	.	.	.
-.	.	.	.	c	shes	0	.
-.	.	.	.	e-	ov-	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	f	-er	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	bored	1	.
-=22	=22	=22	=22	=22	=22	=22	=22
--III	A-:maj	-III	A-:maj	.	.	.	43.703
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	and	0	.
-.	.	.	.	f	self	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	e-	_	.	.
-.	.	.	.	d-	assu-	0	.
-.	.	.	.	c	-red	1	.
-=23	=23	=23	=23	=23	=23	=23	=23
-i	F:min	i	F:min	.	.	.	45.764
-.	.	.	.	.	.	.	.
-.	.	.	.	d-	oh	3	.
-.	.	.	.	c	no	0	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	B-	I	0	.
-.	.	.	.	A-	know	1	.
-=24	=24	=24	=24	=24	=24	=24	=24
--III	A-:maj	-III	A-:maj	.	.	.	47.844
-.	.	.	.	.	.	.	.
-.	.	.	.	B-	a	0	.
-.	.	.	.	c	dir-	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	B-	_	.	.
-.	.	.	.	A-	-ty	0	.
-.	.	.	.	G	word	1	.
-=25	=25	=25	=25	=25	=25	=25	=25
-i	F:min	i	F:min	.	.	.	49.927
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-=26	=26	=26	=26	=26	=26	=26	=26
--III	A-:maj	-III	A-:maj	.	.	.	51.983
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	A-	how	1	.
-.	.	.	.	G	_	.	.
-.	.	.	.	G	low	1	.
-=27	=27	=27	=27	=27	=27	=27	=27
-i	F:min	i	F:min	F	_	.	54.035
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-=28	=28	=28	=28	=28	=28	=28	=28
--III	A-:maj	-III	A-:maj	.	.	.	56.107
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	A-	how	1	.
-.	.	.	.	G	_	.	.
-.	.	.	.	G	low	1	.
-=29	=29	=29	=29	=29	=29	=29	=29
-i	F:min	i	F:min	F	_	.	58.152
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-=30	=30	=30	=30	=30	=30	=30	=30
--III	A-:maj	-III	A-:maj	.	.	.	60.204
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	A-	how	1	.
-.	.	.	.	G	_	.	.
-.	.	.	.	G	low	1	.
-=31	=31	=31	=31	=31	=31	=31	=31
-i	F:min	i	F:min	F	_	.	62.239
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-=32	=32	=32	=32	=32	=32	=32	=32
--III	A-:maj	-III	A-:maj	.	.	.	64.281
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	a-	with	0	.
-.	.	.	.	g	the	0	.
-.	.	.	.	g	lights	1	.
-=33	=33	=33	=33	=33	=33	=33	=33
-*>Chorus	*>Chorus	*>Chorus	*>Chorus	*>Chorus	*>Chorus	*>Chorus	*>Chorus
-i	F:min	i	F:min	.	.	.	66.295
-.	.	.	.	f	out	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	its	0	.
-.	.	.	.	b-	less	0	.
-.	.	.	.	b-	dangerous	1	.
-=34	=34	=34	=34	=34	=34	=34	=34
--III	A-:maj	-III	A-:maj	.	.	.	68.317
-.	.	.	.	a-	dangerous	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	d-	here	1	.
-.	.	.	.	d-	we	0	.
-.	.	.	.	d-	are	1	.
-=35	=35	=35	=35	=35	=35	=35	=35
-i	F:min	i	F:min	.	.	.	70.378
-.	.	.	.	c	now	1	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	ent-	2	.
-.	.	.	.	b-	-ert-	0	.
-.	.	.	.	b-	-ain	1	.
-=36	=36	=36	=36	=36	=36	=36	=36
--III	A-:maj	-III	A-:maj	.	.	.	72.425
-.	.	.	.	a-	us	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	a-	I	0	.
-.	.	.	.	g	feel	1	.
-.	.	.	.	g	stu-	1	.
-=37	=37	=37	=37	=37	=37	=37	=37
-i	F:min	i	F:min	.	.	.	74.465
-.	.	.	.	f	-pid	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	and	0	.
-.	.	.	.	b-	cont-	0	.
-.	.	.	.	b-	-agio-	1	.
-=38	=38	=38	=38	=38	=38	=38	=38
--III	A-:maj	-III	A-:maj	.	.	.	76.499
-.	.	.	.	a-	-us	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	d-	here	1	.
-.	.	.	.	d-	we	0	.
-.	.	.	.	d-	are	1	.
-=39	=39	=39	=39	=39	=39	=39	=39
-i	F:min	i	F:min	.	.	.	78.541
-.	.	.	.	c	now	1	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	ent-	2	.
-.	.	.	.	b-	-ert-	0	.
-.	.	.	.	b-	-ain	1	.
-=40	=40	=40	=40	=40	=40	=40	=40
--III	A-:maj	-III	A-:maj	.	.	.	80.566
-.	.	.	.	a-	us	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	a-	a	0	.
-.	.	.	.	g	mul-	0	.
-.	.	.	.	g	-att-	1	.
-=41	=41	=41	=41	=41	=41	=41	=41
-i	F:min	i	F:min	.	.	.	82.593
-.	.	.	.	f	-o	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	an	0	.
-.	.	.	.	b-	al-	0	.
-.	.	.	.	b-	-bi-	1	.
-=42	=42	=42	=42	=42	=42	=42	=42
--III	A-:maj	-III	A-:maj	.	.	.	84.624
-.	.	.	.	a-	-no	2	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	d-	a	0	.
-.	.	.	.	d-	mos-	0	.
-.	.	.	.	d-	-qui-	1	.
-=43	=43	=43	=43	=43	=43	=43	=43
-i	F:min	i	F:min	.	.	.	86.654
-.	.	.	.	c	-to	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	my	0	.
-.	.	.	.	b-	li-	0	.
-.	.	.	.	b-	-bi-	1	.
-=44	=44	=44	=44	=44	=44	=44	=44
--III	A-:maj	-III	A-:maj	.	.	.	88.674
-.	.	.	.	a-	-do	2	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	a-	yeah	3	.
-.	.	.	.	.	.	.	.
-=45	=45	=45	=45	=45	=45	=45	=45
-*tb2	*tb2	*tb2	*tb2	*tb2	*	*	*
-i	F:min	i	F:min	.	.	.	90.727
--II	G-:maj	-II	G-:maj	.	.	.	.
-=46	=46	=46	=46	=46	=46	=46	=46
-*tb4	*tb4	*tb4	*tb4	*tb4	*	*	*
-ic	F:min/5	ic	F:min/5	.	.	.	92.820
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	-III	A-:maj	.	.	.	.
-=47	=47	=47	=47	=47	=47	=47	=47
-*tb2	*tb2	*tb2	*tb2	*tb2	*	*	*
-i	F:min	i	F:min	.	.	.	94.844
--II	G-:maj	-II	G-:maj	.	.	.	.
-=48	=48	=48	=48	=48	=48	=48	=48
-*tb4	*tb4	*tb4	*tb4	*tb4	*	*	*
-ic	F:min/5	ic	F:min/5	.	.	.	96.900
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	-III	A-:maj	.	.	.	.
-=49	=49	=49	=49	=49	=49	=49	=49
-*>BP	*>BP	*>BP	*>BP	*>BP	*>BP	*>BP	*>BP
-*tb2	*tb2	*tb2	*tb2	*tb2	*	*	*
-i	F:min	i	F:min	.	.	.	98.916
-IV	B-:maj	iv	B-:min	.	.	.	.
-=50	=50	=50	=50	=50	=50	=50	=50
--III	A-:maj	-III	A-:maj	.	.	.	100.989
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=51	=51	=51	=51	=51	=51	=51	=51
-i	F:min	i	F:min	.	.	.	103.043
-IV	B-:maj	iv	B-:min	.	.	.	.
-=52	=52	=52	=52	=52	=52	=52	=52
--III	A-:maj	-III	A-:maj	.	.	.	105.140
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=53	=53	=53	=53	=53	=53	=53	=53
-*>Verse	*>Verse	*>Verse	*>Verse	*>Verse	*>Verse	*>Verse	*>Verse
-*tb8	*tb8	*tb8	*tb8	*tb8	*	*	*
-i	F:min	i	F:min	.	.	.	107.208
-.	.	.	.	.	.	.	.
-.	.	.	.	c	im	0	.
-.	.	.	.	e-	worse	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	f	at	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	what	0	.
-=54	=54	=54	=54	=54	=54	=54	=54
--III	A-:maj	-III	A-:maj	.	.	.	109.270
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	f	I	0	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	e-	_	.	.
-.	.	.	.	d-	do	1	.
-.	.	.	.	c	best	1	.
-=55	=55	=55	=55	=55	=55	=55	=55
-i	F:min	i	F:min	.	.	.	111.333
-.	.	.	.	.	.	.	.
-.	.	.	.	d-	and	0	.
-.	.	.	.	c	for	0	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	B-	this	0	.
-.	.	.	.	A-	gift	1	.
-=56	=56	=56	=56	=56	=56	=56	=56
--III	A-:maj	-III	A-:maj	.	.	.	113.411
-.	.	.	.	.	.	.	.
-.	.	.	.	B-	I	0	.
-.	.	.	.	c	feel	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	B-	_	.	.
-.	.	.	.	A-	_	.	.
-.	.	.	.	G	blessed	1	.
-=57	=57	=57	=57	=57	=57	=57	=57
-i	F:min	i	F:min	.	.	.	115.477
-.	.	.	.	.	.	.	.
-.	.	.	.	c	our	0	.
-.	.	.	.	e-	lit-	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	f	-tle	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	group	1	.
-=58	=58	=58	=58	=58	=58	=58	=58
--III	A-:maj	-III	A-:maj	.	.	.	117.576
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	has	1	.
-.	.	.	.	f	alw-	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	e-	_	.	.
-.	.	.	.	d-	-ays	2	.
-.	.	.	.	c	been	1	.
-=59	=59	=59	=59	=59	=59	=59	=59
-i	F:min	i	F:min	.	.	.	119.655
-.	.	.	.	.	.	.	.
-.	.	.	.	d-	and	0	.
-.	.	.	.	c	alw-	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	B-	-ays	2	.
-.	.	.	.	A-	will	0	.
-=60	=60	=60	=60	=60	=60	=60	=60
--III	A-:maj	-III	A-:maj	.	.	.	121.713
-.	.	.	.	.	.	.	.
-.	.	.	.	B-	unt-	0	.
-.	.	.	.	c	-il	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	B-	_	.	.
-.	.	.	.	A-	the	0	.
-.	.	.	.	G	end	1	.
-=61	=61	=61	=61	=61	=61	=61	=61
-i	F:min	i	F:min	.	.	.	123.792
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-=62	=62	=62	=62	=62	=62	=62	=62
--III	A-:maj	-III	A-:maj	.	.	.	125.865
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	A-	how	1	.
-.	.	.	.	G	_	.	.
-.	.	.	.	G	low	1	.
-=63	=63	=63	=63	=63	=63	=63	=63
-i	F:min	i	F:min	F	_	.	127.909
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-=64	=64	=64	=64	=64	=64	=64	=64
--III	A-:maj	-III	A-:maj	.	.	.	129.986
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	A-	how	1	.
-.	.	.	.	G	_	.	.
-.	.	.	.	G	low	1	.
-=65	=65	=65	=65	=65	=65	=65	=65
-i	F:min	i	F:min	F	_	.	132.033
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-=66	=66	=66	=66	=66	=66	=66	=66
--III	A-:maj	-III	A-:maj	.	.	.	134.076
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	A-	how	1	.
-.	.	.	.	G	_	.	.
-.	.	.	.	G	low	1	.
-=67	=67	=67	=67	=67	=67	=67	=67
-i	F:min	i	F:min	F	_	.	136.093
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-=68	=68	=68	=68	=68	=68	=68	=68
--III	A-:maj	-III	A-:maj	.	.	.	138.121
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	a-	with	0	.
-.	.	.	.	g	the	0	.
-.	.	.	.	g	lights	1	.
-=69	=69	=69	=69	=69	=69	=69	=69
-*>Chorus	*>Chorus	*>Chorus	*>Chorus	*>Chorus	*>Chorus	*>Chorus	*>Chorus
-i	F:min	i	F:min	.	.	.	140.110
-.	.	.	.	f	out	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	its	0	.
-.	.	.	.	b-	less	0	.
-.	.	.	.	b-	dangerous	1	.
-=70	=70	=70	=70	=70	=70	=70	=70
--III	A-:maj	-III	A-:maj	.	.	.	142.155
-.	.	.	.	a-	dangerous	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	d-	here	1	.
-.	.	.	.	d-	we	0	.
-.	.	.	.	d-	are	1	.
-=71	=71	=71	=71	=71	=71	=71	=71
-i	F:min	i	F:min	.	.	.	144.205
-.	.	.	.	c	now	1	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	ent-	2	.
-.	.	.	.	b-	-ert-	0	.
-.	.	.	.	b-	-ain	1	.
-=72	=72	=72	=72	=72	=72	=72	=72
--III	A-:maj	-III	A-:maj	.	.	.	146.248
-.	.	.	.	a-	us	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	a-	I	0	.
-.	.	.	.	g	feel	1	.
-.	.	.	.	g	stu-	1	.
-=73	=73	=73	=73	=73	=73	=73	=73
-i	F:min	i	F:min	.	.	.	148.283
-.	.	.	.	f	-pid	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	and	0	.
-.	.	.	.	b-	cont-	0	.
-.	.	.	.	b-	-agio-	1	.
-=74	=74	=74	=74	=74	=74	=74	=74
--III	A-:maj	-III	A-:maj	.	.	.	150.323
-.	.	.	.	a-	-us	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	d-	here	1	.
-.	.	.	.	d-	we	0	.
-.	.	.	.	d-	are	1	.
-=75	=75	=75	=75	=75	=75	=75	=75
-i	F:min	i	F:min	.	.	.	152.351
-.	.	.	.	c	now	1	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	ent-	2	.
-.	.	.	.	b-	-ert-	0	.
-.	.	.	.	b-	-ain	1	.
-=76	=76	=76	=76	=76	=76	=76	=76
--III	A-:maj	-III	A-:maj	.	.	.	154.386
-.	.	.	.	a-	us	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	a-	a	0	.
-.	.	.	.	g	mul-	0	.
-.	.	.	.	g	-att-	1	.
-=77	=77	=77	=77	=77	=77	=77	=77
-i	F:min	i	F:min	.	.	.	156.415
-.	.	.	.	f	-o	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	an	0	.
-.	.	.	.	b-	al-	0	.
-.	.	.	.	b-	-bi-	1	.
-=78	=78	=78	=78	=78	=78	=78	=78
--III	A-:maj	-III	A-:maj	.	.	.	158.424
-.	.	.	.	a-	-no	2	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	d-	a	0	.
-.	.	.	.	d-	mos-	0	.
-.	.	.	.	d-	-qui-	1	.
-=79	=79	=79	=79	=79	=79	=79	=79
-i	F:min	i	F:min	.	.	.	160.452
-.	.	.	.	c	-to	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	my	0	.
-.	.	.	.	b-	li-	0	.
-.	.	.	.	b-	-bi-	1	.
-=80	=80	=80	=80	=80	=80	=80	=80
--III	A-:maj	-III	A-:maj	.	.	.	162.460
-.	.	.	.	a-	-do	2	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	a-	yeah	3	.
-.	.	.	.	.	.	.	.
-=81	=81	=81	=81	=81	=81	=81	=81
-*tb2	*tb2	*tb2	*tb2	*tb2	*	*	*
-i	F:min	i	F:min	.	.	.	164.497
--II	G-:maj	-II	G-:maj	.	.	.	.
-=82	=82	=82	=82	=82	=82	=82	=82
-*tb4	*tb4	*tb4	*tb4	*tb4	*	*	*
-ic	F:min/5	ic	F:min/5	.	.	.	166.556
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	-III	A-:maj	.	.	.	.
-=83	=83	=83	=83	=83	=83	=83	=83
-*tb2	*tb2	*tb2	*tb2	*tb2	*	*	*
-i	F:min	i	F:min	.	.	.	168.560
--II	G-:maj	-II	G-:maj	.	.	.	.
-=84	=84	=84	=84	=84	=84	=84	=84
-*tb4	*tb4	*tb4	*tb4	*tb4	*	*	*
-ic	F:min/5	ic	F:min/5	.	.	.	170.613
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	-III	A-:maj	.	.	.	.
-=85	=85	=85	=85	=85	=85	=85	=85
-*>Solo	*>Solo	*>Solo	*>Solo	*>Solo	*>Solo	*>Solo	*>Solo
-*tb2	*tb2	*tb2	*tb2	*tb2	*	*	*
-i	F:min	i	F:min	.	.	.	172.612
-IV	B-:maj	iv	B-:min	.	.	.	.
-=86	=86	=86	=86	=86	=86	=86	=86
--III	A-:maj	-III	A-:maj	.	.	.	174.632
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=87	=87	=87	=87	=87	=87	=87	=87
-i	F:min	i	F:min	.	.	.	176.639
-IV	B-:maj	iv	B-:min	.	.	.	.
-=88	=88	=88	=88	=88	=88	=88	=88
--III	A-:maj	-III	A-:maj	.	.	.	178.660
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=89	=89	=89	=89	=89	=89	=89	=89
-i	F:min	i	F:min	.	.	.	180.675
-IV	B-:maj	iv	B-:min	.	.	.	.
-=90	=90	=90	=90	=90	=90	=90	=90
--III	A-:maj	-III	A-:maj	.	.	.	182.684
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=91	=91	=91	=91	=91	=91	=91	=91
-i	F:min	i	F:min	.	.	.	184.714
-IV	B-:maj	iv	B-:min	.	.	.	.
-=92	=92	=92	=92	=92	=92	=92	=92
--III	A-:maj	-III	A-:maj	.	.	.	186.741
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=93	=93	=93	=93	=93	=93	=93	=93
-i	F:min	i	F:min	.	.	.	188.736
-IV	B-:maj	iv	B-:min	.	.	.	.
-=94	=94	=94	=94	=94	=94	=94	=94
--III	A-:maj	-III	A-:maj	.	.	.	190.758
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=95	=95	=95	=95	=95	=95	=95	=95
-i	F:min	i	F:min	.	.	.	192.793
-IV	B-:maj	iv	B-:min	.	.	.	.
-=96	=96	=96	=96	=96	=96	=96	=96
--III	A-:maj	-III	A-:maj	.	.	.	194.817
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=97	=97	=97	=97	=97	=97	=97	=97
-i	F:min	i	F:min	.	.	.	196.854
-IV	B-:maj	iv	B-:min	.	.	.	.
-=98	=98	=98	=98	=98	=98	=98	=98
--III	A-:maj	-III	A-:maj	.	.	.	198.897
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=99	=99	=99	=99	=99	=99	=99	=99
-i	F:min	i	F:min	.	.	.	200.929
-IV	B-:maj	iv	B-:min	.	.	.	.
-=100	=100	=100	=100	=100	=100	=100	=100
--III	A-:maj	-III	A-:maj	.	.	.	202.954
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=101	=101	=101	=101	=101	=101	=101	=101
-i	F:min	i	F:min	.	.	.	204.998
-IV	B-:maj	iv	B-:min	.	.	.	.
-=102	=102	=102	=102	=102	=102	=102	=102
--III	A-:maj	-III	A-:maj	.	.	.	207.046
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=103	=103	=103	=103	=103	=103	=103	=103
-i	F:min	i	F:min	.	.	.	209.108
-IV	B-:maj	iv	B-:min	.	.	.	.
-=104	=104	=104	=104	=104	=104	=104	=104
--III	A-:maj	-III	A-:maj	.	.	.	211.176
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-=105	=105	=105	=105	=105	=105	=105	=105
-*>Verse	*>Verse	*>Verse	*>Verse	*>Verse	*>Verse	*>Verse	*>Verse
-*tb8	*tb8	*tb8	*tb8	*tb8	*	*	*
-i	F:min	i	F:min	.	.	.	213.216
-.	.	.	.	.	.	.	.
-.	.	.	.	c	and	0	.
-.	.	.	.	e-	I	0	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	f	for-	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	-get	1	.
-=106	=106	=106	=106	=106	=106	=106	=106
-*tb16	*tb16	*tb16	*tb16	*tb16	*tb16	*tb16	*tb16
--III	A-:maj	-III	A-:maj	.	.	.	215.279
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	just	1	.
-.	.	.	.	.	.	.	.
-.	.	.	.	f	why	1	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	e-	_	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	d-	_	.	.
-.	.	.	.	.	I	0	.
-.	.	.	.	c	taste	1	.
-.	.	.	.	.	.	.	.
-=107	=107	=107	=107	=107	=107	=107	=107
-*tb8	*tb8	*tb8	*tb8	*tb8	*tb8	*tb8	*tb8
-i	F:min	i	F:min	.	.	.	217.330
-.	.	.	.	.	.	.	.
-.	.	.	.	d-	oh	3	.
-.	.	.	.	c	yeah	3	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	B-	I	0	.
-.	.	.	.	A-	guess	1	.
-=108	=108	=108	=108	=108	=108	=108	=108
--III	A-:maj	-III	A-:maj	.	.	.	219.401
-.	.	.	.	.	.	.	.
-.	.	.	.	B-	it	0	.
-.	.	.	.	c	makes	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	B-	_	.	.
-.	.	.	.	A-	me	0	.
-.	.	.	.	G	smile	1	.
-=109	=109	=109	=109	=109	=109	=109	=109
-i	F:min	i	F:min	.	.	.	221.451
-.	.	.	.	.	.	.	.
-.	.	.	.	c	I	0	.
-.	.	.	.	e-	found	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	f	it	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hard	1	.
-=110	=110	=110	=110	=110	=110	=110	=110
--III	A-:maj	-III	A-:maj	.	.	.	223.505
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	its	0	.
-.	.	.	.	f	hard	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	e-	_	.	.
-.	.	.	.	d-	to	0	.
-.	.	.	.	c	find	1	.
-=111	=111	=111	=111	=111	=111	=111	=111
-i	F:min	i	F:min	.	.	.	225.563
-.	.	.	.	.	.	.	.
-.	.	.	.	d-	oh	3	.
-.	.	.	.	c	well	3	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	B-	wha-	2	.
-.	.	.	.	A-	-tev-	1	.
-=112	=112	=112	=112	=112	=112	=112	=112
--III	A-:maj	-III	A-:maj	.	.	.	227.620
-.	.	.	.	.	.	.	.
-.	.	.	.	B-	-er	0	.
-.	.	.	.	c	nev-	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	B-	_	.	.
-.	.	.	.	A-	-er	0	.
-.	.	.	.	G	mind	1	.
-=113	=113	=113	=113	=113	=113	=113	=113
-i	F:min	i	F:min	.	.	.	229.679
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-=114	=114	=114	=114	=114	=114	=114	=114
--III	A-:maj	-III	A-:maj	.	.	.	231.725
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	A-	how	1	.
-.	.	.	.	G	_	.	.
-.	.	.	.	G	low	1	.
-=115	=115	=115	=115	=115	=115	=115	=115
-i	F:min	i	F:min	F	_	.	233.766
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-=116	=116	=116	=116	=116	=116	=116	=116
--III	A-:maj	-III	A-:maj	.	.	.	235.814
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	A-	how	1	.
-.	.	.	.	G	_	.	.
-.	.	.	.	G	low	1	.
-=117	=117	=117	=117	=117	=117	=117	=117
-i	F:min	i	F:min	F	_	.	237.838
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-=118	=118	=118	=118	=118	=118	=118	=118
--III	A-:maj	-III	A-:maj	.	.	.	239.870
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	A-	how	1	.
-.	.	.	.	G	_	.	.
-.	.	.	.	G	low	1	.
-=119	=119	=119	=119	=119	=119	=119	=119
-i	F:min	i	F:min	F	_	.	241.885
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
-=120	=120	=120	=120	=120	=120	=120	=120
--III	A-:maj	-III	A-:maj	.	.	.	243.901
-.	.	.	.	.	.	.	.
-.	.	.	.	A-	hel-	0	.
-.	.	.	.	G	-lo	1	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	a-	with	0	.
-.	.	.	.	g	the	0	.
-.	.	.	.	g	lights	1	.
-=121	=121	=121	=121	=121	=121	=121	=121
-*>Chorus	*>Chorus	*>Chorus	*>Chorus	*>Chorus	*>Chorus	*>Chorus	*>Chorus
-i	F:min	i	F:min	.	.	.	245.884
-.	.	.	.	f	out	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	its	0	.
-.	.	.	.	b-	less	0	.
-.	.	.	.	b-	dangerous	1	.
-=122	=122	=122	=122	=122	=122	=122	=122
--III	A-:maj	-III	A-:maj	.	.	.	247.912
-.	.	.	.	a-	dangerous	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	d-	here	1	.
-.	.	.	.	d-	we	0	.
-.	.	.	.	d-	are	1	.
-=123	=123	=123	=123	=123	=123	=123	=123
-i	F:min	i	F:min	.	.	.	249.948
-.	.	.	.	c	now	1	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	ent-	2	.
-.	.	.	.	b-	-ert-	0	.
-.	.	.	.	b-	-ain	1	.
-=124	=124	=124	=124	=124	=124	=124	=124
--III	A-:maj	-III	A-:maj	.	.	.	251.950
-.	.	.	.	a-	us	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	a-	I	0	.
-.	.	.	.	g	feel	1	.
-.	.	.	.	g	stu-	1	.
-=125	=125	=125	=125	=125	=125	=125	=125
-i	F:min	i	F:min	.	.	.	253.974
-.	.	.	.	f	-pid	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	and	0	.
-.	.	.	.	b-	cont-	0	.
-.	.	.	.	b-	-agio-	1	.
-=126	=126	=126	=126	=126	=126	=126	=126
--III	A-:maj	-III	A-:maj	.	.	.	255.998
-.	.	.	.	a-	-us	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	d-	here	1	.
-.	.	.	.	d-	we	0	.
-.	.	.	.	d-	are	1	.
-=127	=127	=127	=127	=127	=127	=127	=127
-i	F:min	i	F:min	.	.	.	258.022
-.	.	.	.	c	now	1	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	ent-	2	.
-.	.	.	.	b-	-ert-	0	.
-.	.	.	.	b-	-ain	1	.
-=128	=128	=128	=128	=128	=128	=128	=128
--III	A-:maj	-III	A-:maj	.	.	.	260.051
-.	.	.	.	a-	us	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	a-	a	0	.
-.	.	.	.	g	mul-	0	.
-.	.	.	.	g	-att-	1	.
-=129	=129	=129	=129	=129	=129	=129	=129
-i	F:min	i	F:min	.	.	.	262.063
-.	.	.	.	f	-o	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	an	0	.
-.	.	.	.	b-	al-	0	.
-.	.	.	.	b-	-bi-	1	.
-=130	=130	=130	=130	=130	=130	=130	=130
--III	A-:maj	-III	A-:maj	.	.	.	264.053
-.	.	.	.	a-	-no	2	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	d-	a	0	.
-.	.	.	.	d-	mos-	0	.
-.	.	.	.	d-	-qui-	1	.
-=131	=131	=131	=131	=131	=131	=131	=131
-i	F:min	i	F:min	.	.	.	266.051
-.	.	.	.	c	-to	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	b-	my	0	.
-.	.	.	.	b-	li-	0	.
-.	.	.	.	b-	-bi-	1	.
-=132	=132	=132	=132	=132	=132	=132	=132
--III	A-:maj	-III	A-:maj	.	.	.	268.066
-.	.	.	.	a-	-do	2	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	a-	a	0	.
-.	.	.	.	g	de-	0	.
-.	.	.	.	g	-ni-	1	.
-=133	=133	=133	=133	=133	=133	=133	=133
-i	F:min	i	F:min	.	.	.	270.070
-.	.	.	.	f	-al	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	a-	a	0	.
-.	.	.	.	g	de-	0	.
-.	.	.	.	g	-ni-	1	.
-=134	=134	=134	=134	=134	=134	=134	=134
--III	A-:maj	-III	A-:maj	.	.	.	272.111
-.	.	.	.	f	-al	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	a-	a	0	.
-.	.	.	.	g	de-	0	.
-.	.	.	.	g	-ni-	1	.
-=135	=135	=135	=135	=135	=135	=135	=135
-i	F:min	i	F:min	.	.	.	274.173
-.	.	.	.	f	-al	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	a-	a	0	.
-.	.	.	.	g	de-	0	.
-.	.	.	.	g	-ni-	1	.
-=136	=136	=136	=136	=136	=136	=136	=136
--III	A-:maj	-III	A-:maj	.	.	.	276.221
-.	.	.	.	f	-al	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	a-	a	0	.
-.	.	.	.	g	de-	0	.
-.	.	.	.	g	-ni-	1	.
-=137	=137	=137	=137	=137	=137	=137	=137
-i	F:min	i	F:min	.	.	.	278.248
-.	.	.	.	f	-al	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	a-	a	0	.
-.	.	.	.	g	de-	0	.
-.	.	.	.	g	-ni-	1	.
-=138	=138	=138	=138	=138	=138	=138	=138
--III	A-:maj	-III	A-:maj	.	.	.	280.308
-.	.	.	.	f	-al	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	a-	a	0	.
-.	.	.	.	g	de-	0	.
-.	.	.	.	g	-ni-	1	.
-=139	=139	=139	=139	=139	=139	=139	=139
-i	F:min	i	F:min	.	.	.	282.325
-.	.	.	.	f	-al	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-IV	B-:maj	iv	B-:min	.	.	.	.
-.	.	.	.	a-	a	0	.
-.	.	.	.	g	de-	0	.
-.	.	.	.	g	-ni-	1	.
-=140	=140	=140	=140	=140	=140	=140	=140
--III	A-:maj	-III	A-:maj	.	.	.	284.344
-.	.	.	.	f	-al	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
--VI	D-:maj	-VI	D-:maj	.	.	.	.
-.	.	.	.	a-	a	0	.
-.	.	.	.	g	de-	0	.
-.	.	.	.	g	-ni-	1	.
-=141	=141	=141	=141	=141	=141	=141	=141
-i	F:min	i	F:min	.	.	.	286.405
-.	.	.	.	f	-al	0	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-.	.	.	.	.	.	.	.
-*-	*-	*-	*-	*-	*-	*-	*-
+**harm	**kern	**silbe
+!T.d.C.	!T.d.C.	!
+!	!OCT=4	!
+=1	=1	=1
+*>Intro	*>Intro	*>Intro
+*tb2	*tb2	*
+*M4/4	*M4/4	*
+*F:	*f:	*
+*	*k[b-e-a-d-]	*
+i	.	.
+IV	.	.
+=2	=2	=2
+-III	.	.
+-VI	.	.
+=3	=3	=3
+i	.	.
+IV	.	.
+=4	=4	=4
+-III	.	.
+-VI	.	.
+=5	=5	=5
+i	.	.
+IV	.	.
+=6	=6	=6
+-III	.	.
+-VI	.	.
+=7	=7	=7
+i	.	.
+IV	.	.
+=8	=8	=8
+-III	.	.
+-VI	.	.
+=9	=9	=9
+i	.	.
+IV	.	.
+=10	=10	=10
+-III	.	.
+-VI	.	.
+=11	=11	=11
+i	.	.
+IV	.	.
+=12	=12	=12
+-III	.	.
+-VI	.	.
+=13	=13	=13
+i	.	.
+IV	.	.
+=14	=14	=14
+-III	.	.
+-VI	.	.
+=15	=15	=15
+i	.	.
+IV	.	.
+=16	=16	=16
+-III	.	.
+-VI	.	.
+=17	=17	=17
+*>Verse	*>Verse	*>Verse
+*tb8	*tb8	*
+i	.	.
+.	.	.
+.	c	load
+.	e-	up
+IV	.	.
+.	f	on
+.	.	.
+.	A-	guns
+=18	=18	=18
+-III	.	.
+.	.	.
+.	.	.
+.	f	bring
+-VI	.	.
+.	e-	_
+.	d-	your
+.	c	friends
+=19	=19	=19
+i	.	.
+.	.	.
+.	d-	its
+.	c	fun
+IV	.	.
+.	.	.
+.	B-	to
+.	A-	lose
+=20	=20	=20
+-III	.	.
+.	.	.
+.	B-	and
+.	c	to
+-VI	.	.
+.	B-	_
+.	A-	pret-
+.	G	-end
+=21	=21	=21
+i	.	.
+.	.	.
+.	c	shes
+.	e-	ov-
+IV	.	.
+.	f	-er
+.	.	.
+.	A-	bored
+=22	=22	=22
+-III	.	.
+.	.	.
+.	A-	and
+.	f	self
+-VI	.	.
+.	e-	_
+.	d-	assu-
+.	c	-red
+=23	=23	=23
+i	.	.
+.	.	.
+.	d-	oh
+.	c	no
+IV	.	.
+.	.	.
+.	B-	I
+.	A-	know
+=24	=24	=24
+-III	.	.
+.	.	.
+.	B-	a
+.	c	dir-
+-VI	.	.
+.	B-	_
+.	A-	-ty
+.	G	word
+=25	=25	=25
+i	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+IV	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+=26	=26	=26
+-III	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+-VI	.	.
+.	A-	how
+.	G	_
+.	G	low
+=27	=27	=27
+i	F	_
+.	.	.
+.	A-	hel-
+.	G	-lo
+IV	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+=28	=28	=28
+-III	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+-VI	.	.
+.	A-	how
+.	G	_
+.	G	low
+=29	=29	=29
+i	F	_
+.	.	.
+.	A-	hel-
+.	G	-lo
+IV	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+=30	=30	=30
+-III	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+-VI	.	.
+.	A-	how
+.	G	_
+.	G	low
+=31	=31	=31
+i	F	_
+.	.	.
+.	A-	hel-
+.	G	-lo
+IV	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+=32	=32	=32
+-III	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+-VI	.	.
+.	a-	with
+.	g	the
+.	g	lights
+=33	=33	=33
+*>Chorus	*>Chorus	*>Chorus
+i	.	.
+.	f	out
+.	.	.
+.	.	.
+IV	.	.
+.	b-	its
+.	b-	less
+.	b-	dangerous
+=34	=34	=34
+-III	.	.
+.	a-	dangerous
+.	.	.
+.	.	.
+-VI	.	.
+.	d-	here
+.	d-	we
+.	d-	are
+=35	=35	=35
+i	.	.
+.	c	now
+.	.	.
+.	.	.
+IV	.	.
+.	b-	ent-
+.	b-	-ert-
+.	b-	-ain
+=36	=36	=36
+-III	.	.
+.	a-	us
+.	.	.
+.	.	.
+-VI	.	.
+.	a-	I
+.	g	feel
+.	g	stu-
+=37	=37	=37
+i	.	.
+.	f	-pid
+.	.	.
+.	.	.
+IV	.	.
+.	b-	and
+.	b-	cont-
+.	b-	-agio-
+=38	=38	=38
+-III	.	.
+.	a-	-us
+.	.	.
+.	.	.
+-VI	.	.
+.	d-	here
+.	d-	we
+.	d-	are
+=39	=39	=39
+i	.	.
+.	c	now
+.	.	.
+.	.	.
+IV	.	.
+.	b-	ent-
+.	b-	-ert-
+.	b-	-ain
+=40	=40	=40
+-III	.	.
+.	a-	us
+.	.	.
+.	.	.
+-VI	.	.
+.	a-	a
+.	g	mul-
+.	g	-att-
+=41	=41	=41
+i	.	.
+.	f	-o
+.	.	.
+.	.	.
+IV	.	.
+.	b-	an
+.	b-	al-
+.	b-	-bi-
+=42	=42	=42
+-III	.	.
+.	a-	-no
+.	.	.
+.	.	.
+-VI	.	.
+.	d-	a
+.	d-	mos-
+.	d-	-qui-
+=43	=43	=43
+i	.	.
+.	c	-to
+.	.	.
+.	.	.
+IV	.	.
+.	b-	my
+.	b-	li-
+.	b-	-bi-
+=44	=44	=44
+-III	.	.
+.	a-	-do
+.	.	.
+.	.	.
+-VI	.	.
+.	.	.
+.	a-	yeah
+.	.	.
+=45	=45	=45
+*tb2	*tb2	*
+i	.	.
+-II	.	.
+=46	=46	=46
+*tb4	*tb4	*
+ic	.	.
+.	.	.
+IV	.	.
+.	.	.
+=47	=47	=47
+*tb2	*tb2	*
+i	.	.
+-II	.	.
+=48	=48	=48
+*tb4	*tb4	*
+ic	.	.
+.	.	.
+IV	.	.
+.	.	.
+=49	=49	=49
+*>BP	*>BP	*>BP
+*tb2	*tb2	*
+i	.	.
+IV	.	.
+=50	=50	=50
+-III	.	.
+-VI	.	.
+=51	=51	=51
+i	.	.
+IV	.	.
+=52	=52	=52
+-III	.	.
+-VI	.	.
+=53	=53	=53
+*>Verse	*>Verse	*>Verse
+*tb8	*tb8	*
+i	.	.
+.	.	.
+.	c	im
+.	e-	worse
+IV	.	.
+.	f	at
+.	.	.
+.	A-	what
+=54	=54	=54
+-III	.	.
+.	.	.
+.	.	.
+.	f	I
+-VI	.	.
+.	e-	_
+.	d-	do
+.	c	best
+=55	=55	=55
+i	.	.
+.	.	.
+.	d-	and
+.	c	for
+IV	.	.
+.	.	.
+.	B-	this
+.	A-	gift
+=56	=56	=56
+-III	.	.
+.	.	.
+.	B-	I
+.	c	feel
+-VI	.	.
+.	B-	_
+.	A-	_
+.	G	blessed
+=57	=57	=57
+i	.	.
+.	.	.
+.	c	our
+.	e-	lit-
+IV	.	.
+.	f	-tle
+.	.	.
+.	A-	group
+=58	=58	=58
+-III	.	.
+.	.	.
+.	A-	has
+.	f	alw-
+-VI	.	.
+.	e-	_
+.	d-	-ays
+.	c	been
+=59	=59	=59
+i	.	.
+.	.	.
+.	d-	and
+.	c	alw-
+IV	.	.
+.	.	.
+.	B-	-ays
+.	A-	will
+=60	=60	=60
+-III	.	.
+.	.	.
+.	B-	unt-
+.	c	-il
+-VI	.	.
+.	B-	_
+.	A-	the
+.	G	end
+=61	=61	=61
+i	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+IV	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+=62	=62	=62
+-III	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+-VI	.	.
+.	A-	how
+.	G	_
+.	G	low
+=63	=63	=63
+i	F	_
+.	.	.
+.	A-	hel-
+.	G	-lo
+IV	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+=64	=64	=64
+-III	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+-VI	.	.
+.	A-	how
+.	G	_
+.	G	low
+=65	=65	=65
+i	F	_
+.	.	.
+.	A-	hel-
+.	G	-lo
+IV	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+=66	=66	=66
+-III	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+-VI	.	.
+.	A-	how
+.	G	_
+.	G	low
+=67	=67	=67
+i	F	_
+.	.	.
+.	A-	hel-
+.	G	-lo
+IV	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+=68	=68	=68
+-III	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+-VI	.	.
+.	a-	with
+.	g	the
+.	g	lights
+=69	=69	=69
+*>Chorus	*>Chorus	*>Chorus
+i	.	.
+.	f	out
+.	.	.
+.	.	.
+IV	.	.
+.	b-	its
+.	b-	less
+.	b-	dangerous
+=70	=70	=70
+-III	.	.
+.	a-	dangerous
+.	.	.
+.	.	.
+-VI	.	.
+.	d-	here
+.	d-	we
+.	d-	are
+=71	=71	=71
+i	.	.
+.	c	now
+.	.	.
+.	.	.
+IV	.	.
+.	b-	ent-
+.	b-	-ert-
+.	b-	-ain
+=72	=72	=72
+-III	.	.
+.	a-	us
+.	.	.
+.	.	.
+-VI	.	.
+.	a-	I
+.	g	feel
+.	g	stu-
+=73	=73	=73
+i	.	.
+.	f	-pid
+.	.	.
+.	.	.
+IV	.	.
+.	b-	and
+.	b-	cont-
+.	b-	-agio-
+=74	=74	=74
+-III	.	.
+.	a-	-us
+.	.	.
+.	.	.
+-VI	.	.
+.	d-	here
+.	d-	we
+.	d-	are
+=75	=75	=75
+i	.	.
+.	c	now
+.	.	.
+.	.	.
+IV	.	.
+.	b-	ent-
+.	b-	-ert-
+.	b-	-ain
+=76	=76	=76
+-III	.	.
+.	a-	us
+.	.	.
+.	.	.
+-VI	.	.
+.	a-	a
+.	g	mul-
+.	g	-att-
+=77	=77	=77
+i	.	.
+.	f	-o
+.	.	.
+.	.	.
+IV	.	.
+.	b-	an
+.	b-	al-
+.	b-	-bi-
+=78	=78	=78
+-III	.	.
+.	a-	-no
+.	.	.
+.	.	.
+-VI	.	.
+.	d-	a
+.	d-	mos-
+.	d-	-qui-
+=79	=79	=79
+i	.	.
+.	c	-to
+.	.	.
+.	.	.
+IV	.	.
+.	b-	my
+.	b-	li-
+.	b-	-bi-
+=80	=80	=80
+-III	.	.
+.	a-	-do
+.	.	.
+.	.	.
+-VI	.	.
+.	.	.
+.	a-	yeah
+.	.	.
+=81	=81	=81
+*tb2	*tb2	*
+i	.	.
+-II	.	.
+=82	=82	=82
+*tb4	*tb4	*
+ic	.	.
+.	.	.
+IV	.	.
+.	.	.
+=83	=83	=83
+*tb2	*tb2	*
+i	.	.
+-II	.	.
+=84	=84	=84
+*tb4	*tb4	*
+ic	.	.
+.	.	.
+IV	.	.
+.	.	.
+=85	=85	=85
+*>Solo	*>Solo	*>Solo
+*tb2	*tb2	*
+i	.	.
+IV	.	.
+=86	=86	=86
+-III	.	.
+-VI	.	.
+=87	=87	=87
+i	.	.
+IV	.	.
+=88	=88	=88
+-III	.	.
+-VI	.	.
+=89	=89	=89
+i	.	.
+IV	.	.
+=90	=90	=90
+-III	.	.
+-VI	.	.
+=91	=91	=91
+i	.	.
+IV	.	.
+=92	=92	=92
+-III	.	.
+-VI	.	.
+=93	=93	=93
+i	.	.
+IV	.	.
+=94	=94	=94
+-III	.	.
+-VI	.	.
+=95	=95	=95
+i	.	.
+IV	.	.
+=96	=96	=96
+-III	.	.
+-VI	.	.
+=97	=97	=97
+i	.	.
+IV	.	.
+=98	=98	=98
+-III	.	.
+-VI	.	.
+=99	=99	=99
+i	.	.
+IV	.	.
+=100	=100	=100
+-III	.	.
+-VI	.	.
+=101	=101	=101
+i	.	.
+IV	.	.
+=102	=102	=102
+-III	.	.
+-VI	.	.
+=103	=103	=103
+i	.	.
+IV	.	.
+=104	=104	=104
+-III	.	.
+-VI	.	.
+=105	=105	=105
+*>Verse	*>Verse	*>Verse
+*tb8	*tb8	*
+i	.	.
+.	.	.
+.	c	and
+.	e-	I
+IV	.	.
+.	f	for-
+.	.	.
+.	A-	-get
+=106	=106	=106
+*tb16	*tb16	*tb16
+-III	.	.
+.	.	.
+.	.	.
+.	.	.
+.	A-	just
+.	.	.
+.	f	why
+.	.	.
+-VI	.	.
+.	.	.
+.	e-	_
+.	.	.
+.	d-	_
+.	.	I
+.	c	taste
+.	.	.
+=107	=107	=107
+*tb8	*tb8	*tb8
+i	.	.
+.	.	.
+.	d-	oh
+.	c	yeah
+IV	.	.
+.	.	.
+.	B-	I
+.	A-	guess
+=108	=108	=108
+-III	.	.
+.	.	.
+.	B-	it
+.	c	makes
+-VI	.	.
+.	B-	_
+.	A-	me
+.	G	smile
+=109	=109	=109
+i	.	.
+.	.	.
+.	c	I
+.	e-	found
+IV	.	.
+.	f	it
+.	.	.
+.	A-	hard
+=110	=110	=110
+-III	.	.
+.	.	.
+.	A-	its
+.	f	hard
+-VI	.	.
+.	e-	_
+.	d-	to
+.	c	find
+=111	=111	=111
+i	.	.
+.	.	.
+.	d-	oh
+.	c	well
+IV	.	.
+.	.	.
+.	B-	wha-
+.	A-	-tev-
+=112	=112	=112
+-III	.	.
+.	.	.
+.	B-	-er
+.	c	nev-
+-VI	.	.
+.	B-	_
+.	A-	-er
+.	G	mind
+=113	=113	=113
+i	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+IV	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+=114	=114	=114
+-III	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+-VI	.	.
+.	A-	how
+.	G	_
+.	G	low
+=115	=115	=115
+i	F	_
+.	.	.
+.	A-	hel-
+.	G	-lo
+IV	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+=116	=116	=116
+-III	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+-VI	.	.
+.	A-	how
+.	G	_
+.	G	low
+=117	=117	=117
+i	F	_
+.	.	.
+.	A-	hel-
+.	G	-lo
+IV	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+=118	=118	=118
+-III	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+-VI	.	.
+.	A-	how
+.	G	_
+.	G	low
+=119	=119	=119
+i	F	_
+.	.	.
+.	A-	hel-
+.	G	-lo
+IV	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+=120	=120	=120
+-III	.	.
+.	.	.
+.	A-	hel-
+.	G	-lo
+-VI	.	.
+.	a-	with
+.	g	the
+.	g	lights
+=121	=121	=121
+*>Chorus	*>Chorus	*>Chorus
+i	.	.
+.	f	out
+.	.	.
+.	.	.
+IV	.	.
+.	b-	its
+.	b-	less
+.	b-	dangerous
+=122	=122	=122
+-III	.	.
+.	a-	dangerous
+.	.	.
+.	.	.
+-VI	.	.
+.	d-	here
+.	d-	we
+.	d-	are
+=123	=123	=123
+i	.	.
+.	c	now
+.	.	.
+.	.	.
+IV	.	.
+.	b-	ent-
+.	b-	-ert-
+.	b-	-ain
+=124	=124	=124
+-III	.	.
+.	a-	us
+.	.	.
+.	.	.
+-VI	.	.
+.	a-	I
+.	g	feel
+.	g	stu-
+=125	=125	=125
+i	.	.
+.	f	-pid
+.	.	.
+.	.	.
+IV	.	.
+.	b-	and
+.	b-	cont-
+.	b-	-agio-
+=126	=126	=126
+-III	.	.
+.	a-	-us
+.	.	.
+.	.	.
+-VI	.	.
+.	d-	here
+.	d-	we
+.	d-	are
+=127	=127	=127
+i	.	.
+.	c	now
+.	.	.
+.	.	.
+IV	.	.
+.	b-	ent-
+.	b-	-ert-
+.	b-	-ain
+=128	=128	=128
+-III	.	.
+.	a-	us
+.	.	.
+.	.	.
+-VI	.	.
+.	a-	a
+.	g	mul-
+.	g	-att-
+=129	=129	=129
+i	.	.
+.	f	-o
+.	.	.
+.	.	.
+IV	.	.
+.	b-	an
+.	b-	al-
+.	b-	-bi-
+=130	=130	=130
+-III	.	.
+.	a-	-no
+.	.	.
+.	.	.
+-VI	.	.
+.	d-	a
+.	d-	mos-
+.	d-	-qui-
+=131	=131	=131
+i	.	.
+.	c	-to
+.	.	.
+.	.	.
+IV	.	.
+.	b-	my
+.	b-	li-
+.	b-	-bi-
+=132	=132	=132
+-III	.	.
+.	a-	-do
+.	.	.
+.	.	.
+-VI	.	.
+.	a-	a
+.	g	de-
+.	g	-ni-
+=133	=133	=133
+i	.	.
+.	f	-al
+.	.	.
+.	.	.
+IV	.	.
+.	a-	a
+.	g	de-
+.	g	-ni-
+=134	=134	=134
+-III	.	.
+.	f	-al
+.	.	.
+.	.	.
+-VI	.	.
+.	a-	a
+.	g	de-
+.	g	-ni-
+=135	=135	=135
+i	.	.
+.	f	-al
+.	.	.
+.	.	.
+IV	.	.
+.	a-	a
+.	g	de-
+.	g	-ni-
+=136	=136	=136
+-III	.	.
+.	f	-al
+.	.	.
+.	.	.
+-VI	.	.
+.	a-	a
+.	g	de-
+.	g	-ni-
+=137	=137	=137
+i	.	.
+.	f	-al
+.	.	.
+.	.	.
+IV	.	.
+.	a-	a
+.	g	de-
+.	g	-ni-
+=138	=138	=138
+-III	.	.
+.	f	-al
+.	.	.
+.	.	.
+-VI	.	.
+.	a-	a
+.	g	de-
+.	g	-ni-
+=139	=139	=139
+i	.	.
+.	f	-al
+.	.	.
+.	.	.
+IV	.	.
+.	a-	a
+.	g	de-
+.	g	-ni-
+=140	=140	=140
+-III	.	.
+.	f	-al
+.	.	.
+.	.	.
+-VI	.	.
+.	a-	a
+.	g	de-
+.	g	-ni-
+=141	=141	=141
+i	.	.
+.	f	-al
+.	.	.
+.	.	.
+.	.	.
+.	.	.
+.	.	.
+.	.	.
+*-	*-	*-
 !!!ONB: Translated from original encodings in the Rolling Stone Corpus (rockcorpus.midside.com), May 2019
 !!!ONB: Original transcribers noted in comments in each spine: !D.T. = David Temperley; !T.d.C. = Trevor de Clercq
 !!!YOE: David Temperley, Trevor de Clercq
 !!!EED: Nathaniel Condit-Schultz
 !!!ENC: Nathaniel Condit-Schultz, automated
+!!!EMD: Edited in humdrumR 0.7.0.7 on 2024-11-06

@@ -8,7 +8,7 @@
 <link href="Introduction_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="Introduction_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="Introduction_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.57">
+  <meta name="generator" content="quarto-1.4.555">
 
   <meta name="author" content="Nick Shea, Nat Condit-Schultz">
   <meta name="dcterms.date" content="2024-11-09">
@@ -345,7 +345,7 @@ Nick Shea, Nat Condit-Schultz
 <h1>Welcome!</h1>
 <p>We have two presentations planned:</p>
 <ul>
-<li class="fragment">Comparing musical definitions using humdrum<span class="math inline">\(_{\mathbb{R}}\)</span>
+<li class="fragment">Exploring Pitch and Rhythm using humdrum<span class="math inline">\(_{\mathbb{R}}\)</span>
 <ul>
 <li class="fragment">— Nat</li>
 </ul></li>
@@ -358,6 +358,7 @@ Nick Shea, Nat Condit-Schultz
 <section class="slide level2">
 
 <p>We will be using this Posit Cloud sandbox environment.</p>
+<p><a href="https://posit.cloud/content/9055786" class="uri">https://posit.cloud/content/9055786</a></p>
 
 <img data-src="images/PositLink_SMT_MIG_2024.png" class="r-stretch"><ul>
 <li class="fragment">Feel free to follow along!</li>
@@ -380,7 +381,7 @@ Nick Shea, Nat Condit-Schultz
 </ul></li>
 <li class="fragment">Software
 <ul>
-<li class="fragment">The original humdrum <em>toolkit</em></li>
+<li class="fragment">The original <em>humdrum toolkit</em></li>
 <li class="fragment">Craig Sapp’s <em>Verovio Humdrum Viewer</em></li>
 <li class="fragment">My humdrum<span class="math inline">\(_{\mathbb{R}}\)</span></li>
 </ul></li>
@@ -443,12 +444,22 @@ Nick Shea, Nat Condit-Schultz
 </section>
 <section class="slide level2">
 
-<p>Let’s focus on the two “primary parameters”:</p>
+<p>Today we’ll use humdrum<span class="math inline">\(_{\mathbb{R}}\)</span> to explore basic methodological issues in computational musicology.</p>
 <ul>
-<li class="fragment">Pitch data</li>
-<li class="fragment">Timing data</li>
+<li class="fragment">I’ll draw on three datasets:
+<ul>
+<li class="fragment">The 371 Bach chorales</li>
+<li class="fragment">The CoCoPops corpus of rock/pop vocal transcriptions</li>
+<li class="fragment">The Saraga dataset of Hindustani performances.</li>
+</ul></li>
 </ul>
-<div class="quarto-auto-generated-content">
+</section>
+<section class="slide level2">
+
+<p>Once you’re in the posit cloud environment, click <code>Files &gt; Tutorials &gt; Pitch.Rmd</code> then press “Run Document.”</p>
+<p><a href="https://posit.cloud/content/9055786" class="uri">https://posit.cloud/content/9055786</a></p>
+
+<img data-src="images/PositLink_SMT_MIG_2024.png" class="r-stretch"><div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>SMT MIG 2024: Representing and Sampling Music</p>
 </div>
@@ -734,7 +745,18 @@ Nick Shea, Nat Condit-Schultz
         }
         return false;
       }
-      const onCopySuccess = function(e) {
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -766,29 +788,7 @@ Nick Shea, Nat Condit-Schultz
         }, 1000);
         // clear code selection
         e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
       });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -796,7 +796,7 @@ Nick Shea, Nat Condit-Schultz
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {

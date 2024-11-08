@@ -2,7 +2,7 @@
 title: Representing Pitch
 output:
     learnr::tutorial:
-      theme: flatly
+      theme: sandstone
       progressive: true
       allow_skip: true
       ace_theme: "github"
@@ -25,213 +25,311 @@ tutorial_options(exercise.lines = 10)
 
 <script language="JavaScript" src="js/scripts.js"></script>
 
-## What is Pitch
+## Representing Pitch
 
-Pitch is a subjective perceptual phenomenon.
+<!-- Pitch is a complex, subjective perceptual phenomenon. -->
 
-- Humans *perceive* some sounds as having a property called "pitch."
-  - The percept is roughly associated with the fundamental frequency of harmonic signals.
-- However, we mainly perceive relationships between pitches, which are the basis for musical organization.
-  + Melodic contours
-  + Tonal hierarchies
+<!-- Humans *perceive* some sounds as having a property called "pitch." -->
+<!-- The percept is roughly associated with the fundamental frequency of harmonic signals. -->
+<!-- However, we mainly perceive relationships between pitches, which are the basis for musical organization. -->
+<!-- Melodic contours; -->
+<!-- Tonal hierarchies; etc. -->
+
+<!-- ## -->
+
+In Western music theory and practice, we have a number of ways of representing the "pitch" of note events.
+
++ Frequency
++ Cents
++ Semitones
++ Pitch classes
++ Steps (generic)
++ Tonal name (specific)
++ Scale degrees
++ Intervals
 
 
-### Data
+
+### Dimensions {.tabset}
+
+These represent different aspects/dimensions of the construct "pitch."
+
+#### Acoustic vs Perceptual
+
+```{r, echo = FALSE, out.width = 600, out.height=300, fig.height=2.5, fig.width = 5}
+pitch_space1("Acoustic", "Perceptual")
+
+lab(0, 'Frequency')
+lab(0.2, "Cents")
+lab(.6, 'Semitones')
+lab(1, "Scale degrees")
+lab(.8, "Tonal interval")
+
+```
+
+#### Atonal vs Tonal
+
+```{r, echo = FALSE, out.width = 600, out.height=300, fig.height=2.5, fig.width = 5}
+pitch_space1("Atonal", "Tonal")
+
+lab(0, "Frequency")
+lab(.2, 'Semitones')
+lab(.8 , 'Scientific Pitch')
+lab(1, "Scale degree")
+
+```
+
+#### Absolute vs Relative
+
+
+```{r, echo = FALSE, out.width = 600, out.height=300, fig.height=2.5, fig.width = 5}
+pitch_space1("Absolute", "Relative")
+
+lab(0, 'Frequency')
+lab(0.2, 'Semitones')
+lab(0.3, 'Scientific pitch')
+lab(.8, 'Scale degree')
+
+```
+
+### Humdrum {.tabset}
+
+#### Construct
+
+Humdrum representations for all of these things are defined:
+
+```{r, echo = FALSE, out.width = 600, out.height=600, fig.height=5, fig.width = 5}
+
+pitch_space2('Atonal', 'Tonal', 'Absolute', 'Relative')
+
+lab2(0, 0, 'Frequency')
+lab2(0.2, 0.2, 'Semitones')
+lab2(.8, .3, 'Scientific pitch')
+lab2(1, .8, 'Scale degree')
+
+```
+
+#### Humdrum
+
+Humdrum representations for all of these things are defined:
+
+```{r, echo = FALSE, out.width = 600, out.height=600, fig.height=5, fig.width = 5}
+
+pitch_space2('Atonal', 'Tonal', 'Absolute', 'Relative')
+
+lab2(0, 0, '**freq')
+lab2(0.2, 0.2, '**semits')
+lab2(.8, .3, '**pitch\n**kern')
+lab2(1, .8, '**deg\n**solfa')
+
+```
+
+#### HumdrumR
+
+Humdrum$_{\mathcal{R}}$ can read/write most common representations.
+
+```{r, echo = FALSE, out.width = 600, out.height=600, fig.height=5, fig.width = 5}
+
+
+pitch_space2('Atonal', 'Tonal', 'Absolute', 'Relative')
+
+lab2(0, 0, 'freq()', family = 'mono')
+lab2(0.2, 0.2, 'semits()', family = 'mono')
+lab2(.8, .3, 'pitch()\nkern()', family = 'mono')
+lab2(1, .8, 'deg()\nsolfa()', family = 'mono')
+
+
+```
+
+###
+
+Some information is encoded directly in scores/data.
+
+Other information must be inferred/understood (*domain knowledge*) from data.
+
+This means that translation can be lossy/lossless...
+
+----
+
+
+
+## Data
 
 Let's get some data: 
 
 + The trusty 371 Bach Chorales^[Actually 370, because I'll leave out the one five-voice chorale.].
-+ Vocal melodies from the Coordinated Corpus of Popular music.
++ Vocal melodies from the [Coordinated Corpus of Popular music](https://github.com/Computational-Cognitive-Musicology-Lab/CoCoPops).
++ F0 contours from [Saraga](https://mtg.github.io/saraga/) (Carnatic music)
 
-```{r,  message = FALSE}
+```{r,  message = FALSE, eval = FALSE}
 
-# bach <- readHumdrum('../Data/Bach370/.*krn')
+bach <- readHumdrum('Data/Bach370/.*krn')
+cocopops <- readHumdrum('Data/CoCoPops/.*hum', reference = c('BillboardChartDate', 'BillboardPeak', 'COC', 'OTL'))
+saraga <- readHumdrum('Data/Saraga/.*freq')
+
 load('../Data/Bach370/Bach.Rd')
 
-# cocopops <- readHumdrum('../Data/CoCoPops/.*hum', reference = c('BillboardChartDate', 'BillboardPeak', 'COC', 'OTL'))
+```
+
+```{r}
 load('../Data/CoCoPops/CoCoPops.Rd')
 
 ```
 
-```{r}
+
+###
+
+These datasets represent radically different sources of pitch information:
+
++ *Bach Chorales*: Explicitly notated scores. Pre-EQT/440.
++ *CoCoPops*: By-ear transcriptions of recordings. Modern EQT/440 era, but includes blue-inflected music.
++ *Saraga*: Machine extraction of continuous [$F_0$](https://en.wikipedia.org/wiki/Fundamental_frequency) contours.
+
+###
+
+```{r data, exercise = TRUE, fig.cap = "We can inspect files from each dataset."}
+
 bach[1]
+
+census(bach)
+# cocopops[13]
+
+# saraga[2]
+
 ```
 
 
+## Entropy
 
-
-
-## Representing Pitch
-
-
-Information about pitch in music can be represented in numerous ways.
+[Entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)), also called "Shannon entropy"^[After Claude Shannon.] or "information entropy," is a useful way of characterizing how certain/uncertain *any* probability distribution is.
+Entropy is the central concept if [information theory](https://en.wikipedia.org/wiki/Information_theory).
 
 ###
 
-Humdrum$_{\mathcal{R}}$ can read/write most common representations.
+Entropy is essentially the average (log) probability of observations; 
+
+$$
+H(X) := -\sum(P(X)\log_2(P(X))
+$$
+
+$$
+H(X) := mean(-{\log_2 P(X)})
+$$
+
+
+High probability events are uninformative, predictable.
+Low probability events are informative, unpredictable, surprising.
+
+If a distribution is totally predictable the entropy is 0.
+The more a distribution is made up of low-probability events, the higher the entropy.
+
+This effectively means that entropy is a measure of how "flat" a distribution is.
+Compare these two distributions:
+
+| Rock | Reggae | Blues | Pop | Country | Jazz | Film | Classical | Metal | Punk | Funk | R&B              | Folk |
+|------|--------|-------|-----|---------|------|------|-----------|-------|------|------|------------------|------|
+| .14  | .04    | .09   | .15 | .13     | .08  | .03  | .03       | .04   | .07  | .05  | .08              | .06  |
+| .12  | .02    | .02   | .67 | .06     | .01  | .01  | .01       | .01   | .01  | .01  | .01              | .02  |
+
+```{r entropy_genre, echo = FALSE}
+
+par(family = 'Times', mar = c(5,4,2,2), mfcol = c(1,2))
+row1 <- c(.14,.04,.09,.15,.13,.08,.03,.03,.04,.07,.05,.08,.06)
+row2 <- c(.12,.02,.02,.67,.06,.01,.01,.01,.01,.01,.01,.01,.02)
+genres <- c("Rock","Reggae","Blues","Pop","Country","Jazz","Film","Classical","Metal","Punk","Funk","R&B","Folk")
+x <- barplot(row1, main = 'Genre Distribution (Row 1)', axes =FALSE, ylim = c(0,1), space = 0)
+axis(2, pretty(c(0, 1)), tick =FALSE, las = 1)
+axis(1, x, genres, las = 2, tick = FALSE)
+
+text(mean(x), .8, paste0('Entropy (bits) = ', round(-sum(row1 * log(row1, 2)), 2)))
+
+
+x <- barplot(row2, main = 'Genre Distribution (Row 2)', axes =FALSE, ylim = c(0,1), space = 0)
+axis(2, pretty(c(0, 1)), tick =FALSE, las = 1)
+axis(1, x, genres, las = 2, tick = FALSE)
+
+text(mean(x), .8, paste0('Entropy (bits) = ', round(-sum(row2 * log(row2, 2)), 2)))
+
+```
+
+The second row has a lower entropy because it is much more concentrated on a few values (especially Pop).
+When we observe samples from this distribution, more than half the time we observe Pop, so we aren't surprised much.
+We do occasionally get surprised by a rare draw of Folk or Blues, but only very rarely---most of the time, we see the commonplace Pop.
+In contrast, when we draw from the row-one distribution, every observation is a bit if a surprise, so the entropy is higher.
+
+The key thing is that entropy can be computed even when distributions differ in the number of levels, or even if there are infinite levels (continous variable).
+For example, the following distribution, with only four categories, also has 1.8 bits of entropy:
+
+| Rock | Reggae | Blues | Pop |
+|------|--------|-------|-----|
+| .46  | .24    | .2    | .1  |
+
+
+As so does this distribution:
 
 ```{r, echo = FALSE}
-
-pline()
-
-lab(.95, '**deg **degree **solfa **bhatk')
-lab(.75, '**kern **pitch')
-lab(.3, '**semits **midi')
-lab(.05, '**freq')
-
+par(mar= c(2,2,2,2), mfcol=c(1,1))
+curve(dnorm(x, 0, 1.191604), -5, 5, axes = FALSE)
+mtext('Value', 1, line = 3)
+mtext('Density', 2, line = 3)
+axis(1, seq(-5,5,.5), las = 1, tick = FALSE,
+     cex.axis = .5)
+axis(2, seq(0,.3, .05), tick = FALSE, las = 1)
 
 ```
+
+
+
+### Additive property
+
+A cool property of entropy is that, if we combine distributions that are independent, their *joint entropy* is the sum of their independent entropies.
+For example, the entropy of a coin flip is one bit; the entropy of two independent coin flips is two bits. Etc.
+
+However, if two distributions are dependent, then their joint entropy will be less than the sum of the independent entropies.
+This difference is called the mutual information.
 
 ###
 
-```{r, echo = FALSE}
+How much mutual information is there between pitch and rhythm information?
 
-pitchRepTable <-  data.frame(Interpretation = c('**deg', '**degree','**solfa', '**bhatk', '**kern', '**pitch', '**semits', '**midi',  '**freq'), 
-                             Concept        = c('**Scale degree**', '', '', '', '**Absolute pitch**',  '', '', '', '**Frequency**'),
-                             Type           = c('',             '', '', '',  '',    '$\\uparrow$ More tonal', '$\\downarrow$More acoustic', '','') )
-knitr::kable(pitchRepTable, 'pipe')
+```{r mutual, exercise = TRUE}
 
 
 ```
 
-
-## Conversion
-
-We can (and frequently do ) convert between different representations of pitch.
-
-### Lossless
-
-Some pitch representations convey exactly the same information---the only difference is readability and aesthetics.
-
-We can convert between equivalent representations without losing and information (**lossless**).
-
-
-
-```{r lossless, exercise = TRUE}
-Kern  <- c('c', 'g#','a', 'dd','cc')
-Pitch <- c('C4', 'G#4', 'A4', 'D5', 'C5')
-```
-
-```{r lossless-solution}
-data.frame(Pitch2Kern = Pitch |> kern(),
-           Kern2Pitch = Kern |> pitch(),
-           Pitch2Kern2Pitch = Pitch |> kern() |> pitch())
-
-```
-
-```{r lossless-hint}
-Kern |> tonh() |> kern()
+```{r mutual-solution}
+# It depends on whether we use absolute or relative pitch.
 
 ```
 
 
-### Lossy
 
-In contrast, some pitch representation really do represent different information about pitch.
 
-Converting between these representations can lose information (**lossy**), or conversely *require* additional information (depending on the direction you are converting).
 
-```{r lossy, exercise = TRUE}
-Kern  <- c('c', 'a-','a', 'dd','cc')
-Freq <- c(261.6256, 415.3047, 440.0000, 587.3295, 523.2511)
 
-```
+## Analyses
 
-```{r lossy-solution}
+### 
 
-data.frame(Freq2Kern = Freq |> kern(Exclusive = 'freq'),
-           Kern2Freq = Kern |> freq(frequency.reference = 440, frequency.reference.note = 'a', tonalHarmonic = 2^(19/12)),
-           Kern2Freq2Kern = Kern |> freq() |> kern())
+```{r mostFrequentPitch, exercise = TRUE, fig.cap = 'What is the most frequent pitch in each dataset?'}
 
 
 ```
 
-<div id='lossy-hint'>
-The distinction between G# and Ab is lost in the frequency representation.
-Conversely, information about exact pitch is lost in the kern representation.
-
-We have to independently provide additional information about the tuning system in order to convert between these representations at all.
-</div>
+### Prediction
 
 
+### Distance
 
-###
 
-When doing computational musicology research, we need to consider: 
-
-+ What information about pitch is encoded in our data?
-+ If we are creating our own data, what information should we put into our data?
+How can we represent "distance" in pitch?
 
 
 
+### Shape
 
+How can we express "shape" in pitch.
 
-## Analyzing Pitch
+### Repetition
 
-What kind of analyses can we support with this data?
-
-
-```{r fig.height=10, fig.width=6}
-bach |> freq() |> with(draw( . ,facet = Instrument, showCounts = FALSE))
-
-```
-
-
-However, this data doesn't really support this analysis.
-
-+ The exact tuning system used by Bach, or any particular choir singing this music, is not represented in the data.
-+ Nor is the tuning variations that would happen in real human performance.
-
-###
-
-
-We might get closer with A420 and a Pythagorean tuning:
-
-```{r fig.height=10, fig.width=6}
-bach |> freq() |> with(draw(. ,facet = Instrument, showCounts = FALSE, xlim = c(20, 500), breaks = 30))
-
-bach |> freq(tonalHarmonic = 3, frequency.reference = 420) |> with(draw(. ,facet = Instrument, showCounts = FALSE, xlim = c(20, 500), breaks = 30))
-
-```
-
-```{r}
-
-pline()
-
-lab(.85, '**kern **pitch')
-lab(.05, '**freq')
-
-
-```
-
-### Using frequency
-
-What research questions might be supported by frequency data?
-
-<div id='freq-hint'>
-+ Estimating reverb tail of choir singing in specific concert hall.
-</div>
-
-----
-
-### Tonality
-
-
-Frequency space is not very representative of musical experience.
-We can try something more perceptually meaningful using semitones:
-
-
-```{r fig.height=10, fig.width=6}
-bach |> semits() |> with(draw(Semits ,facet = Instrument, showCounts = FALSE, xlim = c(20, 500), breaks = 30))
-
-```
-
-This representation can be fully extracted from our score data.
-
-
-
-
-
-## Mathematical Assumptions
-
-
+How can we express "repetition" in pitch?
