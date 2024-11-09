@@ -257,17 +257,6 @@ cocopops |> mint(deparser = semits)
 
 ```
 
-
-<!-- <div id="pitchexplore-hint"> -->
-<!-- If a conversion is lossless, you should be able to convert from X to Y, then convert back from Y to X, and get the original X. -->
-
-<!-- $$ -->
-<!-- f(g(x)) = x -->
-<!-- $$ -->
-
-<!-- </div> -->
-
-
 ```{r pitchexplore-solution}
 sciPitch <- c('C4', 'E4', 'G#4', 'B4', 'C#5', 'D5')
 
@@ -276,6 +265,17 @@ sciPitch |> solfa() |> pitch() # lossless
 sciPitch |> semits() |> pitch() # lossy
 
 ```
+
+If a conversion is lossless, you should be able to convert from X to Y, then convert back from Y to X, and get the original X.
+
+$$
+f(g(x)) = x
+$$
+
+</div>
+
+
+
 
 ----
 
@@ -505,10 +505,18 @@ bach |> kern(simple = TRUE) |> count() |> entropy()
 ```
 
 
-> **Which pitch representations have the lowest entropy? And Why?**
+> **Which pitch representations have the lowest entropy? And why?**
 
 ```{r entropy_represents, exercise = TRUE }
 
+
+
+``` 
+
+```{r entropy_represents-hint-1}
+bach |> pitch() |> count() |> entropy()
+
+bach |> solfa() |> count() |> entropy()
 
 
 ```
@@ -517,6 +525,33 @@ bach |> kern(simple = TRUE) |> count() |> entropy()
 
 ```{r entropy_corpora, exercise = TRUE}
 
+
+
+```
+
+```{r entropy_corpora-hint-1}
+# It might depend on what pitch representation we choose
+
+bach |> pitch() |> count() |> entropy()
+cocopops |> pitch() |> count() |> entropy()
+
+
+```
+
+```{r entropy_corpora-hint-2}
+# It might depend on what pitch representation we choose
+
+bach |> semits() |> count() |> entropy()
+cocopops |> semits() |> count() |> entropy()
+
+
+```
+
+```{r entropy_corpora-hint-1}
+# It might depend on what pitch representation we choose
+
+bach |> pitch(simple = TRUE) |> count() |> entropy()
+cocopops |> pitch(simple = TRUE) |> count() |> entropy()
 
 
 ```
@@ -617,17 +652,16 @@ knitr::include_graphics('images/entropy.gif')
 ### Joint/Conditonal entropy in humdrumR
 
 In humdrum$_{\mathbb{R}}$, we can pass two (or more) variables to the `count()` function, then pass that to entropy.
-For example:
+We can also pass a `condition` argument to `entropy()`.
 
-```{r, echo = TRUE, eval = FALSE}
+> Try it out:
+
+```{r humdrumRcond, exercise = TRUE}
 cocopops |> pitch() |> count(Pitch, Key) |> entropy()
-```
-
-We can also pass a `condition` argument to `entropy()`:
-
-```{r, echo = TRUE, eval = FALSE}
 cocopops |> pitch() |> count(Pitch, Key) |> entropy(condition= 'Key')
 ```
+
+
 
 ### Exercises
 
@@ -637,12 +671,6 @@ cocopops |> pitch() |> count(Pitch, Key) |> entropy(condition= 'Key')
 
 ```
 
-<div id='pitchentropy-hint'>
-
-For example, you could compare the entropy of an absolute representation of pitch, to one where the octave information is removed.
-Or compare the entropy of scale degrees and *key* information.
-
-</div>
 
 ```{r pitchentropy-hint-1}
 bach |> count(Key) |> entropy()
@@ -655,13 +683,27 @@ bach |> deg() |> count(Deg, Key) |> entropy()
 bach |> deg() |> count(Deg, Key) |> entropy(condition = 'Key')
 ```
 
-> **Is information content in the Chorales and CoCoPops similarly parititioned?**
+> **Is information content in the Chorales and CoCoPops similarly partitioned?**
 
 ```{r entropy_cocopopsvsbach, exercise = TRUE}
 
 
 ```
 
+```{r entropy_cocopopsvsbach-solution}
+
+bach |> deg() |> count() |> entropy()
+bach |> count(Key) |> entropy()
+
+
+cocopops |> deg() |> count() |> entropy()
+cocopops |> count(Key) |> entropy()
+
+
+```
+
+
+### Challenge
 
 > **How much mutual information is there between pitch and rhythm information?**
 
@@ -670,8 +712,19 @@ bach |> deg() |> count(Deg, Key) |> entropy(condition = 'Key')
 
 ```
 
-```{r mutualrhythm-hint-1}
-# It depends on what pitch representation we have
+```{r mutualrhythm-solution}
+# It depends on what pitch representation we use!
+
+bach |> 
+  mutate(Mint = mint(Token), Duration = recip(Token)) -> bach
+
+bach |> select(Mint) |> entropy() -> Hmint
+bach |> select(Duration) |> entropy() -> Hdur
+
+bach |> count(Mint, Duration) |> entropy() -> Hmintdur
+
+(Hmint + Hdur) - Hmintdur
+  
 
 ```
 
@@ -680,24 +733,75 @@ bach |> deg() |> count(Deg, Key) |> entropy(condition = 'Key')
 
 
 
-## Further Analyses
+## Pitch Sequencing Information 
+
+We've only been considering pitch events in isolation.
+However, sequential pitch events are obviously not independent.
+
+### Lag
+
+We can explore this using the humdrumR$_{\mathbb{R}}$ lag feature.
+The syntax looks like this:
+
+```{r echo = TRUE, eval = FALSE}
+
+bach |> pitch(simple = TRUE, generic = TRUE) |> count(Pitch, Pitch[lag = 1])
+
+```
+
+> Try it out:
+
+```{r trylag, exercise = TRUE}
+
+bach |> 
+  pitch(simple = TRUE, generic = TRUE) |> 
+  count(Pitch, Pitch[lag = 1])
 
 
-
-### Prediction
-
-
-### Distance
+```
 
 
-How can we represent "distance" in pitch?
+### Exercises
 
 
+> **How much information does each pitch convey, if you known the previous pitch?**
 
-### Shape
+```{r antecedent, exercise= TRUE}
 
-How can we express "shape" in pitch.
 
-### Repetition
+```
 
-How can we express "repetition" in pitch?
+
+```{r antecedent-solution}
+cocopops |> 
+  deg(simple = TRUE) |>
+  count(Deg, Deg[lag = 1]) |>
+  entropy(condition = 2)
+
+```
+
+
+## Other Analyses
+
+> **Can we use entropy to estimate the tuning of the Saraga data?**
+
+```{r saraga, exercise = TRUE, warn = FALSE}
+saraga |> 
+  select(F0) |> 
+  semits(Exclusive = 'freq',
+         parseArgs = list(frequency.reference = 440)) |>
+  entropy()
+
+
+```
+
+
+> **Is la-based minor more informative than do-based minor?**
+
+```{r labased, exercise = TRUE}
+bach |> 
+  pitch(simple = TRUE, transposeArgs = list(to = ifelse(Key %~% '[A-G]', 'C:', 'a:'))) |>
+  count() |> 
+  entropy() 
+
+```
