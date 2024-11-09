@@ -1,0 +1,1002 @@
+artist,title,primary.status,BIHAP,gender,year,corpus,total,rank
+Aretha Franklin,Respect,1,1,1,1967,2021,9,1
+Bob Dylan,Like a Rolling Stone,0,0,0,1965,2004,10,1
+Public Enemy,Fight the Power,1,1,0,1989,2021,44,2
+The Rolling Stones,Satisfaction,0,0,0,1965,2004,14,2
+Sam Cooke,A Change Is Gonna Come,1,1,0,1964,2021,15,3
+John Lennon,Imagine,0,0,0,1971,2004,14,3
+Bob Dylan,Like a Rolling Stone,0,0,0,1965,2021,11,4
+Marvin Gaye,What's Going On,1,1,0,1971,2004,10,4
+Nirvana,Smells Like Teen Spirit,0,0,0,1991,2021,9,5
+Aretha Franklin,Respect,1,1,1,1967,2004,9,5
+Marvin Gaye,What's Going On,1,1,0,1971,2021,10,6
+The Beach Boys,Good Vibrations,0,0,0,1966,2004,25,6
+The Beatles,Strawberry Fields Forever,0,0,0,1967,2021,15,7
+Chuck Berry,Johnny B. Goode,1,1,0,1958,2004,17,7
+Missy Elliott,Get Ur Freak On,1,1,1,2001,2021,22,8
+The Beatles,Hey Jude,0,0,0,1968,2004,0,8
+Fleetwood Mac,Dreams,1,0,1,1977,2021,17,9
+Nirvana,Smells Like Teen Spirit,0,0,0,1991,2004,9,9
+Outkast,Hey Ya!,1,1,0,2003,2021,2,10
+Ray Charles,What'd I Say,1,1,0,1959,2004,48,10
+The Beach Boys,God Only Knows,0,0,0,1966,2021,17,11
+The Who,My Generation,0,0,0,1965,2004,4,11
+Stevie Wonder,Superstition,1,1,0,1972,2021,29,12
+Sam Cooke,A Change Is Gonna Come,1,1,0,1964,2004,15,12
+The Rolling Stones,Gimme Shelter,0,0,0,1969,2021,49,13
+The Beatles,Yesterday,0,0,0,1965,2004,5,13
+The Kinks,Waterloo Sunset,0,0,0,1967,2021,16,14
+Bob Dylan,Blowin' in the Wind,0,0,0,1963,2004,2,14
+The Beatles,I Want to Hold Your Hand,0,0,0,1963,2021,7,15
+The Clash,London Calling,0,0,0,1980,2004,21,15
+Beyonce feat. Jay-Z,Crazy in Love,1,1,0,2003,2021,14,16
+The Beatles,I Want to Hold Your Hand,0,0,0,1963,2004,7,16
+Queen,Bohemian Rhapsody,0,0,0,1975,2021,24,17
+The Jimi Hendrix Experience,Purple Haze,1,1,0,1967,2004,31,17
+Prince and the Revolution,Purple Rain,1,1,1,1984,2021,17,18
+Chuck Berry,Maybellene,1,1,0,1955,2004,4,18
+John Lennon,Imagine,0,0,0,1971,2021,14,19
+Elvis Presley,Hound Dog,0,0,0,1956,2004,0,19
+Robyn,Dancing on My Own,1,1,1,2010,2021,17,20
+The Beatles,Let It Be,0,0,0,1970,2004,12,20
+Billie Holiday,Strange Fruit,1,1,1,1939,2021,19,21
+Bruce Springsteen,Born to Run,0,0,0,1975,2004,13,21
+The Ronettes,Be My Baby,1,1,1,1963,2021,8,22
+The Ronettes,Be My Baby,1,1,1,1963,2004,8,22
+David Bowie,Heroes,0,0,0,1977,2021,17,23
+The Beatles,In My Life,0,0,0,1965,2004,8,23
+The Beatles,A Day in the Life,0,0,0,1967,2021,13,24
+The Impressions,People Get Ready,1,1,0,1965,2004,14,24
+Kanye West feat. Pusha T,Runaway,1,1,0,2010,2021,38,25
+The Beach Boys,God Only Knows,0,0,0,1966,2004,17,25
+Joni Mitchell,A Case of You,1,0,0,1971,2021,19,26
+The Beatles,A Day in the Life,0,0,0,1967,2004,13,26
+Bruce Springsteen,Born to Run,0,0,0,1975,2021,13,27
+Derek and the Dominos,Layla,0,0,0,1970,2004,24,27
+Talking Heads,Once in a Lifetime,0,0,0,1980,2021,17,28
+Otis Redding,(Sittin' on) the Dock of the Bay,1,1,0,1968,2004,9,28
+Dr. Dre feat. Snoop Doggy Dogg,Nuthin' But a 'G' Thang,1,1,0,1992,2021,9,29
+The Beatles,Help!,0,0,0,1965,2004,10,29
+Lorde,Royals,1,0,1,2011,2021,0,30
+Johnny Cash,I Walk the Line,0,0,0,1956,2004,29,30
+The Rolling Stones,(I Can't Get No) Satisfaction,0,0,0,1965,2021,14,31
+Led Zeppelin,Stairway To Heaven,0,0,0,1971,2004,53,31
+The Rolling Stones,Sympathy for the Devil,0,0,0,1968,2004,21,32
+Chuck Berry,Johnny B. Goode,1,1,0,1958,2021,17,33
+Ike and Tina Turner,River Deep - Mountain High,1,1,1,1966,2004,4,33
+James Brown,Papa's Got a Brand New Bag,1,1,0,1966,2021,0,34
+The Righteous Brothers,You've Lost That Lovin' Feelin',0,0,0,1964,2004,0,34
+Little Richard,Tutti Frutti,1,1,0,1955,2021,0,35
+The Doors,Light My Fire,0,0,0,1967,2004,9,35
+The White Stripes,Seven Nation Army,1,0,1,2003,2021,16,36
+U2,One,0,0,0,1991,2004,12,36
+Prince and the Revolution,When Doves Cry,1,1,1,1984,2021,17,37
+Bob Marley and the Wailers,No Woman No Cry,1,1,0,1975,2004,10,37
+Otis Redding,(Sittin' on) the Dock of the Bay,1,1,0,1967,2021,9,38
+The Rolling Stones,Gimme Shelter,0,0,0,1969,2004,49,38
+Outkast,B.O.B.,1,1,0,2000,2021,5,39
+Buddy Holly,That'll Be the Day,0,0,0,1957,2004,2,39
+The Jimi Hendrix Experience,All Along the Watchtower,1,1,0,1968,2021,17,40
+Martha and the Vandellas,Dancing in the Street,1,1,1,1964,2004,8,40
+Joy Division,Love Will Tear Us Apart,0,0,0,1980,2021,27,41
+The Band,The Weight,0,0,0,1968,2004,6,41
+Bob Marley and the Wailers,Redemption Song,1,1,0,1980,2021,16,42
+The Kinks,Waterloo Sunset,0,0,0,1967,2004,16,42
+The Temptations,My Girl,1,1,0,1965,2021,9,43
+Little Richard,Tutti Frutti,1,1,0,1955,2004,0,43
+Michael Jackson,Billie Jean,1,1,0,1982,2021,28,44
+Kendrick Lamar,Alright,1,1,0,2015,2021,3,45
+Elvis Presley,Heartbreak Hotel,0,0,0,1956,2004,0,45
+M.I.A.,Paper Planes,1,1,1,2008,2021,11,46
+David Bowie,Heroes,0,0,0,1977,2004,17,46
+Elton John,Tiny Dancer,0,0,0,1972,2021,13,47
+Simon and Garfunkel,Bridge over Troubled Water,0,0,0,1970,2004,22,47
+Radiohead,Idioteque,0,0,0,2000,2021,59,48
+The Jimi Hendrix Experience,All Along the Watchtower,1,1,0,1968,2004,17,48
+Lauryn Hill,Doo Wop (That Thing),1,1,1,1998,2021,1,49
+The Eagles,Hotel California,0,0,0,1976,2004,52,49
+Daddy Yankee,Gasolina,1,1,0,2010,2021,20,50
+Dionne Warwick,Walk On By,1,1,1,1964,2021,4,51
+Grandmaster Flash and the Furious Five,The Message,1,1,0,1982,2004,42,51
+Donna Summer,I Feel Love,1,1,1,1977,2021,41,52
+Prince and the Revolution,When Doves Cry,1,1,1,1984,2004,17,52
+The Beach Boys,Good Vibrations,0,0,0,1966,2021,0,53
+Sex Pistols,Anarchy in the U.K.,0,0,0,1977,2004,14,53
+Smokey Robinson and the Miracles,The Tracks of My Tears,1,1,0,1965,2021,20,54
+Percy Sledge,When a Man Loves a Woman,1,1,0,1966,2004,14,54
+Madonna,Like a Prayer,1,0,1,1989,2021,10,55
+The Kingsmen,Louie Louie,0,0,0,1963,2004,8,55
+Missy Elliott,Work It,1,1,1,2000,2021,29,56
+Little Richard,Long Tall Sally,1,1,0,1956,2004,0,56
+Sly and the Family Stone,Family Affair,1,1,1,1971,2021,4,57
+Procol Harum,A Whiter Shade of Pale,0,0,0,1967,2004,27,57
+The Band,The Weight,0,0,0,1968,2021,10,58
+Michael Jackson,Billie Jean,1,1,0,1983,2004,28,58
+Grandmaster Flash and the Furious Five,The Message,1,1,0,1982,2021,42,59
+Bob Dylan,The Times They Are A-Changin',0,0,0,1964,2004,2,59
+Kate Bush,Running Up That Hill,1,0,1,1985,2021,25,60
+Al Green,Let's Stay Together,1,1,0,1971,2004,10,60
+Led Zeppelin,Stairway to Heaven,0,0,0,1971,2021,53,61
+Jerry Lee Lewis,Whole Lotta Shakin' Goin On,0,0,0,1957,2004,8,61
+U2,One,0,0,0,1992,2021,12,62
+Bo Diddley,Bo Diddley,1,1,0,1955,2004,10,62
+Dolly Parton,Jolene,1,0,1,1974,2021,8,63
+Buffalo Springfield,For What It's Worth,0,0,0,1967,2004,9,63
+Ramones,Blitzkrieg Bop,0,0,0,1976,2021,32,64
+The Beatles,She Loves You,0,0,0,1963,2004,0,64
+"Earth, Wind, and Fire",September,1,1,0,1978,2021,18,65
+Cream,Sunshine of Your Love,0,0,0,1968,2004,17,65
+Simon and Garfunkel,Bridge Over Troubled Water,0,0,0,1970,2021,22,66
+Bob Marley and the Wailers,Redemption Song,1,1,0,1980,2004,16,66
+Bob Dylan,Tangled Up in Blue,0,0,0,1975,2021,10,67
+Elvis Presley,Jailhouse Rock,0,0,0,1957,2004,6,67
+Chic,Good Times,1,1,0,1979,2021,18,68
+Bob Dylan,Tangled Up in Blue,0,0,0,1975,2004,10,68
+Taylor Swift,All Too Well,1,0,1,2012,2021,20,69
+Roy Orbison,Crying,0,0,0,1961,2004,5,69
+Elvis Presley,Suspicious Minds,0,0,0,1969,2021,5,70
+Dionne Warwick,Walk On By,1,1,1,1964,2004,4,70
+Tracy Chapman,Fast Car,1,1,1,1988,2021,19,71
+The Beach Boys,California Girls,0,0,0,1965,2004,23,71
+The Beatles,Yesterday,0,0,0,1965,2021,5,72
+James Brown,Papa's Got a Brand New Bag,1,1,0,1966,2004,0,72
+Beyonce,Formation,1,1,1,2016,2021,8,73
+Eddie Cochran,Summertime Blues,0,0,0,1958,2004,10,73
+Leonard Cohen,Hallelujah,0,0,0,1984,2021,3,74
+Stevie Wonder,Superstition,1,1,0,1972,2004,29,74
+Pulp,Common People,0,0,0,1996,2021,6,75
+Led Zeppelin,Whole Lotta Love,0,0,0,1969,2004,11,75
+Johnny Cash,I Walk the Line,0,0,0,1956,2021,29,76
+The Beatles,Strawberry Fields Forever,0,0,0,1967,2004,15,76
+The Modern Lovers,Roadrunner,0,0,0,1976,2021,4,77
+Elvis Presley,Mystery Train,0,0,0,1955,2004,7,77
+The Four Tops,Reach Out (I'll Be There),1,1,0,1967,2021,14,78
+James Brown,I Got You (I Feel Good),1,1,0,1965,2004,0,78
+Amy Winehouse,Back to Black,1,1,1,2006,2021,15,79
+The Byrds,Mr. Tambourine Man,0,0,0,1965,2004,8,79
+Ray Charles,What'd I Say,1,1,0,1957,2021,48,80
+Marvin Gaye,I Heard It Through the Grapevine,1,1,0,1968,2004,20,80
+Fats Domino,Blueberry Hill,1,1,0,1956,2004,10,81
+The Velvet Underground,I'm Waiting for the Man,0,0,0,1967,2004,16,81
+Adele,Rolling in the Deep,1,0,1,2011,2021,5,82
+The Kinks,You Really Got Me,0,0,0,1964,2004,7,82
+Bob Dylan,Desolation Row,0,0,0,1965,2021,8,83
+The Beatles,Norwegian Wood (This Bird Has Flown),0,0,0,1965,2004,15,83
+Al Green,Let's Stay Together,1,1,0,1971,2021,10,84
+The Police,Every Breath You Take,0,0,0,1983,2004,14,84
+Prince,Kiss,1,1,0,1986,2021,0,85
+Patsy Cline,Crazy,1,0,1,1961,2004,13,85
+The Rolling Stones,Tumbling Dice,0,0,0,1972,2021,11,86
+Bruce Springsteen,Thunder Road,0,0,0,1975,2004,18,86
+LCD Soundsystem,All My Friends,1,1,1,2007,2021,81,87
+Johnny Cash,Ring of Fire,0,0,0,1963,2004,9,87
+Guns N' Roses,Sweet Child O' Mine,0,0,0,1987,2021,30,88
+The Temptations,My Girl,1,1,0,1964,2004,9,88
+The Beatles,Hey Jude,0,0,0,1968,2021,0,89
+The Mamas and the Papas,California Dreamin',1,0,1,1965,2004,7,89
+Aretha Franklin,(You Make Me Feel Like) A Natural Woman,1,1,1,1967,2021,3,90
+The Five Satins,In the Still of the Night,1,1,0,1956,2004,13,90
+UGK feat. Outkast,Int'l Players Anthem (I Choose You),1,1,0,2007,2021,73,91
+Elvis Presley,Suspicious Minds,0,0,0,1969,2004,5,91
+Little Richard,"Good Golly, Miss Molly",1,1,0,1958,2021,17,92
+Ramones,Blitzkrieg Bop,0,0,0,1976,2004,33,92
+Kelly Clarkson,Since U Been Gone,1,0,1,2004,2021,4,93
+U2,I Still Haven't Found What I'm Looking For,0,0,0,1987,2004,27,93
+Whitney Houston,I Will Always Love You,1,1,1,1992,2021,41,94
+Little Richard,"Good Golly, Miss Molly",1,1,0,1958,2004,17,94
+Oasis,Wonderwall,0,0,0,1995,2021,20,95
+Carl Perkins,Blue Suede Shoes,0,0,0,1956,2004,8,95
+Jay-Z,99 Problems,1,1,0,2003,2021,0,96
+Jerry Lee Lewis,Great Balls Of Fire,0,0,0,1957,2004,0,96
+Patti Smith,Gloria,0,0,0,1975,2021,22,97
+Chuck Berry,Roll Over Beethoven,1,1,0,1956,2004,15,97
+The Beatles,In My Life,0,0,0,1965,2021,8,98
+Al Green,Love and Happiness,1,1,0,1972,2004,3,98
+Bee Gees,Stayin' Alive,0,0,0,1977,2021,14,99
+Creedence Clearwater Revival,Fortunate Son,0,0,0,1969,2004,18,99
+Bob Dylan,Blowin' in the Wind,0,0,0,1963,2021,2,100
+The Rolling Stones,You Can't Always Get What You Want,0,0,0,1969,2004,74,100
+Yeah Yeah Yeahs,Maps,1,1,1,2003,2021,28,101
+Chuck Berry,Maybellene,1,1,0,1955,2021,4,102
+Gene Vincent,Be-Bop-A-Lula,0,0,0,1956,2004,0,102
+Alanis Morissette,You Oughta Know,1,0,1,1995,2021,0,103
+Donna Summer,Hot Stuff,1,1,1,1979,2004,31,103
+The Jackson 5,I Want You Back,1,1,0,1969,2021,30,104
+Stevie Wonder,Living for the City,1,1,0,1973,2004,11,104
+David Bowie,Life on Mars?,0,0,0,1971,2021,0,105
+Simon and Garfunkel,The Boxer,0,0,0,1969,2004,5,105
+The Rolling Stones,Sympathy for the Devil,0,0,0,1968,2021,21,106
+Bob Dylan,Mr. Tambourine Man,0,0,0,1965,2004,5,106
+Wu-Tang Clan,C.R.E.A.M.,1,1,0,1994,2021,26,107
+Buddy Holly and the Crickets,Not Fade Away,0,0,0,1957,2004,9,107
+The Cure,Just Like Heaven,0,0,0,1987,2021,49,108
+Prince,Little Red Corvette,1,1,0,1983,2004,20,108
+Sly and the Family Stone,Everyday People,1,1,1,1968,2021,8,109
+Van Morrison,Brown Eyed Girl,0,0,0,1967,2004,13,109
+The Beatles,Something,0,0,0,1969,2021,4,110
+Otis Redding,I've Been Loving You Too Long (to Stop Now),1,1,0,1965,2004,0,110
+Bruce Springsteen,Thunder Road,0,0,0,1975,2021,18,111
+Hank Williams,I'm So Lonesome I Could Cry,0,0,0,1949,2004,7,111
+R.E.M.,Losing My Religion,0,0,0,1991,2021,15,112
+Elvis Presley,That's All Right,0,0,0,1954,2004,6,112
+Stevie Wonder,Higher Ground,1,1,0,1973,2021,23,113
+The Drifters,Up On the Roof,1,1,0,1962,2004,9,113
+Britney Spears,Toxic,1,0,1,2003,2021,13,114
+The Crystals,Da Doo Ron Ron,1,1,1,1963,2004,6,114
+Etta James,At Last,1,1,1,1960,2021,19,115
+Sam Cooke,You Send Me,1,1,0,1957,2004,0,115
+Rob Base and DJ E-Z Rock,It Takes Two,1,1,0,1988,2021,23,116
+The Rolling Stones,Honky Tonk Women,0,0,0,1969,2004,16,116
+Aretha Franklin,I Say a Little Prayer,1,1,1,1968,2021,8,117
+Al Green,Take Me to the River,1,1,0,1974,2004,28,117
+Radiohead,Creep,0,0,0,1992,2021,19,118
+The Isley Brothers,Shout (Parts 1 and 2),1,1,0,1959,2004,6,118
+Marvin Gaye,I Heard It Through the Grapevine,1,1,0,1968,2021,20,119
+Fleetwood Mac,Go Your Own Way,1,0,1,1977,2004,4,119
+X-Ray Spex,Oh Bondage! Up Yours!,0,0,0,1977,2021,25,120
+The Jackson 5,I Want You Back,1,1,0,1969,2004,30,120
+The Beatles,Let It Be,0,0,0,1970,2021,12,121
+Ben E. King,Stand By Me,1,1,0,1961,2004,15,121
+The Impressions,People Get Ready,1,1,0,1965,2021,14,122
+The Animals,House of the Rising Sun,0,0,0,1964,2004,11,122
+Talking Heads,This Must Be the Place (Naive Melody),0,0,0,1983,2021,63,123
+James Brown,It's a Man's Man's Man's World,1,1,0,1966,2004,12,123
+Buddy Holly,That'll Be the Day,0,0,0,1957,2021,2,124
+The Rolling Stones,Jumpin' Jack Flash,0,0,0,1968,2004,22,124
+Sex Pistols,Anarchy in the U.K.,0,0,0,1977,2021,14,125
+The Shirelles,Will You Love Me Tomorrow,1,1,1,1960,2004,6,125
+George Michael,Freedom! '90,0,0,0,1990,2021,52,126
+Big Joe Turner,"Shake, Rattle and Roll",1,1,0,1954,2004,6,126
+TLC,Waterfalls,1,1,1,1995,2021,33,127
+David Bowie,Changes,0,0,0,1971,2004,20,127
+Led Zeppelin,Whole Lotta Love,0,0,0,1969,2021,11,128
+Chuck Berry,Rock & Roll Music,1,1,0,1957,2004,0,128
+Drake feat. Majid Jordan,"Hold On, We're Going Home",1,1,0,2013,2021,18,129
+Steppenwolf,Born To Be Wild,0,0,0,1968,2004,14,129
+Martha and the Vandellas,Dancing in the Street,1,1,1,1964,2021,8,130
+Rod Stewart,Maggie May,0,0,0,1971,2004,45,130
+Ben E. King,Stand by Me,1,1,0,1961,2021,15,131
+U2,With or Without You,0,0,0,1987,2004,26,131
+Eric B. and Rakim,Paid in Full,1,1,0,1987,2021,48,132
+Bo Diddley,Who Do You Love,1,1,0,1957,2004,25,132
+Journey,Don't Stop Believin',1,1,0,1981,2021,18,133
+The Who,Won't Get Fooled Again,0,0,0,1971,2004,43,133
+Tina Turner,What's Love Got to Do With It,1,1,1,1984,2021,19,134
+Wilson Pickett,In The Midnight Hour,1,1,0,1965,2004,15,134
+The Beatles,She Loves You,0,0,0,1964,2021,0,135
+The Beatles,While My Guitar Gently Weeps,0,0,0,1968,2004,16,135
+Otis Redding,Try a Little Tenderness,1,1,0,1966,2021,12,136
+Elton John,Your Song,0,0,0,1970,2004,8,136
+Ariana Grande,"Thank U, Next",1,0,1,2019,2021,8,137
+The Beatles,Eleanor Rigby,0,0,0,1966,2004,0,137
+Blondie,Heart of Glass,1,0,1,1979,2021,16,138
+Sly and the Family Stone,Family Affair,1,1,1,1971,2004,4,138
+Madonna,Vogue,1,0,1,1990,2021,85,139
+The Beatles,I Saw Her Standing There,0,0,0,1964,2004,7,139
+Bob Marley and the Wailers,No Woman No Cry,1,1,0,1975,2021,10,140
+Led Zeppelin,Kashmir,0,0,0,1975,2004,18,140
+Rod Stewart,Maggie May,0,0,0,1971,2021,45,141
+The Everly Brothers,All I Have to Do Is Dream,0,0,0,1958,2004,1,141
+George Jones,He Stopped Loving Her Today,0,0,0,1980,2021,0,142
+James Brown,"Please, Please, Please",1,1,0,1956,2004,0,142
+The Clash,London Calling,0,0,0,1980,2021,21,143
+The Rolling Stones,Jumpin' Jack Flash,0,0,0,1968,2021,22,144
+Ramones,I Wanna Be Sedated,0,0,0,1978,2004,5,144
+Outkast,Ms. Jackson,1,1,0,2000,2021,22,145
+Sly and the Family Stone,Everyday People,1,1,1,1968,2004,8,145
+James Taylor,Fire and Rain,0,0,0,1970,2021,12,146
+Fats Domino,Blueberry Hill,1,1,0,1956,2021,10,147
+Iggy Pop,Lust for Life,0,0,0,1977,2004,71,147
+Led Zeppelin,Kashmir,0,0,0,1975,2021,18,148
+Janis Joplin,Me and Bobby McGee,1,0,1,1971,2004,4,148
+Elton John,Rocket Man,0,0,0,1972,2021,0,149
+The Everly Brothers,Cathy's Clown,0,0,0,1960,2004,8,149
+Green Day,Basket Case,0,0,0,1994,2021,0,150
+The Byrds,Eight Miles High,0,0,0,1966,2004,29,150
+The Shirelles,Will You Love Me Tomorrow,1,1,1,1960,2021,6,151
+The Penguins,Earth Angel,1,1,0,1954,2004,11,151
+Creedence Clearwater Revival,Proud Mary,0,0,0,1969,2021,12,152
+The Jimi Hendrix Experience,Foxey Lady,1,1,0,1965,2004,19,152
+Rick James,Super Freak,1,1,0,1981,2021,14,153
+The Beatles,A Hard Day's Night,0,0,0,1964,2004,3,153
+Howlin' Wolf,Spoonful,1,1,0,1960,2021,16,154
+Buddy Holly and the Crickets,Rave On,0,0,0,1958,2004,1,154
+The Strokes,Last Nite,0,0,0,2001,2021,27,155
+Creedence Clearwater Revival,Proud Mary,0,0,0,1969,2004,12,155
+The Kingsmen,Louie Louie,0,0,0,1963,2021,8,156
+Sonic Youth,Teenage Riot,0,0,0,1988,2021,124,157
+The Flamingos,I Only Have Eyes for You,1,1,0,1959,2004,4,157
+The Meters,Cissy Strut,1,1,0,1969,2021,2,158
+Bill Haley and His Comets,(We're Gonna) Rock Around the Clock,0,0,0,1954,2004,11,158
+The Velvet Underground,I'm Waiting for the Man,0,0,0,1967,2021,16,159
+The Who,Baba O'Riley,0,0,0,1971,2021,66,159
+R.E.M.,Nightswimming,0,0,0,1992,2021,15,160
+Public Enemy,Bring the Noise,1,1,0,1988,2004,14,160
+Madonna,Into the Groove,1,0,1,1985,2021,17,161
+Ray Charles,I Can't Stop Loving You,1,1,0,1962,2004,6,161
+Nick Drake,Pink Moon,1,1,0,1972,2021,12,162
+Sinead O'Connor,Nothing Compares 2 U,1,0,1,1990,2021,10,162
+Fleetwood Mac,Landslide,1,0,1,1975,2021,12,163
+Queen,Bohemian Rhapsody,0,0,0,1975,2004,24,163
+Bob Dylan,Mr. Tambourine Man,0,0,0,1965,2021,5,164
+Johnny Cash,Folsom Prison Blues,0,0,0,1956,2004,5,164
+Hank Williams,I'm So Lonesome I Could Cry,0,0,0,1949,2021,7,165
+Tracy Chapman,Fast Car,1,1,1,1988,2004,19,165
+Mott the Hoople,All the Young Dudes,0,0,0,1972,2021,11,166
+Eminem,Lose Yourself,0,0,0,2002,2004,55,166
+Eminem,Lose Yourself,0,0,0,2002,2021,55,167
+Marvin Gaye,Let's Get It On,1,1,0,1973,2004,2,167
+Dusty Springfield,Son of a Preacher Man,1,0,1,1968,2021,11,168
+The Temptations,Papa Was A Rollin' Stone,1,1,0,1972,2004,114,168
+Tom Petty and the Heartbreakers,American Girl,0,0,0,1976,2021,33,169
+R.E.M.,Losing My Religion,0,0,0,1991,2004,15,169
+The Five Satins,In the Still of the Night,1,1,0,1956,2021,13,170
+Joni Mitchell,Both Sides Now,1,0,0,1969,2004,20,170
+Louis Armstrong,What a Wonderful World,1,1,0,1967,2021,6,171
+ABBA,Dancing Queen,1,0,1,1976,2004,19,171
+Nina Simone,Mississippi Goddam,1,1,1,1964,2021,5,172
+Aerosmith,Dream On,0,0,0,1973,2004,36,172
+Television,Marquee Moon,0,0,0,1977,2021,24,173
+Sex Pistols,God Save the Queen,0,0,0,1977,2004,18,173
+R.E.M.,Radio Free Europe,0,0,0,1983,2021,11,174
+The Rolling Stones,"Paint It, Black",0,0,0,1966,2004,14,174
+The Flamingos,I Only Have Eyes for You,1,1,0,1959,2021,4,175
+The Bobby Fuller Four,I Fought the Law,0,0,0,1966,2004,11,175
+The Kinks,You Really Got Me,0,0,0,1964,2021,7,176
+The Beach Boys,Don't Worry Baby,0,0,0,1964,2004,17,176
+Van Halen,Jump,0,0,0,1983,2021,28,177
+Tom Petty,Free Fallin',0,0,0,1989,2004,11,177
+Billie Eilish,Bad Guy,1,0,1,2019,2021,14,178
+Big Star,September Gurls,0,0,0,1974,2004,8,178
+Pink Floyd,Comfortably Numb,0,0,0,1979,2021,7,179
+Joy Division,Love Will Tear Us Apart,0,0,0,1980,2004,27,179
+Lou Reed,Walk on the Wild Side,0,0,0,1972,2021,20,180
+Outkast,Hey Ya!,1,1,0,2003,2004,2,180
+The Byrds,Eight Miles High,0,0,0,1966,2021,29,181
+Booker T. and the MGs,Green Onions,1,1,0,1962,2004,7,181
+Simon and Garfunkel,The Sound of Silence,0,0,0,1964,2021,2,182
+The Drifters,Save the Last Dance for Me,1,1,0,1960,2004,3,182
+Stevie Wonder,You Are the Sunshine of My Life,1,1,0,1972,2021,15,183
+B.B. King,The Thrill Is Gone,1,1,0,1969,2004,33,183
+Sinead O'Connor,Nothing Compares 2 U,1,0,1,1990,2004,10,184
+The Beatles,Please Please Me,0,0,0,1963,2004,7,184
+Michael Jackson,Beat It,1,1,0,1982,2021,38,185
+Bob Dylan,Desolation Row,0,0,0,1963,2004,8,185
+The Staple Singers,I'll Take You There,1,1,1,1972,2021,10,186
+Aretha Franklin,I Never Loved a Man (The Way I Love You),1,1,1,1967,2004,8,186
+Bob Dylan,Subterranean Homesick Blues,0,0,0,1965,2021,8,187
+AC/DC,Back in Black,0,0,0,1980,2004,26,187
+The Jimi Hendrix Experience,Little Wing,1,1,0,1968,2021,35,188
+Creedence Clearwater Revival,Who'll Stop the Rain,0,0,0,1970,2004,12,188
+David Bowie,Space Oddity,0,0,0,1969,2021,29,189
+Bee Gees,Stayin' Alive,0,0,0,1977,2004,14,189
+N.W.A.,Fuck tha Police,1,1,0,1988,2021,30,190
+Bob Dylan,Knocking on Heaven's Door,0,0,0,1973,2004,28,190
+Bobbie Gentry,Ode to Billie Joe,1,0,1,1967,2021,8,191
+Lynyrd Skynyrd,Free Bird,0,0,0,1973,2004,69,191
+Geto Boys,Mind Playing Tricks on Me,1,1,0,1991,2021,9,192
+Glen Campbell,Wichita Lineman,0,0,0,1968,2004,10,192
+The Rolling Stones,Wild Horses,0,0,0,1971,2021,20,193
+The Drifters,There Goes My Baby,1,1,0,1959,2004,15,193
+PJ Harvey,Rid of Me,1,0,1,1993,2021,46,194
+Buddy Holly,Peggy Sue,0,0,0,1957,2004,8,194
+Patsy Cline,Crazy,1,0,1,1961,2021,13,195
+The Chantels,Maybe,1,1,1,1957,2004,15,195
+James Brown,Get Up (I Feel Like Being a) Sex Machine,1,1,0,1970,2021,14,196
+Guns N' Roses,Sweet Child O' Mine,0,0,0,1987,2004,30,196
+Ann Peebles,I Can't Stand the Rain,1,1,1,1973,2021,5,197
+Elvis Presley,Don't Be Cruel,0,0,0,1956,2004,5,197
+Marvin Gaye,Sexual Healing,1,1,0,1982,2021,17,198
+The Jimi Hendrix Experience,Hey Joe,1,1,0,1966,2004,7,198
+Aerosmith,Dream On,0,0,0,1973,2021,37,199
+Parliament,Flash Light,1,1,0,1977,2004,8,199
+David Bowie,Changes,0,0,0,1971,2021,20,200
+Beck,Loser,0,0,0,1993,2004,22,200
+Johnny Cash,Ring of Fire,0,0,0,1963,2021,9,201
+New Order,Bizarre Love Triangle,0,0,0,1986,2004,8,201
+Elton John,Your Song,0,0,0,1970,2021,8,202
+The Beatles,Come Together,0,0,0,1969,2004,11,202
+Stevie Wonder,"Signed, Sealed, Delivered I'm Yours",1,1,0,1970,2021,10,203
+Bob Dylan,Positively 4th Street,0,0,0,1965,2004,10,203
+David Bowie,Young Americans,0,0,0,1975,2021,25,204
+Otis Redding,Try a Little Tenderness,1,1,0,1966,2004,12,204
+Britney Spears,...Baby One More Time,1,0,1,1998,2021,13,205
+Bill Withers,Lean On Me,1,1,0,1972,2004,27,205
+Glen Campbell,Wichita Lineman,0,0,0,1968,2021,10,206
+The Four Tops,Reach Out (I'll Be There),1,1,0,1966,2004,14,206
+Rage Against the Machine,Killing in the Name,0,0,0,1992,2021,40,207
+The Everly Brothers,Bye Bye Love,0,0,0,1957,2004,6,207
+Hole,Doll Parts,1,0,1,1994,2021,1,208
+Them,Gloria,0,0,0,1964,2004,20,208
+Don Henley,The Boys of Summer,0,0,0,1984,2021,32,209
+The Beach Boys,In My Room,0,0,0,1963,2004,8,209
+Funkadelic,One Nation Under a Groove,1,1,0,1978,2021,0,210
+? and the Mysterians,96 Tears,1,1,0,1966,2004,9,210
+U2,With or Without You,0,0,0,1987,2021,26,211
+The Beach Boys,"Caroline, No",0,0,0,1966,2004,6,211
+Boston,More Than A Feeling,0,0,0,1976,2021,17,212
+Prince,1999,1,1,0,1982,2004,34,212
+The Rolling Stones,"Paint It, Black",0,0,0,1966,2021,15,213
+Hank Williams,Your Cheatin' Heart,0,0,0,1953,2004,6,213
+Steely Dan,Deacon Blues,0,0,0,1977,2021,14,214
+Neil Young,Rockin' in the Free World,0,0,0,1989,2004,14,214
+Mobb Deep,"Shook Ones, Pt. II",1,1,0,1995,2021,27,215
+The Chords,Sh-Boom,1,1,0,1954,2004,0,215
+Elvis Presley,Jailhouse Rock,0,0,0,1957,2021,6,216
+Stevie Nicks,Edge of Seventeen,1,0,1,1981,2021,8,217
+Dolly Parton,Jolene,1,0,1,1974,2004,8,217
+Wilson Pickett,In the Midnight Hour,1,1,0,1965,2021,15,218
+John Lee Hooker,Boom Boom,1,1,0,1962,2004,19,218
+Tom Petty,Free Fallin',0,0,0,1989,2021,11,219
+Howlin' Wolf,Spoonful,1,1,0,1960,2004,16,219
+New Order,Bizarre Love Triangle,0,0,0,1986,2021,8,220
+The Left Banke,Walk Away Renee,0,0,0,1966,2004,5,220
+Lou Reed,Walk on the Wild Side,0,0,0,1972,2004,20,221
+"Crosby, Stills & Nash",Suite: Judy Blue Eyes,0,0,0,1969,2021,12,222
+Roy Orbison,"Oh, Pretty Woman",0,0,0,1964,2004,14,222
+Eminem feat. Dido,Stan,1,0,1,2000,2021,25,223
+Sly and the Family Stone,Dance to the Music,1,1,1,1968,2004,22,223
+Derek and the Dominoes,Layla,0,0,0,1970,2021,24,224
+Chic,Good Times,1,1,0,1979,2004,18,224
+Joni Mitchell,Both Sides Now,1,0,0,1969,2021,20,225
+Muddy Waters,Hoochie Coochie Man,1,1,0,1954,2004,7,225
+The Smiths,There is a Light That Never Goes Out,0,0,0,1986,2021,4,226
+Van Morrison,Moondance,0,0,0,1970,2004,6,226
+Creedence Clearwater Revival,Fortunate Son,0,0,0,1969,2021,18,227
+James Taylor,Fire And Rain,0,0,0,1970,2004,12,227
+Beyonce,Single Ladies (Put A Ring On It),1,1,1,2008,2021,10,228
+The Clash,Should I Stay or Should I Go,0,0,0,1982,2004,15,228
+Woody Guthrie,This Land is Your Land,0,0,0,1951,2021,6,229
+Muddy Waters,Mannish Boy,1,1,0,1955,2004,28,229
+The Byrds,Mr. Tambourine Man,0,0,0,1965,2021,8,230
+Bob Dylan,Just Like a Woman,0,0,0,1966,2004,12,230
+Whitney Houston,I Wanna Dance With Somebody (Who Loves Me),1,1,1,1987,2021,32,231
+Marvin Gaye,Sexual Healing,1,1,0,1982,2004,17,231
+The Who,My Generation,0,0,0,1965,2021,4,232
+Roy Orbison,Only the Lonely (Know the Way I Feel),0,0,0,1960,2004,19,232
+Deee-Lite,Groove is in the Heart,0,0,0,1990,2021,23,233
+The Animals,We Gotta Get Out of This Place,0,0,0,1965,2004,55,233
+The Supremes,You Keep Me Hanging On,1,1,1,1966,2021,7,234
+The Byrds,I'll Feel a Whole Lot Better,0,0,0,1965,2004,5,234
+New Order,Blue Monday,0,0,0,1983,2021,62,235
+Ray Charles,I Got a Woman,1,1,0,1954,2004,0,235
+Bill Withers,Lean on Me,1,1,0,1972,2021,27,236
+Buddy Holly,Everyday,0,0,0,1957,2004,4,236
+Hank Williams,Your Cheatin' Heart,0,0,0,1953,2021,6,237
+Afrika Bambaataa and the Soul Sonic Force,Planet Rock,1,1,0,1982,2004,19,237
+Aaliyah,Are You That Somebody?,1,1,1,1998,2021,0,238
+Patsy Cline,I Fall to Pieces,1,0,1,1961,2004,10,238
+Big Star,September Gurls,0,0,0,1974,2021,8,239
+Dion,The Wandered,0,0,0,1961,2004,8,239
+Backstreet Boys,I Want It That Way,0,0,0,1999,2021,8,240
+Dusty Springfield,Son of a Preacher Man,1,0,1,1968,2004,11,240
+Digital Underground,The Humpty Dance,1,1,0,1990,2021,10,241
+Sly and the Family Stone,Stand!,1,1,1,1969,2004,3,241
+Jerry Lee Lewis,Great Balls of Fire,0,0,0,1957,2021,0,242
+Elton John,Rocket Man,0,0,0,1972,2004,0,242
+The Beatles,Eleanor Rigby,0,0,0,1966,2021,0,243
+Pavement,Summer Babe (Winter Version),0,0,0,1992,2021,20,244
+Spencer Davis Group,Gimme Some Lovin',0,0,0,1966,2004,29,244
+Beastie Boys,Sabotage,0,0,0,1994,2021,18,245
+The Band,The Night They Drove Old Dixie Down,0,0,0,1969,2004,2,245
+Faces,Ooh La La,0,0,0,1973,2021,31,246
+Jackie Wilson,(Your Love Keeps Lifting Me) Higher and Higher,1,1,0,1967,2004,15,246
+Joni Mitchell,River,1,0,0,1971,2021,19,247
+Sly and the Family Stone,Hot Fun in the Summertime,1,1,1,1969,2004,10,247
+N.W.A.,Straight Outta Compton,1,1,0,1988,2021,4,248
+The Sugarhill Gang,Rappers Delight,0,0,0,1979,2004,33,248
+Joan Jett,Bad Reputation,1,0,1,1980,2021,15,249
+Aretha Franklin,Chain of Fools,1,1,1,1967,2004,4,249
+The Jimi Hendrix Experience,Purple Haze,1,1,0,1967,2021,31,250
+Black Sabbath,Paranoid,0,0,0,1970,2004,11,250
+Gloria Gaynor,I Will Survive,1,1,1,1978,2021,5,251
+Bobby Darin,Mack the Knife,0,0,0,1959,2004,7,251
+Parliament,Flash Light,1,1,0,1977,2021,8,252
+The Drifters,Money Honey,1,1,0,1953,2004,3,252
+Willie Nelson,Blue Eyes Crying in the Rain,0,0,0,1975,2021,3,253
+Mott the Hoople,All the Young Dudes,0,0,0,1972,2004,11,253
+The Supremes,Stop! In the Name of Love,1,1,1,1965,2021,2,254
+AC/DC,Highway to Hell,0,0,0,1979,2004,18,254
+Loretta Lynn,Coal Miner's Daughter,1,0,1,1970,2021,7,255
+Blondie,Heart of Glass,1,0,1,1978,2004,8,255
+Metallica,Master of Puppets,0,0,0,1986,2021,60,256
+Radiohead,Paranoid Android,0,0,0,1997,2004,20,256
+Martha and the Vandellas,Heat Wave,1,1,1,1963,2021,27,257
+The Troggs,Wild Thing,0,0,0,1966,2004,6,257
+Gil-Scott Heron,The Revolution Will Not Be Televised,1,1,0,1971,2021,10,258
+The Who,I Can See For Miles,0,0,0,1967,2004,10,258
+Neil Young,Heart of Gold,0,0,0,1972,2021,34,259
+Jeff Buckley,Hallelujah,0,0,0,1994,2004,58,259
+The Dells,"Oh, What a Night",1,1,0,1969,2004,4,260
+Curtis Mayfield,Pusherman,1,1,0,1972,2021,31,261
+Stevie Wonder,Higher Ground,1,1,0,1973,2004,23,261
+Paul Simon,American Tune,0,0,0,1973,2021,5,262
+Smokey Robinson,Ooo Baby Baby,1,1,0,1965,2004,10,262
+Dolly Parton,Coat of Many Colors,1,0,1,1971,2021,6,263
+The Crystals,He's a Rebel,1,1,1,1962,2004,9,263
+Marvin Gaye,Let's Get it On,1,1,0,1973,2021,2,264
+Randy Newman,Sail Away,0,0,0,1972,2004,0,264
+The Replacements,Left of the Dial,0,0,0,1985,2021,22,265
+Archie Bell and the Drells,Tighten Up,1,1,0,1968,2004,16,265
+Augustus Pablo,King Tubby Meets the Rockers Uptown,1,1,0,1974,2021,15,266
+The Ronettes,Walking in the Rain,1,1,1,1964,2004,19,266
+Drake feat. Rihanna,Take Care,1,1,1,2011,2021,5,267
+New York Dolls,Personality Crisis,0,0,0,1973,2004,24,267
+The Isley Brothers,Shout (Parts 1 and 2),1,1,0,1959,2021,6,268
+U2,Sunday Bloody Sunday,0,0,0,1983,2004,19,268
+The Righteous Brothers,Unchained Melody,0,0,0,1965,2021,0,269
+The Modern Lovers,Roadrunner,0,0,0,1976,2004,4,269
+Nine Inch Nails,Closer,0,0,0,1994,2021,21,270
+George Jones,He Stopped Loving Her Today,0,0,0,1980,2004,0,270
+Procol Harum,A Whiter Shade of Pale,0,0,0,1967,2021,27,271
+The Beach Boys,Sloop John B,0,0,0,1966,2004,4,271
+Thin Lizzy,The Boys Are Back in Town,0,0,0,1976,2021,23,272
+Chuck Berry,Sweet Little Sixteen,1,1,0,1958,2004,3,272
+Roberta Flack,Killing Me Softly With His Song,1,1,1,1973,2021,47,273
+The Beatles,Something,0,0,0,1969,2004,4,273
+Al Green,Love and Happiness,1,1,0,1972,2021,2,274
+Jefferson Airplaine,Somebody To Love,0,0,0,1967,2004,0,274
+Randy Newman,Sail Away,0,0,0,1972,2021,0,275
+Bruce Springsteen,Born in the U.S.A.,0,0,0,1984,2004,18,275
+Buzzcocks,Ever Fallen in Love (With Someone You Shouldn't've),0,0,0,1978,2021,11,276
+The Staple Singers,I'll Take You There,1,1,1,1972,2004,10,276
+Bo Diddley,Bo Diddley,1,1,0,1955,2021,10,277
+David Bowie,Ziggy Stardust,0,0,0,1972,2004,25,277
+Toots and the Maytals,Pressure Drop,1,1,0,1973,2021,13,278
+The Cure,Pictures of You,0,0,0,1989,2004,113,278
+Radiohead,Karma Police,0,0,0,1997,2021,26,279
+The Dixie Cups,Chapel of Love,1,1,1,1964,2004,1,279
+The Beatles,Penny Lane,0,0,0,1967,2021,0,280
+Bill Withers,Ain't No Sunshine,1,1,0,1971,2004,0,280
+Clipse,Grindin',1,1,0,2002,2021,20,281
+Stevie Wonder,You Are the Sunshine of My Life,1,1,0,1972,2004,15,281
+INXS,Never Tear Us Apart,0,0,0,1988,2021,14,282
+Joni Mitchell,Help Me,1,0,0,1974,2004,6,282
+Ray Charles,Georgia on My Mind,1,1,0,1960,2021,15,283
+Blondie,Call Me,1,0,1,1980,2004,15,283
+Leonard Cohen,Suzanne,0,0,0,1967,2021,10,284
+Elvis Costello and the Attractions,(What's So Funny 'Bout) Peace Love and Understanding?,0,0,0,1979,2004,13,284
+Destiny's Child,Say My Name,1,1,1,1999,2021,28,285
+Howlin' Wolf,Smoke Stack Lightning,1,1,0,1956,2004,10,285
+ABBA,Dancing Queen,1,0,1,1976,2021,18,286
+Pavement,Summer Babe (Winter Version),0,0,0,1992,2004,20,286
+AC/DC,You Shook Me All Night Long,0,0,0,1980,2021,29,287
+Run-DMC,Walk This Way,1,1,0,1986,2004,26,287
+The Funky 4 + 1,That's the Joint,1,1,0,1980,2021,18,288
+Barrett Strong,Money (That's What I Want),1,1,0,1960,2004,22,288
+Bruce Springsteen,Atlantic City,0,0,0,1982,2021,0,289
+The Beatles,Can't Buy Me Love,0,0,0,1964,2004,8,289
+Usher feat. Lil Jon and Ludacris,Yeah!,1,1,0,2004,2021,19,290
+Eminem feat. Dido,Stan,1,0,1,2000,2004,25,290
+Phil Collins,In the Air Tonight,0,0,0,1981,2021,51,291
+The Zombies,She's Not There,0,0,0,1964,2004,8,291
+A Tribe Called Quest,Can I Kick It?,1,1,0,1990,2021,29,292
+The Clash,Train in Vain,0,0,0,1979,2004,11,292
+Alice Cooper,School's Out,0,0,0,1972,2021,21,293
+Al Green,Tired of Being Alone,1,1,0,1971,2004,8,293
+The Velvet Underground,Sweet Jane,0,0,0,1970,2021,17,294
+Led Zeppelin,Black Dog,0,0,0,1971,2004,6,294
+The Who,Won't Get Fooled Again,0,0,0,1971,2021,43,295
+The Rolling Stones,Street Fighting Man,0,0,0,1968,2004,12,295
+Bikini Kill,Rebel Girl,1,0,1,1993,2021,21,296
+Bob Marley and the Wailers,"Get Up, Stand Up",1,1,0,1975,2004,7,296
+Neil Young,Heart of Gold,0,0,0,1972,2004,34,297
+Bruce Springsteen,Jungleland,0,0,0,1975,2021,42,298
+Blondie,One Way or Another,1,0,1,1978,2004,24,298
+Screamin' Jay Hawkins,I Put A Spell on You,1,1,0,1956,2021,8,299
+Prince,Sign 'O' the Times,1,1,0,1987,2004,28,299
+The B-52s,Rock Lobster,1,0,1,1978,2021,10,300
+Madonna,Like a Prayer,1,0,1,1989,2004,10,300
+Bob Seger,Night Moves,0,0,0,1976,2021,16,301
+Rod Stewart,Do Ya Think I'm Sexy?,0,0,0,1978,2004,34,301
+Pink Floyd,Wish You Were Here,0,0,0,1975,2021,95,302
+Willie Nelson,Blue Eyes Crying in the Rain,0,0,0,1975,2004,3,302
+TLC,No Scrubs,1,1,1,1999,2021,9,303
+The Rolling Stones,Ruby Tuesday,0,0,0,1967,2004,0,303
+Kraftwerk,Trans-Europe Express,0,0,0,1977,2021,119,304
+The Beatles,With a Little Help From My Friends,0,0,0,1967,2004,9,304
+The Police,Every Breath You Take,0,0,0,1983,2021,14,305
+James Brown,Say It Loud (I'm Black and I'm Proud),1,1,0,1968,2004,0,305
+Aretha Franklin,Chain of Fools,1,1,1,1967,2021,4,306
+The Jam,That's Entertainment,0,0,0,1980,2004,13,306
+Gnarls Barkley,Crazy,1,1,0,2006,2021,2,307
+Frankie Lymon and the Teenagers,Why Do Fools Fall In Love,1,1,0,1956,2004,11,307
+Liz Phair,Divorce Song,1,0,1,1993,2021,15,308
+Jackie Wilson,Lonely Teardrops,1,1,0,1958,2004,0,308
+Bill Withers,Ain't No Sunshine,1,1,0,1971,2021,0,309
+Tina Turner,What's Love Got to Do With It,1,1,1,1984,2004,19,309
+The Doors,Light My Fire,0,0,0,1967,2021,9,310
+Black Sabbath,Iron Man,0,0,0,1971,2004,40,310
+The Eagles,Hotel California,0,0,0,1976,2021,52,311
+The Everly Brothers,Wake Up Little Susie,0,0,0,1957,2004,6,311
+Isaac Hayes,Walk on By,1,1,0,1969,2021,41,312
+Roy Orbison,In Dreams,0,0,0,1963,2004,20,312
+Smokey Robinson and the Miracles,The Tears of a Clown,1,1,0,1967,2021,13,313
+Screamin' Jay Hawkins,I Put A Spell on You,1,1,0,1956,2004,8,313
+The Stooges,I Wanna Be Your Dog,0,0,0,1969,2021,31,314
+Pink Floyd,Comfortably Numb,0,0,0,1979,2004,7,314
+John Coltrane,Pt.1-Acknowledgement,1,1,0,1965,2021,64,315
+The Animals,Don't Let Me Be Misunderstood,0,0,0,1965,2004,9,315
+The Shangri-Las,Leader of the Pack,1,0,1,1964,2021,32,316
+Pink Floyd,Wish You Were Here,0,0,0,1975,2004,95,316
+Bob Dylan,Visions of Johanna,0,0,0,1966,2021,11,317
+Jimmy Cliff,Many Rivers to Cross,1,1,0,1969,2004,24,317
+Big Mama Thornton,Hound Dog,1,1,1,1953,2021,16,318
+Elvis Costello,Alison,0,0,0,1977,2004,10,318
+Tears for Fears,Everybody Wants to Rule the World,0,0,0,1985,2021,28,319
+Alice Cooper,School's Out,0,0,0,1972,2004,21,319
+2Pac,California Love,1,1,0,1995,2021,12,320
+Led Zeppelin,Heartbreaker,0,0,0,1969,2004,26,320
+U2,I Still Haven't Found What I'm Looking For,0,0,0,1987,2021,27,321
+Neil Young,Cortez the Killer,0,0,0,1975,2004,203,321
+Neil Young,After the Gold Rush,0,0,0,1970,2021,10,322
+Public Enemy,Fight the Power,1,1,0,1989,2004,44,322
+The Everly Brothers,All I have to Do is Dream,0,0,0,1958,2021,1,323
+Patti Smith Group,Dancing Barefoot,1,0,1,1979,2004,8,323
+Billy Joel,Scenes From an Italian Restaurant,0,0,0,1977,2021,14,324
+The Supremes,Baby Love,1,1,1,1964,2004,10,324
+Iggy Pop,Lust for Life,0,0,0,1977,2021,71,325
+The Young Rascals,Good Lovin',0,0,0,1966,2004,12,325
+Rilo Kiley,Portions for Foxes,1,0,1,2004,2021,33,326
+James Brown,Get Up (I Feel Like Being a) Sex Machine,1,1,0,1970,2004,14,326
+Mary J. Blige,Real Love,1,1,1,1992,2021,4,327
+Jerry Butler and the Impressions,For Precious Love,1,1,0,1958,2004,18,327
+Red Hot Chili Peppers,Under the Bridge,1,1,0,1991,2021,28,328
+The Doors,The End,0,0,0,1967,2004,52,328
+Bad Bunny,Safaera,1,1,0,2020,2021,11,329
+"Earth, Wind, and Fire",That's the Way of the World,1,1,0,1975,2004,35,329
+The Notorious B.I.G,Big Poppa,1,1,0,1994,2021,21,330
+Queen,We Will Rock You,0,0,0,1977,2004,11,330
+The Marvelettes,Please Mr. Postman,1,1,1,1961,2021,0,331
+Bonnie Raitt,I Can't Make You Love Me,1,0,1,1991,2004,32,331
+Rihanna feat. Jay-Z,Umbrella,1,1,1,2007,2021,10,332
+Bob Dylan,Subterranean Homesick Blues,0,0,0,1965,2004,8,332
+The Temptations,Papa Was A Rollin' Stone,1,1,0,1972,2021,114,333
+Norman Greenbaum,Spirit in the Sky,0,0,0,1970,2004,29,333
+The Grateful Dead,Ripple,0,0,0,1970,2021,31,334
+The Rolling Stones,Wild Horses,0,0,0,1971,2004,20,334
+Marshall Jefferson,Move Your Body (The House Music Anthem),1,1,0,1986,2021,65,335
+The Velvet Underground,Sweet Jane,0,0,0,1970,2004,17,335
+Hall and Oates,She's Gone,0,0,0,1973,2021,62,336
+Aerosmith,Walk This Way,0,0,0,1976,2004,13,336
+Cher,Believer,1,0,1,1998,2021,29,337
+Michael Jackson,Beat It,1,1,0,1982,2004,38,337
+Black Sabbath,Paranoid,0,0,0,1970,2021,11,338
+Paul McCartney,Maybe I'm Amazed,0,0,0,1970,2004,16,338
+Prince,1999,1,1,0,1982,2021,34,339
+The Supremes,You Keep Me Hanging On,1,1,1,1966,2004,7,339
+The Clash,White Man in Hammersmith Palais,0,0,0,1978,2021,16,340
+The Who,Baba O'Riley,0,0,0,1971,2004,66,340
+The Monkees,I'm a Believer,0,0,0,1966,2021,5,341
+Jimmy Cliff,The Harder They Come,1,1,0,1975,2004,10,341
+Chuck Berry,Promised Land,1,1,0,1964,2021,3,342
+Dion,Runaround Sue,0,0,0,1961,2004,22,342
+The Doobie Brothers,What a Fool Believes,0,0,0,1979,2021,16,343
+Lavern Baker,Jim Dandy,1,1,1,1956,2004,9,343
+Black Sabbath,Iron Man,0,0,0,1971,2021,40,344
+Big Brother and the Holding Company,Piece of My Heart,0,0,0,1968,2004,24,344
+Carole King,It's Too Late,1,0,1,1971,2021,9,345
+Ritchie Valens,La Bamba,1,1,0,1958,2004,6,345
+BTS,Dynamite,1,1,0,2020,2021,9,346
+Dr. Dre and 2Pac,California Love,1,1,0,1996,2004,12,346
+Elvis Presley,Heartbreak Hotel,0,0,0,1958,2021,0,347
+Elton John,Candle in the Wind,0,0,0,1973,2004,8,347
+Roxy Music,Virginia Plain,0,0,0,1972,2021,14,348
+The Isley Brothers,The Lady (Part 1 and 2),1,1,0,1973,2004,31,348
+The Zombies,Time of the Season,0,0,0,1968,2021,8,349
+Ben E. King,Spanish Harlem,1,1,0,1960,2004,8,349
+John Prine,Angel From Montgomery,0,0,0,1971,2021,14,350
+Little Eva,The Loco-Motion,1,1,1,1962,2004,8,350
+The Platters,The Great Pretender,1,1,0,1955,2004,4,351
+Ice Cube,It Was a Good Day,1,1,0,1992,2021,23,352
+Elvis Presley,All Shook Up,0,0,0,1957,2004,6,352
+Eurythmics,Sweet Dreams (Are Made Of This),1,0,1,1983,2021,26,353
+Eric Clapton,Tears in Heaven,0,0,0,1992,2004,12,353
+Michael Jackson,Rock With You,1,1,0,1979,2021,18,354
+Elvis Costello,Watching the Detectives,0,0,0,1977,2004,23,354
+Thelma Houston,Don't Leave Me This Way,1,1,1,1976,2021,37,355
+Creedence Clearwater Revival,Bad Moon Rising,0,0,0,1969,2004,5,355
+Cheap Trick,Surrender,0,0,0,1978,2021,15,356
+Taylor Swift,Blank Space,1,0,1,2014,2021,5,357
+Patti Smith,Because the Night,0,0,0,1978,2021,10,358
+Martha and the Vandellas,Nowhere to Run,1,1,1,1965,2004,6,358
+Fugees,Killing Me Softly With His Song,1,1,1,1996,2021,33,359
+Muddy Waters,Get My Mojo Working,1,1,0,1957,2004,25,359
+Prince,Little Red Corvette,1,1,0,1982,2021,20,360
+Roberta Flack,Killing Me Softly With His Song,1,1,1,1973,2004,47,360
+Jimmy Cliff,The Harder They Come,1,1,0,1972,2021,10,361
+The Clash,Complete Control,0,0,0,1979,2004,11,361
+Kacey Musgraves,Merry Go 'Round,1,0,1,2013,2021,10,362
+The Beatles,All You Need Is Love,0,0,0,1967,2004,26,362
+Bob Marley and the Wailers,Could You Be Loved,1,1,0,1980,2021,14,363
+The Box Tops,The Letter,0,0,0,1967,2004,5,363
+The Grateful Dead,Box of Rain,0,0,0,1970,2021,17,364
+Bob Dylan,Highway 61 Revisited,0,0,0,1965,2004,7,364
+Sex Pistols,God Save The Queen,0,0,0,1977,2021,19,365
+The Righteous Brothers,Unchained Melody,0,0,0,1965,2004,0,365
+The Crystals,Da Doo Ron Ron,1,1,1,1963,2021,6,366
+Frank Ocean,Thinkin Bout You,1,1,0,2012,2021,6,367
+Cream,White Room,0,0,0,1968,2004,23,367
+Soundgarden,Black Hole Sun,0,0,0,1994,2021,16,368
+Depeche Mode,Personal Jesus,0,0,0,1989,2004,6,368
+The Cars,Just What I Needed,0,0,0,1978,2021,17,369
+Bo Diddley,I'm a Man,1,1,0,1955,2004,7,369
+Buddy Holly,Peggy Sue,0,0,0,1958,2021,8,370
+Elton John,Bennie and the Jets,0,0,0,1973,2021,29,371
+The Who,I Can't Explain,0,0,0,1965,2004,9,371
+Bonnie Raitt,I Can't Make You Love Me,1,0,1,1991,2021,32,372
+Television,Marquee Moon,0,0,0,1977,2004,24,372
+Drake,Hotline Bling,1,1,0,2015,2021,12,373
+Sam Cooke,Wonderful World,1,1,0,1969,2004,4,373
+William DeVaughn,Be Thankful for What You Got,0,0,0,1974,2021,34,374
+Chuck Berry,Brown Eyed Handsome Man,1,1,0,1956,2004,6,374
+The Drifters,Up On the Roof,1,1,0,1964,2021,9,375
+Pink Floyd,Another Brick in the Wall Part 2,0,0,0,1979,2004,0,375
+Merle Haggard,Mama Tried,0,0,0,1968,2021,11,376
+Radiohead,Fake Plastic Trees,0,0,0,1995,2004,0,376
+The Cure,Pictures of You,0,0,0,1989,2021,113,377
+Ray Charles,Hit the Road Jack,1,1,0,1961,2004,4,377
+The Killers,Mr. Brightside,0,0,0,2003,2021,6,378
+U2,Pride (In the Name of Love),0,0,0,1984,2004,27,378
+D'Angelo,Untitled (How Does It Feel),1,1,0,2000,2021,37,379
+R.E.M.,Radio Free Europe,0,0,0,1983,2004,11,379
+Fountains of Wayne,Radiation Vibe,0,0,0,1996,2021,9,380
+Elton John,Goodbye Yellow Brick Road,0,0,0,1973,2004,8,380
+The Slits,Typical Girls,1,1,1,1979,2021,32,381
+Aaron Neville,Tell It Like It Is,1,1,0,1966,2004,3,381
+Fiona Apple,Paper Bag,1,0,1,1999,2021,9,382
+The Verve,Bitter Sweet Symphony,0,0,0,1997,2004,66,382
+Childish Gambino,Redbone,1,1,0,2016,2021,30,383
+The Allman Brothers Band,Whipping Post,0,0,0,1969,2004,26,383
+"Cardi B, J Balvin, and Bad Bunny",I Like It,1,1,1,2018,2021,13,384
+The Beatles,Ticket To Ride,0,0,0,1965,2004,7,384
+Diana Ross,I'm Coming Out,1,1,1,1980,2021,51,385
+"Crosby, Stills, Nash and Young",Ohio,0,0,0,1970,2004,12,385
+The Kinks,Lola,0,0,0,1970,2021,5,386
+Eric B. and Rakim,I Know You Got Soul,1,1,0,1987,2004,8,386
+New York Dolls,Personality Crisis,0,0,0,1973,2021,24,387
+Elton John,Tiny Dancer,0,0,0,1971,2004,13,387
+DMX,Party Up (Up in Here),1,1,0,1999,2021,8,388
+The Police,Roxanne,0,0,0,1979,2004,16,388
+Pretenders,Brass in Pocket,1,0,1,1979,2021,3,389
+The Temptations,Just My Imagination,1,1,0,1971,2004,23,389
+Metallica,Enter Sandman,0,0,0,1991,2021,70,390
+The Four Tops,Baby I Need Your Loving,1,1,0,1964,2004,13,390
+Eric Church,Springsteen,0,0,0,2011,2021,9,391
+Freda Payne,Band of Gold,1,1,1,1970,2004,7,391
+Coldplay,Fix You,0,0,0,2005,2021,14,392
+The Five Stairsteps,O-o-h Child,1,1,0,1970,2004,15,392
+James Brown,Say It Loud (I'm Black and I'm Proud),1,1,0,1968,2021,0,393
+The Lovin' Spoonful,Summer In the City,0,0,0,1966,2004,10,393
+Jeff Buckley,Grace,0,0,0,1994,2021,25,394
+Elvis Presley,Can't Help Falling in Love,0,0,0,1961,2004,7,394
+Afrika Bambaataa and the Soul Sonic Force,Planet Rock,1,1,0,1982,2021,19,395
+The Shangri-Las,Remember (Walkin' in the Sand),1,0,1,1964,2004,2,395
+Elvis Costello,Alison,0,0,0,1977,2021,10,396
+Big Star,Thirteen,0,0,0,1972,2004,5,396
+Public Enemy,Bring the Noise,1,1,0,1987,2021,14,397
+Blue Oyster Cult,(Don't Fear) the Reaper,0,0,0,1976,2004,12,397
+Duran Duran,Hungry Like the Wolf,0,0,0,1982,2021,8,398
+Lynyrd Skynyrd,Sweet Home Alabama,0,0,0,1974,2004,23,398
+Sylvester,You Make Me Feel (Mighty Real),1,1,1,1978,2021,29,399
+Metallica,Enter Sandman,0,0,0,1991,2004,70,399
+David Bowie,Station to Station,0,0,0,1976,2021,87,400
+Paul Revere and the Raiders,Kicks,0,0,0,1966,2004,7,400
+Fleetwood Mac,Go Your Own Way,1,0,1,1977,2021,4,401
+The Shirelles,Tonight's the Night,1,1,1,1960,2004,5,401
+Bill Withers,Lovely Day,1,1,0,1977,2021,20,402
+Sly and the Family Stone,Thank You (Falettinme Be Mice Elf Agin),1,1,1,1970,2004,18,402
+Rufus and Chaka Khan,Ain't Nobody,1,1,1,1983,2021,37,403
+Eddie Cochran,C'mon Everybody,0,0,0,1958,2004,15,403
+Kiss,Rock and Roll All Nite,0,0,0,1975,2021,13,404
+Bob Dylan,Visions of Johanna,0,0,0,1966,2004,11,404
+Selena,Amor Prohibido,1,1,1,1994,2021,12,405
+The Carpenters,We've Only Just Begun,1,0,1,1970,2004,12,405
+Run-DMC,Sucker MC's,1,1,0,1984,2021,11,406
+R. Kelly,I Believe I Can Fly,1,1,0,1996,2004,37,406
+Lynyrd Skynyrd,Free Bird,0,0,0,1973,2021,69,407
+Nirvana,In Bloom,0,0,0,1991,2004,24,407
+Cat Stevens/Yusuf,Father and Son,1,1,0,1970,2021,14,408
+Aerosmith,Sweet Emotion,0,0,0,1975,2004,35,408
+Foo Fighters,Everlong,0,0,0,1997,2021,31,409
+Cream,Crossroads,0,0,0,1968,2004,21,409
+Allman Brothers Band,Whipping Post,0,0,0,1969,2021,25,410
+The Pixies,Monkey Gone to Heaven,1,1,1,1989,2004,3,410
+Wilco,Heavy Metal Drummer,0,0,0,2002,2021,18,411
+Donna Summer,I Feel Love,1,1,1,1977,2004,41,411
+Neneh Cherry,Buffalo Stance,1,1,1,1988,2021,28,412
+Bobbie Gentry,Ode to Billie Joe,1,0,1,1967,2004,8,412
+Them,Gloria,0,0,0,1965,2021,20,413
+Little Richard,The Girl Can't Help It,1,1,0,1957,2004,3,413
+Blondie,Dreaming,1,0,1,1979,2021,26,414
+The Coasters,Young Blood,1,1,0,1957,2004,1,414
+Depeche Mode,Enjoy the Silence,0,0,0,1990,2021,26,415
+The Four Tops,"I Can't Help Myself (Sugar Pie, Honey Bunch)",1,1,0,1965,2004,11,415
+Pearl Jam,Alive,0,0,0,1991,2021,32,416
+Don Henley,The Boys of Summer,0,0,0,1984,2004,32,416
+Mark Ronson feat. Bruno Mars,Uptown Funk,1,1,0,2015,2021,17,417
+N.W.A.,Fuck tha Police,1,1,0,1989,2004,30,417
+Booker T. and the MGs,Green Onions,1,1,0,1962,2021,7,418
+"Crosby, Stills & Nash",Suite: Judy Blue Eyes,0,0,0,1969,2004,12,418
+Mariah Carey,Fantasy,1,1,1,1995,2021,21,419
+Dr. Dre feat. Snoop Doggy Dogg,Nuthin' But a 'G' Thang,1,1,0,1992,2004,9,419
+The Mamas and the Papas,California Dreamin',1,0,1,1965,2021,7,420
+The Isley Brothers,It's Your Thing,1,1,0,1969,2004,9,420
+The Smiths,How Soon Is Now?,0,0,0,1984,2021,20,421
+Billy Joel,Piano Man,0,0,0,1973,2004,30,421
+"Craig Mack feat. Notorious B.I.G., LL Cool J, Busta Rhymes, Rampage",Flava in Ya Ear (Remix),1,1,0,1994,2021,13,422
+The Kinks,Lola,0,0,0,1970,2004,5,422
+Fiona Apple,Criminal,1,0,1,1996,2021,21,423
+Elvis Presley,Blue Suede Shoes,0,0,0,1956,2004,0,423
+Blackstreet feat. Dr. Dre and Queen Pen,No Diggity,1,1,0,1996,2021,22,424
+The Rolling Stones,Tumbling Dice,0,0,0,1972,2004,11,424
+Muddy Waters,Mannish Boy,1,1,0,1955,2021,28,425
+The Smiths,"William, It Was Really Nothing",0,0,0,1984,2004,4,425
+Nicki Minaj,Super Bass,1,1,1,2010,2021,16,426
+Deep Purple,Smoke on the Water,0,0,0,1973,2004,51,426
+Sugar Hill Gang,Rapper's Delight,1,1,0,1979,2021,17,427
+U2,New Year's Day,0,0,0,1983,2004,36,427
+Harry Styles,Sign of the Times,0,0,0,2017,2021,16,428
+Mitch Ryder and the Detroit Wheels,Devil With a Blue Dress On / Good Golly Miss Molly,0,0,0,1966,2004,30,428
+Queen and David Bowie,Under Pressure,0,0,0,1981,2021,29,429
+Solomon Burke,Everybody Needs Somebody to Love,1,1,0,1964,2004,57,429
+Pete Rock and CL Smooth,They Reminisce Over You,1,1,0,1992,2021,33,430
+The Clash,White Man in Hammersmith Palais,0,0,0,1979,2004,16,430
+Prince,Adore,1,1,0,1987,2021,0,431
+Fats Domino,Ain't It a Shame,1,1,0,1955,2004,0,431
+Eddie Cochran,Summertime Blues,0,0,0,1958,2021,10,432
+Gladys Knight and the Pips,Midnight Train to Georgia,1,1,1,1973,2004,12,432
+Pet Shop Boys,West End Girls,0,0,0,1984,2021,43,433
+Led Zeppelin,Ramble On,0,0,0,1969,2004,20,433
+Ramones,Sheena Is a Punk Rocker,0,0,0,1977,2021,5,434
+Wilson Pickett,Mustang Sally,1,1,0,1966,2004,7,434
+Rush,Limelight,0,0,0,1981,2021,23,435
+The Rolling Stones,Beast of Burden,0,0,0,1978,2004,20,435
+Carly Rae Jepsen,Call Me Maybe,1,0,1,2012,2021,4,436
+Love,Alone Again Or,1,1,0,1968,2004,18,436
+Lucinda Williams,Passionate Kisses,1,0,1,1988,2021,8,437
+Elvis Presley,Love Me Tender,0,0,0,1956,2004,3,437
+Megan Thee Stallion feat. Beyonce,Savage (Remix),1,1,1,2020,2021,2,438
+The Stooges,I Wanna Be Your Dog,0,0,0,1969,2004,31,438
+Celia Cruz,La Vida Es un Carnaval,1,1,1,1998,2021,21,439
+John Cougar Mellencamp,Pink Houses,0,0,0,1983,2004,17,439
+Alicia Keys,If I Ain't Got You,1,1,1,2003,2021,24,440
+Salt-n-Pepa,Push It,1,1,1,1987,2004,90,440
+Miranda Lambert,The House That Built Me,1,0,1,2010,2021,20,441
+The Del-Vikings,Come Go With Me,1,1,0,1957,2004,1,441
+Motorhead,Ace of Spades,0,0,0,1980,2021,13,442
+Little Richard,Keep a Knockin',1,1,0,1957,2004,6,442
+Fall Out Boy,"Sugar, We're Goin Down",0,0,0,2005,2021,25,443
+Bob Marley and the Wailers,I Shot the Sheriff,1,1,0,1973,2004,0,443
+50 Cent,In Da Club,1,1,0,2003,2021,0,444
+Sonny and Cher,I Got You Babe,1,0,1,1965,2004,7,444
+T. Rex,Cosmic Dancer,0,0,0,1971,2021,0,445
+Nirvana,Come As You Are,0,0,0,1991,2004,16,445
+Bruce Springsteen,Rosalita (Come Out Tonight),0,0,0,1973,2021,27,446
+Toots and the Maytals,Pressure Drop,1,1,0,1973,2004,13,446
+The Beatles,Help!,0,0,0,1965,2021,10,447
+The Shangri-Las,Leader of the Pack,1,0,1,1964,2004,32,447
+Erykah Badu,Tyrone,1,1,1,1997,2021,33,448
+The Velvet Underground,Heroin,0,0,0,1967,2004,52,448
+Blue Oyster Cult,(Don't Fear) The Reaper,0,0,0,1976,2021,12,449
+The Beatles,Penny Lane,0,0,0,1967,2004,0,449
+Neil Young,Powderfinger,0,0,0,1979,2021,9,450
+Glen Campbell,By the Time I Get to Phoenix,0,0,0,1967,2004,11,450
+Migos feat. Lil Uzi Vert,Bad and Boujee,1,1,0,2016,2021,15,451
+Chubby Checker,The Twist,1,1,0,1960,2004,6,451
+Toto,Africa,0,0,0,1982,2021,30,452
+Sam Cooke,Cupid,1,1,0,1961,2004,7,452
+Missy Elliott,The Rain (Supa Dupa Fly),1,1,1,1997,2021,31,453
+Guns N' Roses,Paradise City,0,0,0,1987,2004,20,453
+Sister Nancy,Bam Bam,1,1,1,1982,2021,12,454
+George Harrison,My Sweet Lord,0,0,0,1970,2004,30,454
+Nirvana,All Apologies,0,0,0,1993,2004,16,455
+Lana Del Rey,Summertime Sadness,1,0,1,2012,2021,17,456
+Lloyd Price,Stagger Lee,1,1,0,1958,2004,0,456
+Bon Jovi,Livin' on a Prayer,0,0,0,1986,2021,45,457
+Ramones,Sheena Is a Punk Rocker,0,0,0,1977,2004,5,457
+Beck,Loser,0,0,0,1993,2021,22,458
+Sam and Dave,Soul Man,1,1,0,1967,2004,16,458
+Sade,No Ordinary Love,1,1,1,1992,2021,22,459
+Muddy Waters,Rollin' Stone,1,1,0,1948,2004,7,459
+Steel Pulse,Ku Klux Klan,1,1,0,1978,2021,30,460
+The Chiffons,One Fine Day,1,1,1,1963,2004,6,460
+Roy Orbison,Crying,0,0,0,1962,2021,5,461
+Prince,Kiss,1,1,0,1986,2004,0,461
+Van Morrison,Into the Mystic,0,0,0,1970,2021,16,462
+The Staple Singers,Respect Yourself,1,1,1,1971,2004,8,462
+John Lee Hooker,Boom Boom,1,1,0,1962,2021,19,463
+The Beatles,Rain,0,0,0,1966,2004,9,463
+Joni Mitchell,Help Me,1,0,0,1974,2021,6,464
+The Four Tops,Standing in the Shadows of Love,1,1,0,1966,2004,15,464
+Daft Punk feat. Pharrell Williams,Get Lucky,0,0,0,2013,2021,31,465
+Cheap Trick,Surrender,0,0,0,1978,2004,15,465
+Luther Vandross,Never Too Much,1,1,0,1981,2021,38,466
+Del Shannon,Runaway,0,0,0,1961,2004,7,466
+Nirvana,Come as You Are,0,0,0,1991,2021,16,467
+Guns N' Roses,Welcome to the Jungle,0,0,0,1987,2004,39,467
+Mazzy Star,Fade Into You,0,0,0,1993,2021,19,468
+The Stooges,Search and Destroy,0,0,0,1973,2004,17,468
+Dixie Chicks,Goodbye Earl,1,0,1,2000,2021,16,469
+Carole King,It's Too Late,1,0,1,1970,2004,9,469
+Gladys Knight and the Pips,Midnight Train to Georgia,1,1,1,1973,2021,12,470
+Joni Mitchell,Free Man in Paris,1,0,0,1974,2004,15,470
+The Animals,The House of the Rising Sun,0,0,0,1964,2021,12,471
+Willie Nelson,On the Road Again,0,0,0,1980,2004,8,471
+Peter Gabriel,Solsbury Hill,0,0,0,1977,2021,27,472
+The Supremes,Where Did Our Love Go,1,1,1,1964,2004,3,472
+Tammy Wynette,Stand by Your Man,0,0,0,1968,2021,9,473
+Aretha Franklin,"Do Right Woman, Do Right Man",1,1,1,1967,2004,8,473
+Curtis Mayfield,Move On Up,1,1,0,1970,2021,14,474
+Funkadelic,One Nation Under a Groove,1,1,0,1978,2004,0,474
+Janet Jackson,Rhythm Nation,1,1,1,1989,2021,47,475
+Kris Kristofferson,Sunday Mornin' Comin' Down,0,0,0,1970,2021,6,476
+Foreigner,I Want to Know What Love Is,0,0,0,1984,2004,14,476
+The Go-Gos,Our Lips Are Sealed,1,0,1,1981,2021,16,477
+Rick James,Super Freak,1,1,0,1981,2004,14,477
+Juvenile feat. Lil Wayne and Mannie Fresh,Back That Azz Up,1,1,0,1998,2021,15,478
+Jefferson Airplaine,White Rabbit,0,0,0,1967,2004,27,478
+Santana,Oye Como Va,1,1,0,1970,2021,37,479
+Labelle,Lady Marmalade,1,1,1,1975,2004,8,479
+Biz Markie,Just a Friend,1,1,0,1989,2021,0,480
+Van Morrison,Into the Mystic,0,0,0,1970,2004,16,480
+Robert Johnson,Cross Road Blues,1,1,0,1937,2021,8,481
+David Bowie,Young Americans,0,0,0,1975,2004,25,481
+Lady Gaga,Bad Romance,1,0,1,2009,2021,32,482
+Alice Cooper,I'm Eighteen,0,0,0,1971,2004,25,482
+The Four Tops,"I Can't Help Myself (Sugar Pie, Honey Bunch)",1,1,0,1965,2021,11,483
+The Cure,Just Like Heaven,0,0,0,1987,2004,49,483
+Weezer,Buddy Holly,0,0,0,1994,2021,0,484
+Joan Jett,I Love Rock 'N Roll,1,0,1,1982,2004,15,484
+Azealia Banks,212,1,1,1,2011,2021,15,485
+Paul Simon,Graceland,0,0,0,1986,2004,40,485
+Lil Wayne,A Milli,1,1,0,2009,2021,13,486
+The Smiths,How Soon Is Now?,0,0,0,1985,2004,20,486
+Solange,Cranes in the Ski,1,1,1,2016,2021,26,487
+The Drifters,Under the Boardwalk,1,1,0,1964,2004,8,487
+The Weeknd,House of Balloons,1,1,0,2011,2021,26,488
+Fleetwood Mac,Rhiannon (Will You Ever Win),1,0,1,1975,2004,14,488
+The Breeders,Cannonball,1,0,1,1993,2021,55,489
+Gloria Gaynor,I Will Survive,1,1,1,1978,2004,5,489
+Lil Nas X,Old Town Road,1,1,0,2019,2021,13,490
+The Rolling Stones,Brown Sugar,0,0,0,1971,2004,29,490
+Guns N' Roses,Welcome to the Jungle,0,0,0,1987,2021,39,491
+Dusty Springfield,You Don't Have to Say You Love Me,1,0,1,1966,2004,18,491
+Miles Davis,So What,1,1,0,1959,2021,33,492
+Jackson Browne,Running On Empty,0,0,0,1977,2004,21,492
+The Pixies,Where Is My Mind?,0,0,0,1988,2021,27,493
+The Crystals,Then He Kissed Me,1,1,1,1963,2004,10,493
+Cyndi Lauper,Time After Time,1,0,1,1983,2021,14,494
+The Eagles,Desperado,0,0,0,1973,2004,18,494
+Carly Simon,You're So Vain,1,1,1,1972,2021,18,495
+The Miracles,Shop Around,1,1,1,1960,2004,12,495
+Harry Nilsson,Without You,0,0,0,1971,2021,7,496
+The Rolling Stones,Miss You,0,0,0,1978,2004,25,496
+Lizzo,Truth Hurts,1,1,1,2017,2021,6,497
+Weezer,Buddy Holly,0,0,0,1994,2004,0,497
+Townes Van Sandt,Pancho and Lefty,0,0,0,1972,2021,12,498
+Brook Benton,Rainy Night in Georgia,1,1,0,1970,2004,13,498
+The Supremes,Baby Love,1,1,1,1964,2021,10,499
+Thin Lizzy,The Boys Are Back in Town,0,0,0,1976,2004,23,499
+Kanye West,Stronger,1,1,0,2007,2021,0,500
+Boston,More Than a Feeling,0,0,0,1976,2004,17,500
+Bob Marley and the Wailers,"Get Up, Stand Up",1,1,0,1973,2021,6,260
+Ike and Tina Turner,"River Deep, Mountain High",1,1,1,1966,2021,4,33
+Jefferson Airplaine,White Rabbit,0,0,0,1967,2021,27,455
+Jorge Ben,Ponta de Lano Africano (Umbabarauma),1,1,0,1976,2021,16,351
+Motley Crue,Ace of Spades,0,0,0,1980,2021,13,442
+The Notorious B.I.G.,Juicy,1,1,0,1994,2021,19,32
+The Beach Boys,Wouldn't It Be Nice,0,0,0,1966,2021,8,297
+Beastie Boys,Sabotage,0,0,0,1994,2004,17,475
+Bee Gees,How Deep Is Your Love,0,0,0,1977,2004,17,366
+Eurythmics,Sweet Dreams (Are Made Of This),1,0,1,1983,2004,26,356
+Prince and the Revolution,Purple Rain,1,1,0,1984,2004,17,143
+Ray Charles,Georgia on My Mind,1,1,0,1960,2004,15,44
+Simon and Garfunkel,The Sound of Silence,0,0,0,1965,2004,2,156
+The B-52s,Love Shack,1,0,1,1989,2004,15,243
+The B-52s,Rock Lobster,1,0,1,1979,2004,5,146
+The Jimi Hendrix Experience,Little Wing,1,1,0,1968,2004,35,357
+The Jimi Hendrix Experience,The Wind Cries Mary,1,1,0,1967,2004,14,370
+The Jimi Hendrix Experience,Voodoo Child (Slight Return),1,1,0,1968,2004,65,101
+The Lovin' Spoonful,Do You Believe in Magic,0,0,0,1965,2004,7,216
+Smokey Robinson and the Miracles,The Tracks of My Tears,1,1,1,1965,2004,20,50

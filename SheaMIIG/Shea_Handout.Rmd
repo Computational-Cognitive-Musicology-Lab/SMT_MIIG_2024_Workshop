@@ -1,0 +1,557 @@
+---
+title: "Representativeness in Music Corpus Studies"
+author: "Nicholas J. Shea"
+date: "`r Sys.Date()`"
+output:
+  html_document: default
+  word_document: default
+subtitle: "Music- and human-facing corpus building"
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(eval = TRUE)
+knitr::opts_chunk$set(cache = TRUE)
+require(dplyr)
+require(tidyr)
+require(splitstackshape)
+require(ggplot2)
+```
+
+## Part 1: Diversity versus representation
+
+A few of my recent projects draw on the *Popular Music Artist Demographic* database (*PMADD*) that catalogs various facets of popular-music artists' identity along the lines of race, ethnicity, and gender [@shea2022]. The current version includes artist demographic information from the *Rolling Stone 200* [@declercq2011], *McGill Billboard Hot 100* [@burgoyne2011], *Guitar Pro Tablature* [@shea2023], *Timbre in Popular Song* music-research databases, as well as those in the newly updated (2021) *Rolling Stone Magazine's* "500 Greatest Hits of All Time" list [@shea2024d]. We have since used this database to shape our artist populations (by genre) using a process called *stratified sampling* in the *Timbre in Popular Song* corpus.
+
+One might understandably have some reservations about shaping corpora by demographics given the precedent in the field of music theory to prefer capturing repertoires by critical acclaim or commercial success. Trevor de Clercq recently offered a response to the data report that accompanied the *PMADD* [@clercq2023a]. I’d like to thank Trevor for his response. He’s given me much to think about. He raises the concern that dataset diversity is often in conflict with representation — in this case, that making sampling adjustments to promote a greater range of artist identities can undermine a corpus’s job of properly representing the population. In short, if we adjust for diversity, it may cause our corpus to skew too far from the broader population it is meant to capture. I do agree with him, that it is important in corpus studies to maintain methodological rigor so we can assess trends objectively.
+
+We can summarize differences along two lines — *music-facing* versus *human-facing* corpus development. de Clercq's strictly *music-facing* stance emerges when he states “The population of glass vials […] has nothing to do with the population of people living in a country.” (p. 2) I read this statement as advocating that songs or the broader style to which these songs belong (e.g., “rock” music) should be methodologically separate from the people who contributed to the style. In short, *songs* are the population. In contrast, my colleagues and I have advocated for a more *human-facing* approach [@shea2024d].[^1] Our logic follows that genre is socially determined, and songs are written by artists who draw from said genres, so we can leverage the flexibility of genre to create more-inclusive corpora that perhaps better-reflect the broader *human population* of music-makers. Both approaches reflect a slightly different philosophy on corpus-building, but accomplish the same goal of generating collections that aim to capture the development of certain organizational trends over time.
+
+[^1]: \*(As we underscore throughout the article, our approach is **non-prescriptive** and is **germane to our research question**. We [explicitly]{.underline} acknowledge it is not appropriate for all circumstances.)
+
+## Part 2: What's at stake statistically?
+
+Today we're going to explore what's at stake when we build corpora around strictly *music-facing* versus more *human-facing* methods. That is, generating samples that prioritize factors like ranking versus others like demographic distribution. To do so, we'll focus on a somewhat trivial feature — introduction lengths — based on a hypothesis that introductions have become shorter over time [@léveillégauvin2018]. We'll craft two 200-song corpora. The first will directly model de Clercq and Temperley's [@declercq2011a] methodology for generating the *Rolling Stone 200*, shaped by song rankings. Our second will emulate a new project conducted by a graduate student interested in how attention economy has changed over time, shaped by demographics.
+
+By generating these two different samples, I hope to promote a productive discussion about where and where we do not permit methodological flexibility when we conduct corpus studies. I'll also (hopefully) be able to convince you that sampling strategy does not much matter in terms of statistical outcomes, at least for the work we do here today.
+
+Here are some questions I'd like you to consider as we move through the workshop:
+
+-   Is the new *Rolling Stone* list, focused on demographics, as "representative" as the older version, focused solely on rank?
+-   How do we tend to treat genre in music theory?
+-   Do artist identities correspond to, or perhaps influence, feature organization?
+
+As we will see, *certain* aspects of choice sampling methods appear to be inconsequential as far as introduction lengths go.
+
+## Part 3: Generating the *Rolling Stone 200*
+
+We'll begin with the *RS5x20* corpus that samples the top-20 songs per decade (1950—1999). I have already compiled the two databases, so we're just going to simulate how TdC and DT did so themselves. First, grab the top-20 songs per decade by rating
+
+```{r echo = T, include=TRUE}
+RSall <- read.csv("RS2004-2021_intros.csv")
+#make decade function by treating year as mod 10
+floor_decade = function(value){ return(value - value %% 10) }
+RSall$decade <- floor_decade(RSall$year)
+#select 2004 version
+RS2004 <- RSall %>%
+  #select 2004 version
+  filter(corpus == "2004")
+
+#generate the RS5x20
+RS5x20 <- RS2004 %>%
+  #group by decade
+  group_by(decade) %>%
+  #grab top 20 ratings
+  arrange(desc(rank)) %>%
+  #remove anything pre-1950 and post-2000
+  filter(year > "1949", year < "2000") %>%
+  slice(1:20) #top 20 by ranking
+```
+
+Next, we'll generate the remaining songs for the *RS200* by selecting the next 100 top-rated songs.
+
+```{r echo=T, message=FALSE, warning=FALSE, include=TRUE}
+#remove 5x20 from RS2004 so we don't sample it again
+RS200 <- anti_join(RS2004,RS5x20) %>%
+  #again remove decades out of scope
+  filter(decade != "1940", decade != "2000") %>%
+  #grab next 100 songs by rank
+  arrange(desc(rank)) %>%
+  slice(1:100)
+
+#combine into one data set
+RS200 <- rbind(RS200,RS5x20)
+```
+
+```{r echo = F, include=F}
+rm(RS5x20,RS2004)
+```
+
+## Part 4: Attention economy study
+
+Corpus studies can have different goals. Here, our demographic-oriented sample aims to capture trends in attention economy in popular music. These are some basic parameters of our hypothetical study.
+
+-   *hunch*: intro lengths decrease over time due to link between attention span and social media
+
+-   *question*: how does attention economy manifest in the general population?
+
+-   *prior knowledge*: listening habits are demographically coded [@howblac2022a].
+
+-   *sample*: *Rolling Stone Magazine* 2021 list (hereby *RS2021*).
+
+-   *assumption*: artist compositional preferences in corpus reflect broader listening preferences
+
+-   *method*: align dataset diversity with population diversity per decade via Census data
+
+To do so, she'll necessarily need to generalize about listening habits between white and non-white listeners, so she chooses to rely on US Census data to shape her corpus sample accordingly.
+
+**Disclaimer: census categories**
+
+Now is a good time to acknowledge that US Census data is not perfect. The categories themselves are known to be inaccurate for some populations and, by extension, have harmed them [@nobles2000]. Ideally we'd have our popular-music artists self report their identities, like the Institute for Composer Diversity's database, but instead we'll have to rely on online sources as included in the *PMADD*. To draw our comparisons, Black, Indigenous, Hispanic, Asian, and Pacific Islander artists will be encompassed by the BIHAP demographic category in contrast to the White population.
+
+## Part 5: Generating a 200-song sample from the *RS2021*
+
+Our first step will be to determine the distribution of artists per decade.
+
+```{r echo=T, message=FALSE, warning=FALSE, include=TRUE}
+demo.table <- RSall %>%
+  #filter to start at 1950
+  filter(decade >= "1950") %>%
+  #select 2021 version
+  filter(corpus == "2021") %>%
+  group_by(decade,BIHAP) %>%
+  #count the number of artists per group, total number of artists
+  dplyr::summarize(demo.count = n()) %>%
+  dplyr::mutate(decade.count = sum(demo.count)) %>%
+  #determine number of artists to sample per decade to maintain proportions
+  dplyr::mutate(n.sample = round(decade.count*.4, digits = 0)) %>%
+  mutate(RS2021 = round(demo.count/decade.count, digits = 3)) %>%
+  filter(BIHAP == 1)
+```
+
+Let's take a look at our table. `n.sample` indicates the number of songs we need to sample per decade to maintain the same proportions with the broader *RS2021* list.
+
+```{r echo=TRUE}
+print(demo.table)
+```
+
+Now we need to compare our artist population distribution in the *RS2021* to the US Census's.
+
+```{r echo=TRUE}
+#read in Census data per decade
+#read in Census data per decade
+cen <- read.csv('US-Census-per-decade.csv')
+cB <- cen$BIHAP
+demo.table$census <- cB
+n200<-demo.table$n.sample
+#determine the number of artists needed to sample
+#to maintain artist proportions/decade with Census
+demo.table$n.BIHAP <- round(cB*n200, digits = 0)
+demo.table$n.White <- round(n200-demo.table$n.BIHAP,digits = 0)
+demo.table
+```
+
+### Sidebar: small sampling issue
+
+-   2020 consists of all BIHAP artists
+    -   Megan Thee Stallion (Black, woman)
+
+    -   BTS (Korean, men)
+
+    -   Bad Bunny (Puerto Rican, man)
+
+Because the original sample size is so small (*n* = 3), it is mathematically impossible to maintain the proportion between BIHAP and white artists (of which there are none).
+
+To correct this, I'm going to modify `n.BIHAP` in the `demo.table` so that we can sample at least 2 artists.
+
+```{r echo=TRUE}
+demo.table$n.BIHAP <- ifelse(demo.table$decade == "2020", 2, demo.table$n.BIHAP)
+print(demo.table)
+```
+
+Let's compare the proportion of BIHAP artists between the *RS2021* and Census data per decade.
+
+```{r echo = T, include=TRUE}
+#shape the data so we can easily compare prop between categories
+#RS2021 versus Census proportion of BIHAP folks
+prop.plot<-gather(data = demo.table, key = collection, value = prop, RS2021, census)
+#generate the plot
+prop.plot<-ggplot(prop.plot, aes(decade, prop, fill = collection)) +
+  geom_col(position= "dodge")
+```
+
+```{r echo=TRUE}
+print(prop.plot)
+```
+
+As we can see, the *RS2021* over represents songs by BIHAP artists in each decade. However, note this is by *song* as associated with the artist's identity. We would have different data if we controlled for artist identity per decade, e.g., setting a sampling limit (artist cannot appear more that *x* times per decade).
+
+## Part 6: Stratified sampling in the literature
+
+*Stratified sampling* is legitimate technique to address inherited biases in preexisting sources by aligning dataset diversity with real-world diversity. Data from an assumedly non-representative population is compiled then processed to become more representative “by adjusting the sample to have the same distribution of these variables as the population” [@alsalti2023a] (p. 4)
+
+#### Examples
+
+-   [@wang2015a] predicted the results of the 2012 US presidential election from a demographically skewed sample of Xbox gamers.
+    -   disproportionately male
+    -   performed better than true probability or "raw" sampling
+-   [@fareed2022a] compile, sort, and synthesize a variety of public databases to connect outreach organizations with Black mothers whose infants are at a nearly three times greater risk of premature death than white infants.
+-   Iterations of the Goldsmiths *Music Sophistication Index* have used post-hoc stratified sampling to adapt the index for various cultures (e.g., [@lin2021]; [@degrave2019]; [@fiedler2015]).
+
+## Part 7: Stratified sampling in the *RS2021*
+
+Based on our data from `demo.table` we now have the ability to sample artists by race/ethnicity (BIHAP) per decade in proportion with the original population distribution in the broader *Rolling Stone 2021* list.
+
+First, let's select the 2021 version of the corpus
+
+```{r echo=TRUE}
+#select the RS2021
+RS2021 <- RSall %>%
+  #select 2021 version
+  filter(corpus == "2021")
+```
+
+Then we'll create a blank data frame that we can add our samples onto.
+
+```{r echo=TRUE}
+#create an empty dataframe first
+r2021_200 <- data.frame(matrix(ncol = 10, nrow = 0))
+#set column names
+x <- c("artist", "title", "primary.status", "BIHAP", "gender", "year", "corpus", "total", "rank", "decade")
+colnames(r2021_200) <- x
+```
+
+Last, we'll use a *for loop* to cycle over the *RS2021* by `decade` and sample the total number of artists according to the `n.BIHAP` and `n.White` columns of our `demo.table` data.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#begin for loop
+for (i in 1:8)
+{
+d <- demo.table$decade[[i]]
+no.b <- demo.table$n.BIHAP[[i]]
+no.w <- demo.table$n.White[[i]]
+rdec <- RS2021 %>% filter(decade == d)
+s.b <- stratified(rdec, c("BIHAP"), size = no.b, select = list(BIHAP = 1), replace = FALSE)
+s.w <- stratified(rdec, c("BIHAP"), size = no.w, select = list(BIHAP = 0), replace = FALSE)
+sample<-rbind(s.b,s.w)
+r2021_200<-rbind(r2021_200,sample)
+}
+```
+
+We're then left with a 200-song sample from the *RS2021* that maintains the distribution of BIHAP and white artists per decade.
+
+```{r echo=TRUE}
+print(r2021_200)
+```
+
+## Part 8: Analysis
+
+In this section, we aim to model changes in introduction length (`total`) over time (`year`). Because we have data from each 200-song sample (*RS200* and *RS2021*), we can compare the intercepts of each collection to assess differences by eye (at first).
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#combine 200-song samples
+RS <- rbind(r2021_200,RS200)
+#make sure corpus is treated as a factor
+RS$corpus <- as.factor(RS$corpus)
+#plot differences based on linear model
+lm.plot <- RS |>
+  ggplot(aes(x = year, y = total, color = corpus )) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(title="Introduction lengths over time (RS2021, RS200[RS2004]); n = 200",subtitle="RS2021 = demographics, RS2004 = rank") +
+  #"Cortez the Killer" by Neil Young has a 203-sec intro, let's limit y axis
+  coord_cartesian(ylim = c(0,100), default = FALSE)
+print(lm.plot)
+```
+
+Then we can compile this data into a linear model to see if there are any significant interactions between introduction lengths (`total`), time (`year`), and a given corpus (`corpus`).
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#create model
+model <- lm(total ~ year*corpus, data = RS)
+#test model
+summary(model)
+```
+
+## Part 9: Interpreting results
+
+So how can we interpret these results?
+
+-   By eye, we can see that the *corpora have different intercepts*, suggesting that introduction lengths are not treated the same over time between the two collections.
+
+-   Indeed, we have a main effect of corpus *`corpus2021`* and a significant interaction between year and corpus `year:corpus2021` such that there is a statistical difference between the two.
+
+-   Our summary model also suggests a *main effect of year* (song intros appear to increase as time goes on within bounds of sample)
+
+## Part 9: Caveats
+
+Some caveats:
+
+-   Our chronological spans are not the same. *RS200* is 1955-1999. *RS2021* is 1950-2020.
+
+-   Differences may just be a matter of an increased scope.
+
+-   Because our sample size is so small (*n* = 200) we have the option of removing outliers.
+
+## Part 10: Entire-corpora analysis
+
+-   Newest *Rolling Stone* list (2021) expands:
+    -   artists represented
+    -   chronological scope
+    -   BIHAP artists are "tacked on" pre-1950 and post-1999 (Shea et al 2024)
+
+What's the difference between the two (complete) lists?
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+RSall$corpus <- as.factor(RSall$corpus)
+lm.plot <- RSall |>
+  ggplot(aes(x = year, y = total, color = corpus)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(title="Introduction lengths over time between complete lists; n = 500",
+       subtitle="RS2021 = demographics, RS2004 = rank") +
+  #"Cortez the Killer" by Neil Young has a 203-sec intro, let's limit y axis
+  coord_cartesian(ylim = c(0,100), default = FALSE)
+print(lm.plot)
+```
+
+## Part 11: Post-hoc analysis [1/8]
+
+In some ways we are comparing apples to oranges.
+
+-   The *RS200* prioritizes song rank. The *RS2021* is shaped around demographics.
+-   It would be productive to see if our samples still reflect the trends in the broader 500-song corpora when we change our sampling strategy. That is, it may be the case that...
+    -   A 200-song sample from the *RS2004* (ranking) reflects a similar interaction of intro lengths by year present in the entire corpus (*n*=500 songs) if we shape the sample by *demographics*.
+    -   A 200-song sample from the *RS2021* (demographics) reflects a similar interaction of intro lengths by year present in the entire corpus (*n*=500 songs) if we shape the sample by *rank*.
+
+### Reshape the *n* = 200 sample for RS2021 by rank
+
+```{r}
+#read in database
+RSall <- read.csv("RS2004-2021_intros.csv")
+#make decade function by treating year as mod 10
+floor_decade = function(value){ return(value - value %% 10) }
+RSall$decade <- floor_decade(RSall$year)
+#select 2004 version
+RS2021d <- RSall %>%
+  #select 2004 version
+  filter(corpus == "2021")
+```
+
+## Part 11: Post-hoc analysis [2/8]
+
+### Reshape the *n* = 200 sample for RS2021 by rank
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#generate the RS5x20
+RS5x20_21 <- RS2021d %>%
+  #group by decade
+  group_by(decade) %>%
+  #grab top 20 ratings
+  arrange(desc(rank)) %>%
+  #remove anything pre-1950 and post-2000
+  filter(year > "1949", year < "2000") %>%
+  slice(1:20)
+```
+
+## Part 11: Post-hoc analysis [3/8]
+
+### Reshape the *n* = 200 sample for RS2021 by rank
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#remove 5x20 from RS2004 so we don't sample it again
+RS2021_100 <- anti_join(RS2021d,RS5x20_21) %>%
+  #again remove decades out of scope
+  filter(decade != "1940", decade != "2000") %>%
+  #grab next 100 songs by rank
+  arrange(desc(rank)) %>%
+  slice(1:100)
+
+#combine into one data set
+RS2021_200 <- rbind(RS2021_100,RS5x20_21)
+rm(RS2021d,RS5x20_21)
+```
+
+## Part 11: Post-hoc analysis [4/8]
+
+### Reshape the *n* = 200 sample for RS2004 by *demographics*
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#determine proportion for RS2021
+demo.table <- RSall %>%
+  #filter to start at 1950
+  filter(decade >= "1950", year <= "2004") %>%
+  #select 2021 version
+  filter(corpus == "2004") %>%
+  group_by(decade,BIHAP) %>%
+  #count the number of artists per group, total number of artists
+  dplyr::summarize(demo.count = n()) %>%
+  dplyr::mutate(decade.count = sum(demo.count)) %>%
+  #determine number of artists to sample per decade to maintain proportions
+  dplyr::mutate(n.sample = round(decade.count*.4, digits = 0)) %>%
+  mutate(RS2021 = round(demo.count/decade.count, digits = 3)) %>%
+  filter(BIHAP == 1)
+```
+
+## Part 11: Post-hoc analysis [5/8]
+
+### Reshape the *n* = 200 sample for RS2004 by *demographics*
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#select the RS2021
+RS2004 <- RSall %>%
+  #select 2021 version
+  filter(corpus == "2004")
+
+#create an empty dataframe first
+r2004_200 <- data.frame(matrix(ncol = 10, nrow = 0))
+#set column names
+x <- c("artist", "title", "primary.status", "BIHAP",
+       "gender", "year", "corpus", "total", "rank", "decade")
+colnames(r2004_200) <- x
+```
+
+## Part 11: Post-hoc analysis [6/8]
+
+### Reshape the *n* = 200 sample for RS2004 by *demographics*
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#read in Census data per decade
+cen <- read.csv("US-Census-per-decade.csv")
+cen <- cen %>% filter(Decade != "2010", Decade != "2020")
+cB <- cen$BIHAP
+demo.table$census <- cB
+n200<-demo.table$n.sample
+#determine the number of artists needed to sample
+#to maintain artist proportions/decade with Census
+demo.table$n.BIHAP <- round(cB*n200, digits = 0)
+demo.table$n.White <- round(n200-demo.table$n.BIHAP,digits = 0)
+```
+
+## Part 11: Post-hoc analysis [7/8]
+
+### Reshape the *n* = 200 sample for RS2004 by *demographics*
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#begin for loop
+for (i in 1:6)
+{
+#set decade for this iteration
+d <- demo.table$decade[[i]]
+#grab n artists per demographic group
+no.b <- demo.table$n.BIHAP[[i]]
+no.w <- demo.table$n.White[[i]]
+#select the correct decade from the RS2021
+rdec <- RS2004 %>% filter(decade == d)
+#sample according to race/ethnicity distribution from demo.table
+s.b <- stratified(rdec, c("BIHAP"), size = no.b, select = list(BIHAP = 1), replace = FALSE)
+s.w <- stratified(rdec, c("BIHAP"), size = no.w, select = list(BIHAP = 0), replace = FALSE)
+#join sample groups together
+sample<-rbind(s.b,s.w)
+#add to existing data frame
+r2004_200<-rbind(r2004_200,sample)
+}
+```
+
+## Part 11: Post-hoc analysis [8/8]
+
+### TEST RELATIONSHIP NOW THAT SAMPLING STRATEGY HAS FLIPPED
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#combine 200-song samples
+RS <- rbind(r2021_200,r2004_200)
+#make sure corpus is treated as a factor
+RS$corpus <- as.factor(RS$corpus)
+#plot differences based on linear model
+lm.plot <- RS |>
+  ggplot(aes(x = year, y = total, color = corpus )) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(title="Introduction lengths over time (RS2021, RS200); n = 200", subtitle="RS2021 = rank, RS2004 = demographics") +
+  #"Cortez the Killer" by Neil Young has a 203-sec intro, let's limit y axis
+  coord_cartesian(ylim = c(0,100), default = FALSE)
+RS$corpus <- as.factor(RS$corpus)
+RS$total <- as.numeric(RS$total)
+RS$year <- as.numeric(RS$year)
+model <- lm(total ~ year*corpus, data = RS)
+```
+
+## Part 11: Post-hoc analysis [8/8]
+
+### Test the relationship between the samples now that the sampling strategy has flipped
+
+```{r echo=FALSE, message=TRUE, warning=FALSE}
+summary(model)
+```
+
+## 
+
+```{r echo=TRUE, fig.height=5.5, fig.width=10, message=FALSE, warning=FALSE}
+lm.plot
+```
+
+## Part 12: Discussion
+
+### **Discussion questions**
+
+Is the new *RS* list as "representative" as the older version? Why or why not? <br>
+
+-   How do we tend to treat genre in music theory? <br>
+
+-   Do artist identities correspond to, or perhaps influence, feature organization? <br>
+
+-   What else may be at play to cause differences between the two lists?
+
+#### Wrap-up: why sample?
+
+-   sampling is used when we can't capture an entire population
+-   testing is used to assess if norms meet predetermined expectations
+-   Example: Bach chorales
+    -   We have the ability to test trends in all Bach chorales
+    -   Therefore we don't need tests, just to infer
+    -   Yet, skeptical when we say Bach reflects all classical music
+    -   Bach is not necessarily *representative* of all voice leading
+
+#### It is impossible to capture the totality of popular music
+
+-   ...so we use corpora instead
+-   every time we do this we introduce bias
+-   we can take certain steps to reduce biases
+    -   RS5x20: sample equally from each decade
+    -   Here: align dataset population with US Census data
+
+#### *Rolling Stone*: representative of what?
+
+-   Listening habits of "industry professionals" who prefer songs...
+    -   in the "classic rock" canon
+    -   premiered ca. 1965—1985
+    -   written/performed by men
+    -   of critical acclaim and/or commercial success
+-   *RS200*: representative of what?
+    -   expert perspective on harmony, melody, form
+    -   "rock" music that includes a variety of subgenres
+
+#### Where do we permit flexibility?
+
+-   *RS200* represents "rock" music
+-   "Rock" genre label is treated as catch-all for various sub-genres
+-   rap and hip hop are underrepresented in the *RS200* due to
+    -   limited chronological span (1949—1999)
+    -   lopsided chronological distribution (rap is newer)
+    -   all corpora become outdated as time passes, not an intentional fault
+-   RS2024 list
+    -   expands chronological span (1935-2021)
+    -   more songs by artists of color, esp. post 1999
+
+#### So, is the *RS200* more/less representative than our *RS2021* sample?
+
+-   We already have a flexible framework for "rock" music
+    -   does more hip hop and rap mean less "rock"-like?
+    -   if so, maybe we start using "hip hop" or "rap" as our catch-all label given the modern influence of hip hop on musical organization [@fornas1995a]
+-   Ultimately depends on your **research question**, which informs your *population* selection
+    -   TdC (2023), "The statistical population for a corpus study is a set of songs, typically the set of songs belonging to some particular musical style or era." [@clercq2023b]
+    -   *RS2021* expands the population of songs in consideration of the *human-facing* elements of style development.
+    -   May not be a perfect approach, more-diverse folks are tacked on before 1950 and after 1999.
+    -   Captures modern popular music nevertheless, even while prioritizing diversity.
+
+## Works Cited
