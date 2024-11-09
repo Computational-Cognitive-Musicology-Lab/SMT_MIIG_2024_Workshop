@@ -6,7 +6,7 @@ output:
       progressive: true
       allow_skip: true
       ace_theme: "github"
-      df_print: "kable"
+      df_print: "default"
       css: css/mycss.css
 runtime: shiny_prerendered
 description: >
@@ -29,6 +29,8 @@ humdrumR(syntaxHighlight = FALSE, maxRecordsPerFile = 30L)
 load('../Data/Bach370/Bach.Rd')
 load('../Data/CoCoPops/CoCoPops.Rd')
 load('../Data/Saraga/Saraga.Rd')
+
+options(width = 200)
 ```
 
 <script language="JavaScript" src="js/scripts.js"></script>
@@ -75,7 +77,6 @@ bach[10] # view 10th chorales
 cocopops[100] # view 100th cocopops song
 
 census(bach)
-spines(cocopops)
 
 ```
 
@@ -127,9 +128,9 @@ pitch_space1("Acoustic", "Perceptual")
 
 lab(0, 'Frequency')
 lab(0.2, "Cents")
-lab(.6, 'Semitones')
+lab(.5, 'Semitones')
 lab(1, "Scale degrees")
-lab(.8, "Tonal interval")
+lab(.8, "Intervals")
 
 ```
 
@@ -138,10 +139,11 @@ lab(.8, "Tonal interval")
 ```{r, echo = FALSE, out.width = 600, out.height=600, fig.height=5, fig.width = 5}
 pitch_space1("Atonal", "Tonal")
 
-lab(0, "Frequency")
+lab(0, "Frequency\nCents")
 lab(.2, 'Semitones')
-lab(.8 , 'Scientific Pitch')
+lab(.7 , 'Scientific pitch')
 lab(1, "Scale degree")
+lab(.85, 'Intervals')
 
 ```
 
@@ -155,6 +157,7 @@ lab(0, 'Frequency')
 lab(0.2, 'Semitones')
 lab(0.3, 'Scientific pitch')
 lab(.8, 'Scale degree')
+lab(1, 'Intervals')
 
 ```
 
@@ -175,6 +178,7 @@ lab2(0, 0, 'Frequency')
 lab2(0.2, 0.2, 'Semitones')
 lab2(.8, .3, 'Scientific pitch')
 lab2(1, .8, 'Scale degree')
+lab2(1,1,'Intervals')
 
 ```
 
@@ -190,6 +194,7 @@ lab2(0, 0, '**freq')
 lab2(0.2, 0.2, '**semits')
 lab2(.8, .3, '**pitch\n**kern')
 lab2(1, .8, '**deg\n**solfa')
+lab2(1, 1, '**mint\n**hint')
 
 ```
 
@@ -206,6 +211,7 @@ lab2(0, 0, 'freq()', family = 'mono')
 lab2(0.2, 0.2, 'semits()', family = 'mono')
 lab2(.8, .3, 'pitch()\nkern()', family = 'mono')
 lab2(1, .8, 'deg()\nsolfa()', family = 'mono')
+lab2(1,1,'interval()\nmint()', family = 'mono')
 
 
 ```
@@ -214,31 +220,55 @@ Use these functions to convert between different representations of pitch in R.
 
 + We can also use their `generic`/`specific` and `simple`/`complex` arguments to refine our representations.
 
+###
+
+> Try it out:
+
+```{r pitchtransforms, exercise= TRUE}
+bach[1] |> solfa()
+
+```
+
+```{r pitchtransforms-hint-1}
+bach[1] |> freq()
+bach[1] |> semits()
+bach[10] |> deg()
+bach[10] |> solfa(simple = TRUE)
+```
+
+```{r pitchtransforms-hint-2}
+
+bach[1] |> mint()
+bach[1] |> mint(classify = TRUE)
+
+cocopops |> mint(deparser = semits)
+
+```
+
 ### Explore
 
 
-```{r pitch_example, echo = TRUE, eval = FALSE}
-bach |> solfa()
-bach |> freq()
-bach |> pitch(generic = TRUE)
-```
 
 > **Which pitch translations are lossy and which lossless?**
 
-```{r pitch_explore, exercise = TRUE, exercise.cap = ""}
+```{r pitchexplore, exercise = TRUE}
 
 
 
 ```
 
 
-<div id="pitch_explore-hint">
-If a conversion is lossless, you should be able to convert from X to Y, then convert back from Y to X, and get the original X.
+<!-- <div id="pitchexplore-hint"> -->
+<!-- If a conversion is lossless, you should be able to convert from X to Y, then convert back from Y to X, and get the original X. -->
 
-</div>
+<!-- $$ -->
+<!-- f(g(x)) = x -->
+<!-- $$ -->
+
+<!-- </div> -->
 
 
-```{r pitch_explore-solution}
+```{r pitchexplore-solution}
 sciPitch <- c('C4', 'E4', 'G#4', 'B4', 'C#5', 'D5')
 
 sciPitch |> solfa() |> pitch() # lossless
@@ -248,7 +278,38 @@ sciPitch |> semits() |> pitch() # lossy
 ```
 
 ----
+
+Some information is encoded directly in score data.
+Other information can only be inferred/understood from data: our *domain knowledge*.
+
+> **What information is actually embedded in the data tokens, and what is external knowledge?**
   
+  
+```{r domain, exercise = TRUE}
+
+
+```
+
+```{r domain-hint-1}
+bach |> freq(frequency.reference = 420)
+
+```
+
+
+```{r domain-hint-2}
+bach |> deg(Key = 'C:')
+
+```
+
+
+###
+
++ Absolute pitch height can only be inferred from scores if we have domain knowledge of the tuning system.
+  + Conversely, tonal pitch categories can only be inferred from F0 data if we know the tuning system. 
++ Scale degrees can only be converted to absolute pitches if we know the key.
+  + Scale-degree data may or may not encode octave as well.
+  
+
 
 > **What is the lowest fundamental frequency in the Bach chorales?**
 
@@ -276,25 +337,12 @@ bach |> freq(frequency.reference = 420, tonalHarmonic = meantone5th) |> pull() |
 
 
 
-### Take-aways
-
-Some information is encoded directly in score data.
-
-Other information can only be inferred/understood from data---this is *domain knowledge*.
-
-+ Absolute pitch height can only be inferred from scores if we know the tuning system.
-  + Note names can only be inferred from F0 if we know the tuning system.
-+ We can only translate to/from scale degree if we know the key.
-
-
-
 
 ### Counting stuff
 
-What does it matter?
-
 One of the best ways to learn about data is by inspecting the distribution of datapoints.
-Try using the humdrum$_{\mathbb{R}}$ `count()` function, with different pitch representations:
+Try using the humdrum$_{\mathbb{R}}$ `count()` function, with different pitch representations.
+The `pdist()` function is the same, except printing probabilities (proportions).
 
 ```{r echo = TRUE, eval = FALSE}
 
@@ -310,15 +358,17 @@ cocopops |> solfa() |> count()
 
 ```
 
-```{r solfa_compare-hint1}
-bach |> deg(simple = TRUE)
+```{r solfa_compare-hint-1}
+bach |> deg(simple = TRUE) |> count()
 
 ```
 
-```{r solfa_compare-hint2}
+```{r solfa_compare-hint-2}
 bach |> deg(simple = TRUE) |> pdist()
 cocopops |> deg(simple = TRUE) |> pdist()
 ```
+
+
 
 ### Challenge
 
@@ -329,13 +379,24 @@ cocopops |> deg(simple = TRUE) |> pdist()
 
 ```
 
-### 
 
-Which dataset (Bach vs CoCoPops) has more pitch information?
+```{r voice_type-solution}
+bach |> 
+  semits() |> 
+  group_by(Spine) |>
+  summarize(MeanPitch = mean(.)) -> means
 
-Wouldn't it by nice if there was a formal way to ask this questions?
+cocopops |> semits() |> pull() -> popsemits
 
-## Entropy
+mean((popsemits - means$MeanPitch[1])^2) # bass
+mean((popsemits - means$MeanPitch[2])^2) # tenor
+mean((popsemits - means$MeanPitch[3])^2) # alto
+mean((popsemits - means$MeanPitch[4])^2) # soprano
+
+```
+
+
+## Quantifying Pitch Information
 
 The field of [information theory](https://en.wikipedia.org/wiki/Information_theory) explores ways of quantifying the "information content" of data.
 
@@ -374,10 +435,10 @@ Higher entropy means "more information per observation."
 Entropy is useful because it is essentially a measure of how "flat" *any* distribution is:
 Compare these two distributions:
 
-| Rock | Reggae | Blues | Pop | Country | Jazz | Film | Classical | Metal | Punk | Funk | R&B              | Folk |
-|------|--------|-------|-----|---------|------|------|-----------|-------|------|------|------------------|------|
-| .14  | .04    | .09   | .15 | .13     | .08  | .03  | .03       | .04   | .07  | .05  | .08              | .06  |
-| .12  | .02    | .02   | .67 | .06     | .01  | .01  | .01       | .01   | .01  | .01  | .01              | .02  |
+| Rock | Reggae | Blues | Pop | Country | Jazz | Film | Classical | Metal | Punk | Funk | R&B | Folk |
+|------|--------|-------|-----|---------|------|------|-----------|-------|------|------|-----|------|
+| .14  | .04    | .09   | .15 | .13     | .08  | .03  | .03       | .04   | .07  | .05  | .08 | .06  |
+| .12  | .02    | .02   | .67 | .06     | .01  | .01  | .01       | .01   | .01  | .01  | .01 | .02  |
 
 ```{r entropy_genre, echo = FALSE}
 
@@ -409,11 +470,11 @@ In contrast, when we draw from the left distribution, every observation is a bit
 ###
 
 
-The key thing is that entropy can be computed even when distributions differ in the number of levels, or even if there are infinite levels (continuous variables).
+The key thing is that entropy can be computed even when distributions differ in number of levels, or even if there are infinite levels (continuous variables).
 For example, the following distribution, with only four categories, also has 1.8 bits of entropy:
 
 | Rock | Reggae | Blues | Pop |
-|------|--------|-------|-----|
+|:----:|:------:|:-----:|:---:|
 | .46  | .24    | .2    | .1  |
 
 
@@ -460,56 +521,183 @@ bach |> kern(simple = TRUE) |> count() |> entropy()
 
 ```
 
-### Additive property
+It all depends on what our view of pitch is!
+There isn't "one" entropy of data.
 
-A cool property of entropy is that, if we combine distributions that are independent, their *joint entropy* is the sum of their independent entropies.
-For example, the entropy of a coin flip is one bit; the entropy of two independent coin flips is two bits. Etc.
-
-However, if two distributions are dependent, then their joint entropy will be less than the sum of the independent entropies.
-This difference is called the mutual information.
-
-###
-
-How much mutual information is there between pitch and rhythm information?
-
-```{r mutual, exercise = TRUE}
+### Joint entropy
 
 
-```
+If we have multiple variables to consider, we can calculate the total information they represent together: their *joint entropy*.
+The joint entropy of $X$ and $Y$ is notated:
 
-```{r mutual-solution}
-# It depends on whether we use absolute or relative pitch.
+$$
+H(X, Y)
+$$
 
-```
+A cool property of entropy is that, **if two variables are independent**, their *joint entropy* is the sum of their independent entropies.
+For example, the entropy of a coin flip is one bit; the entropy of two independent coin flips is two bits; etc.
 
+$$
+H(X, Y) = H(X) + H(Y)
+$$
+
+
+However, if two distributions are dependent, they share *mutual information*;
+Gaining knowledge about one variable ($X$) also tells us information about the other $Y$.
+Thus their actual joint entropy will be less than the sum of the independent entropies.
+
+$$
+H(X, Y) < H(X) + H(Y)
+$$
 
 ### Conditional entropy
 
+The conditional entropy is the entropy of the *conditional probability* of observations.
+Notated:
+
+$$
+H(X | Y) 
+$$
 
 
+If knowledge about $X$ can be used to predict $Y$, then their is redundancy (shared information) between them.
+Once we know $X$, the information left in $Y$ is reduced.
+If two variables are dependent, their conditional entropy will be less than their marginal entropy.
 
-## Analyses
+
+$$
+H(Y | X) = H(X, Y) - H(X)
+$$
 
 
-```{r mostFrequentPitch, exercise = TRUE, fig.cap = 'What is the most frequent pitch in each dataset?'}
+```{r, echo = FALSE, out.height = 400, out.width=600}
+
+
+bar <- function(x, y, l, ...) {
+  arrows(x, y, x+ l, y, code = 3, angle = 90, ...)
+}
+
+entropyplot <- function(x, y) {
+  mi <- max((x + y) - 1, 0)
+  
+  plot.new()
+  plot.window(c(0, x+y), c(0, 1))
+  
+  bar(0, .8, x, lwd = 2)
+  text(x / 2, .9, quote(H(X)))
+  
+  bar(1, .4, -y, lwd = 2)
+  text(1 - (y/2), .3, quote(H(Y)))
+  
+  bar(x, .8, (1 - x), lty = 'dashed')
+  text(x + (1-x)/2, .9, quote(H(paste(Y, '|', X))))
+  
+  bar(0, .4, 1 - y, lty = 'dashed')
+  text((1-y)*.5, .3, quote(H(paste(X, '|', Y))))
+  
+  if (mi > 0) {
+  bar(1-y, .6, mi, lty = 'dotted', lwd = 2, length = 0)
+  text(x - (mi/2), .58, pos = 3, 'Mutual information', cex = .5)
+    text(.5, 0, quote(H(X, Y)))
+  text(.5, 0, quote(H(X, Y)))
+  } else {
+    
+    mtext('Variables are independent', 1, cex = 2)
+    text(.5, 0, quote(H(X, Y) == H(X) + H(Y)), xpd = TRUE)
+  }
+  
+  bar(0, .1, 1, lwd = 3)
+  
+}
+
+knitr::include_graphics('images/entropy.gif')
+
+```
+
+### Joint/Conditonal entropy in humdrumR
+
+In humdrum$_{\mathbb{R}}$, we can pass two (or more) variables to the `count()` function, then pass that to entropy.
+For example:
+
+```{r, echo = TRUE, eval = FALSE}
+cocopops |> pitch() |> count(Pitch, Key) |> entropy()
+```
+
+We can also pass a `condition` argument to `entropy()`:
+
+```{r, echo = TRUE, eval = FALSE}
+cocopops |> pitch() |> count(Pitch, Key) |> entropy(condition= 'Key')
+```
+
+### Exercises
+
+> **How do different representations of pitch "divide up" information?**
+
+```{r pitchentropy, exercise= TRUE}
+
+```
+
+<div id='pitchentropy-hint'>
+
+For example, you could compare the entropy of an absolute representation of pitch, to one where the octave information is removed.
+Or compare the entropy of scale degrees and *key* information.
+
+</div>
+
+```{r pitchentropy-hint-1}
+bach |> count(Key) |> entropy()
+
+bach |> deg() |> count() |> entropy()
+```
+
+```{r pitchentropy-hint-2}
+bach |> deg() |> count(Deg, Key) |> entropy()
+bach |> deg() |> count(Deg, Key) |> entropy(condition = 'Key')
+```
+
+> **Is information content in the Chorales and CoCoPops similarly parititioned?**
+
+```{r entropy_cocopopsvsbach, exercise = TRUE}
 
 
 ```
 
-## Prediction
+
+> **How much mutual information is there between pitch and rhythm information?**
+
+```{r mutualrhythm, exercise = TRUE}
 
 
-## Distance
+```
+
+```{r mutualrhythm-hint-1}
+# It depends on what pitch representation we have
+
+```
+
+
+
+
+
+
+## Further Analyses
+
+
+
+### Prediction
+
+
+### Distance
 
 
 How can we represent "distance" in pitch?
 
 
 
-## Shape
+### Shape
 
 How can we express "shape" in pitch.
 
-## Repetition
+### Repetition
 
 How can we express "repetition" in pitch?

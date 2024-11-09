@@ -110,7 +110,7 @@ A music encoding is a representation of musical events (notes, chords) or struct
 
 ----
 
-Today we'll use humdrum$_{\mathbb{R}}$ to explore basic methodological issues in computational musicology.
+Today we'll use humdrum$_{\mathbb{R}}$ to explore and discuss basic questions about pitch data.
 
 + I'll draw on three datasets:
   + The 371 Bach chorales
@@ -118,6 +118,15 @@ Today we'll use humdrum$_{\mathbb{R}}$ to explore basic methodological issues in
   + The Saraga dataset of Hindustani performances.
   
 ----
+
+
+Discussion items:
+
++ Concerning pitch representation
++ Concerning methodology
++ Concerning pedagogy
+
+---
 
 Once you're in the posit cloud environment, click `Files > Tutorials > Pitch.Rmd` then press "Run Document."
 
