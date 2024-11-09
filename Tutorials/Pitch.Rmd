@@ -272,7 +272,6 @@ $$
 f(g(x)) = x
 $$
 
-</div>
 
 
 
@@ -547,8 +546,7 @@ cocopops |> semits() |> count() |> entropy()
 
 ```
 
-```{r entropy_corpora-hint-1}
-# It might depend on what pitch representation we choose
+```{r entropy_corpora-hint-3}
 
 bach |> pitch(simple = TRUE) |> count() |> entropy()
 cocopops |> pitch(simple = TRUE) |> count() |> entropy()
